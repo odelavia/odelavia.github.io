@@ -90,6 +90,16 @@ section p {
 	text-align: center;
 }
 
+ section .skills p {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 14px !important;
+	max-width: 90%;
+	line-height: 2;
+	padding:  0 20px;
+	margin-bottom: 30px;
+	text-align: center;
+}
+
 @media (max-width: 800px) {
 	section {
 		padding: 50px 20px;
@@ -346,6 +356,18 @@ svg {
 }
 
 /* projects */
+.projects .grid li {
+	height: 350px;
+	padding: 20px;
+	background-clip: content-box;
+	background-size: cover;
+	background-position: center;
+}
+
+.projects .grid li.medium {
+	flex-basis: 50%;
+}
+
 .projects .quote {
 	font-size: 22px;
 	font-weight: 300;
@@ -375,9 +397,10 @@ svg {
 		margin: 15px 0;
 	}
 
-	.projects .author {
-		font-size: 14px;
-	}
+/* 	.projects .author {
+	font-size: 14px;
+	padding-bottom: 2.5%;
+} */
 
 	.projects .grid li {
 		flex-basis: 100%;
