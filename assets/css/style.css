@@ -46,13 +46,15 @@ a.btn {
 	color: #2d2d2d;
 	background-color: transparent;
 	opacity: 1;
+	justify-content: center;
+	text-align: center;
 }
 
 section {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	padding: 100px 80px;
+	padding: 80px 80px;
 }
 
 section:not(.hero):nth-child(even) {
@@ -71,7 +73,8 @@ hr {
 	height: 3px;
 	background-color: #F7C331;
 	border: 0;
-	margin-bottom: 50px;
+	margin-bottom: 30px;
+	justify-content: center;
 }
 
 section h3.title {
@@ -79,11 +82,12 @@ section h3.title {
 	font: bold 32px "Open Sans", sans-serif;
 	margin-bottom: 30px;
 	text-align: center;
+	justify-content: center;
 }
 
 section p {
 	font-family: 'Montserrat', sans-serif;
-	max-width: 90%;
+	max-width: 100%;
 	line-height: 2;
 	padding:  0 20px;
 	margin-bottom: 30px;
@@ -321,6 +325,8 @@ header nav li {
 	}
 }
 
+/* skills section */
+
 .skills li {
 	padding: 50px;
 	display: inline-block;
@@ -330,7 +336,11 @@ header nav li {
 	text-align: center;
 }
 
-/* skills section */
+.skills ul {
+		justify-content: center;
+		text-align: center;
+}
+
 svg {
 	font-weight: 300;
 }
@@ -364,37 +374,54 @@ svg {
 /* projects */
 .projects .grid li {
 	height: 350px;
-	padding: 20px;
+	padding: 60px;
 	background-clip: content-box;
 	background-size: cover;
 	background-position: center;
+	flex-basis: 50%;
+	text-align: center;
 }
 
 .projects .grid li.medium {
-	flex-basis: 50%;
-}
-
-.projects .quote {
-	font-size: 22px;
-	font-weight: 300;
-	line-height: 1.5;
-	margin: 40px 0 25px;
-
-}
-
-.projects .grid li {
 	padding: 50px;
 	flex-basis: 50%;
 	text-align: center;
 }
 
-.projects .grid li i{
-	color: #F7882F;
+.projects .quote {
+	font-size: 22px;
+	font-weight: 300;
+	line-height: 1.25;
+	margin: 40px 0 25px;
+}
+
+.fa {
+	color: #F7882F !important;     /*not sure why but this won't work, colors project symbols*/
 }
 
 .projects .grid li h4{
-	font-size: 30px;
+	font-size: 25px;
 	margin: 25px 0;
+	justify-content: center;
+}
+
+.projects .grid li p {             /*currently working on this for centering of project p*/
+	justify-self: center;
+	text-align: center;
+	margin: 0;
+}
+
+@media (max-width: 950px) {
+	.projects .grid li.medium {
+		padding: 20px;
+		flex-basis: 100%;
+		text-align: center;
+	}
+
+	.projects .grid li {
+		flex-basis: 100%;
+		padding: 20px;
+	}
 }
 
 @media (max-width: 800px) {
@@ -403,6 +430,11 @@ svg {
 		margin: 15px 0;
 	}
 
+	.projects .grid li.medium {
+	padding: 20px;
+	flex-basis: 100%;
+	text-align: center;
+	}
 /* 	.projects .author {
 	font-size: 14px;
 	padding-bottom: 2.5%;
@@ -414,7 +446,47 @@ svg {
 	}
 }
 
+.projects .grid li + hr {    /*hr element*/
+	width: 800px;
+	height: 2px;
+	background-color: #6B7A8F;
+	opacity: .1;
+	border: 0;
+	margin: 10px;
+}
+
 /* contact */
+.contact hr {    /*hr element*/
+	width: 500px;
+	height: 3px;
+	background-color: #F7C331;
+	border: 0;
+	margin-bottom: 30px;
+	justify-content: center;
+}
+
+@media (max-width: 1024px) {
+	.contact hr {    /*hr element*/
+		width: 488px;
+		box-sizing: border-box;
+	}
+}
+
+@media (max-width: 768px) {
+	.contact hr {    /*hr element*/
+		width: 406px;
+		box-sizing: border-box;
+	}
+}
+
+@media (max-width: 426px) {
+	.contact hr {    /*hr element*/
+		width: 252px;
+		box-sizing: border-box;
+	}
+}
+
+
 .contact form {
 	display: flex;
 	align-items: center;
@@ -445,6 +517,7 @@ svg {
 .contact form textarea {
 	border-style: none;
 	border-radius: 5px;
+	min-width: 252px;
 	margin: 15px;
 	outline: none;
   	resize: none;
@@ -471,7 +544,7 @@ svg {
 }
 
 .last#last{
-	background-color: #E7DFDD !important;
+	background-color: #f5f5f5 !important;
 }
 
 /* footer */

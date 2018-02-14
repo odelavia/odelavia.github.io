@@ -55,7 +55,7 @@ window.onload = function() {
     document.body.appendChild(css);
 };
 
-// navbar scroll dissappear
+/*// navbar scroll dissappear
 $(window).scroll(function(){
     if ($('navbar').offset().top > 50){
         $('.navbar-fixed-top').addClass('top-nav-collapse');
@@ -72,4 +72,4 @@ $(function(){
         }, 1500, 'easeInOutExpo');
         event.preventDefault();
     });
-});
+});*/
