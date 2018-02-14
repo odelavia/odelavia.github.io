@@ -21,6 +21,9 @@ html {
 	color: #555;
 }
 
+body {
+	min-width: 320px;
+}
 ul,
 nav {
 	list-style: none;
@@ -81,6 +84,14 @@ section h3.title {
 	text-transform: capitalize;
 	font: bold 32px "Open Sans", sans-serif;
 	margin-bottom: 30px;
+	text-align: center;
+	justify-content: center;
+}
+
+section.contact h3.title {
+	text-transform: capitalize;
+	font: bold 32px "Open Sans", sans-serif;
+	margin-bottom: 15px;
 	text-align: center;
 	justify-content: center;
 }
@@ -403,6 +414,16 @@ svg {
 	font-size: 25px;
 	margin: 25px 0;
 	justify-content: center;
+	color: #555 !important;
+}
+
+.projects .grid li h4 a{
+	color: #555;
+}
+
+.projects .grid li h4 a:hover {
+	opacity: 0.75;
+	color: #F7882F;
 }
 
 .projects .grid li p {             /*currently working on this for centering of project p*/
