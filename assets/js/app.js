@@ -51,7 +51,7 @@ window.onload = function() {
     // INJECT CSS
     var css = document.createElement("style");
     css.type = "text/css";
-    css.innerHTML = ".typewrite > .wrap { border-right: 0.08em solid #F7882F}"; //text cursor
+    css.innerHTML = ".typewrite > .wrap { border-right: 0.08em solid #F7C331}"; //text cursor
     document.body.appendChild(css);
 };
 
@@ -73,3 +73,17 @@ $(function(){
         event.preventDefault();
     });
 });*/
+
+
+
+
+/*sticky navbar section*/
+
+$(window).on('scroll', function() {
+    if ($(window).scrollTop()) {
+        $('nav').addClass('black');
+    }
+    else {
+        $('nav').removeClass('black');
+    }
+})
