@@ -1,0 +1,23 @@
+{
+  "name": "odelavia.github.io",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/odelavia/odelavia.github.io.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/odelavia/odelavia.github.io/issues"
+  },
+  "homepage": "https://github.com/odelavia/odelavia.github.io#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^4.1.0"
+  }
+}
