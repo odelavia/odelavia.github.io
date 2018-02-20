@@ -23,7 +23,11 @@ html {
 }
 
 body {
-	min-width: 320px;
+  min-width: 320px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 ul {
 	list-style: none;
@@ -39,19 +43,6 @@ a:hover {
 	opacity: 0.75;
 }
 
-a.btn {
-	border: 3px solid #F7C331;
-	text-transform: uppercase;
-	font-weight: bold;
-	height: auto;
-	border-radius: 50px;
-	line-height: normal;
-	color: #2d2d2d;
-	background-color: transparent;
-	/* text-align: center; */
-	/* z-index: -2; */
-}
-
 section {
 	display: -webkit-box;
 	display: -ms-flexbox;
@@ -60,7 +51,9 @@ section {
 	-webkit-box-direction: normal;
 	    -ms-flex-direction: column;
 	        flex-direction: column;
-	/* align-items: center;                                                                       */
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;                                                                       */
 	padding: 80px 80px;
 }
 
@@ -344,11 +337,12 @@ nav .wrapper {
 
 /* hero styles */
 .hero {
-	position: relative;
+	position: relative !important;
 	-webkit-box-pack: center;
 	    -ms-flex-pack: center;
 	        justify-content: center;
-	text-align: center;
+  text-align: center;
+  padding-bottom: 200px;
 	min-height: 100vh;
 	color: #fff;
 }
@@ -365,7 +359,7 @@ nav .wrapper {
 }
 
 .hero h1 {
-	font: bolder 60px "Open Sans", sans-serif;
+	/* font: bolder 60px "Open Sans", sans-serif; */
 	margin-bottom: 50px;
 	/* color: #6B7A8F; */
 	color: #2d2d2d;
@@ -379,7 +373,7 @@ nav .wrapper {
 }
 
 .hero a.btn {
-	padding: 20px 46px;
+  padding: 20px 46px;
 	/* z-index: -2; */
 }
 
@@ -405,16 +399,21 @@ nav .wrapper {
 }
 
 /* typewriter font */
-.hero-content-area h3 {
-	font: bold 26px "Open Sans", sans-serif;
+.hero-content-area h1 {
+  font: bold 26px "Open Sans", sans-serif;
+  -webkit-box-flex:1;
+      -ms-flex:1;
+          flex:1;
     text-align: center;
+    justify-self: center;
+    -ms-flex-item-align: center;
+        align-self: center;
     color: #2d2d2d;
     text-transform: uppercase;
     margin: 30px 0 30px 0;
-    /* margin-bottom: 40px; */
-    position: relative;
-    top: 50%;
-    left: 50%;
+    position: absolute;
+    top: 50% !important;
+    left: 50% !important;
     font-size: 2rem;
     -webkit-transform: translate(-50%, -50%);
             transform: translate(-50%, -50%);
@@ -458,10 +457,21 @@ nav .wrapper {
 
 /* about me section */
 
-/* .page-scroll {
-	-webkit-transition: -webkit-transform 1s;
-	-moz-transition: -webkit-transform 1s;
-} */
+.hire-me-btn {
+    border: 3px solid #F7C331;
+    border-radius: 50px;
+    background-color: transparent;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 225px;
+    -ms-flex-item-align: center;
+        align-self: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    font-weight:bold;
+}
 
 .about .grid li {
 	height: 350px;
@@ -708,12 +718,19 @@ nav .wrapper {
 }
 
 .contact .btn{
+  border: 3px solid #F7C331;
+  border-radius: 50px;
+  font-weight:bold;
+  background-color: transparent;
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
-	padding: 18px 42px;
-	text-align: justify;
-	width: 60%;
+  padding: 18px;
+  margin: 42px;
+	/* text-align: justify; */
+  width: 225px;
+  -ms-flex-item-align: center;
+      align-self: center;
 	-webkit-box-pack: center;
 	    -ms-flex-pack: center;
 	        justify-content: center;
@@ -816,7 +833,7 @@ footer div span {
           justify-content: space-between;
 }
 
-div span:not(.span):not(.span2) {
+div span.fa-layers {
 	margin: 15px;
 	display:-webkit-inline-box;
 	display:-ms-inline-flexbox;
@@ -825,6 +842,10 @@ div span:not(.span):not(.span2) {
 	width:64px;
 	height: 64px;
   }
+
+/* span.writer {
+  width:1000px !important;
+} */
 
 span.span {
   margin: 0;
