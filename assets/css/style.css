@@ -387,8 +387,7 @@ nav .wrapper {
     background-color: transparent;
     display: flex;
     width: 225px;
-    margin-top: 500px:
-    /* align-self: center; */
+    margin-top: 500px;
     justify-content: center;
     font-weight:bold;
 }
@@ -515,8 +514,7 @@ nav .wrapper {
 }
 
 .projects .grid li p {             /*currently working on this for centering of project p*/
-	/* justify-self: center; */
-	text-align: justify;
+  text-align: justify;
 	margin: 0 0 10px 0;
 }
 
@@ -544,10 +542,6 @@ nav .wrapper {
 	flex-basis: 100%;
 	text-align: center;
 	}
-/* 	.projects .author {
-	font-size: 14px;
-	padding-bottom: 2.5%;
-} */
 
 	.projects .grid li {
 		flex-basis: 100%;
@@ -675,17 +669,6 @@ footer {
   font-size: 16px;
   text-transform: uppercase;
 }
-
-/* footer p {
-	text-transform: uppercase;
-	font-size: 16px;
-	opacity: 0.75;
-	align-self: center;
-} */
-
-/* section span {
-	color: #151515;
-} */
 
 footer div a {
   color: #fff;
