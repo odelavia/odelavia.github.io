@@ -1,0 +1,25 @@
+{
+  "workbench.colorTheme": "Palenight Operator",
+  // The number of spaces a tab is equal to. This setting is overriden
+// based on the file contents when `editor.detectIndentation` is true.
+"editor.tabSize": 2,
+
+// Insert spaces when pressing Tab. This setting is overriden
+// based on the file contents when `editor.detectIndentation` is true.
+"editor.insertSpaces": true,
+
+// When opening a file, `editor.tabSize` and `editor.insertSpaces`
+// will be detected based on the file contents. Set to false to keep
+// the values you've explicitly set, above.
+"editor.detectIndentation": false,
+"guides.active.color.dark": "rgba(246, 194, 75, 0.8)",
+// Indentation background colors.
+"guides.indent.backgrounds": rgba(150, 255, 0, 0.8),
+// Maximum rendering boundary based on current cursor position. Set to -1 for no limit. Use floating point between 0-1 to determine from document size instead.
+"guides.limit.maximum": -1,
+
+// Active indentation guides rendering width.
+"guides.active.width": 2,
+  // Override default Visual Studio Code behaviours (such as indentation guides or rulers).
+  "guides.overrideDefault": true
+}

@@ -1,3 +1,14 @@
+// Sticky Header
+$(window).scroll(function() {
+
+  if ($(window).scrollTop() > 25) {
+      $('.wrapper').addClass('sticky');
+  } else {
+      $('.wrapper').removeClass('sticky');
+  }
+});
+
+//typewriter effect
 var TxtType = function(el, toRotate, period) {
         this.toRotate = toRotate;
         this.el = el;
@@ -73,17 +84,3 @@ $(function(){
         event.preventDefault();
     });
 });*/
-
-
-
-
-/*sticky navbar section*/
-
-$(window).on('scroll', function() {
-    if ($(window).scrollTop()) {
-        $('nav').addClass('black');
-    }
-    else {
-        $('nav').removeClass('black');
-    }
-})
