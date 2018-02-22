@@ -23,11 +23,13 @@ html {
 }
 
 body {
+  position: relative;
   min-width: 320px;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  width:100vw !important;
 }
 ul {
 	list-style: none;
@@ -53,8 +55,8 @@ section {
 	        flex-direction: column;
 	-webkit-box-align: center;
 	    -ms-flex-align: center;
-	        align-items: center;                                                                       */
-	padding: 80px 80px;
+	        align-items: center;
+  padding: 60px 20px !important;  /*doesnt work for some reason, taking value from up top of 0.*/
 }
 
 section:not(.hero):nth-child(even) {
@@ -89,7 +91,7 @@ hr {
 section h3.title {
 	text-transform: capitalize;
 	font: bold 32px "Open Sans", sans-serif;
-	margin-bottom: 30px;
+	margin-bottom: 20px;
 	text-align: center;
 	-webkit-box-pack: center;
 	    -ms-flex-pack: center;
@@ -291,6 +293,9 @@ nav .wrapper {
     opacity: 1;
     min-height: 100vh;
     visibility: visible;
+    body {
+      position:fixed;
+    }
   }
   nav .label-toggle {
     background: -webkit-gradient(linear, left top, left bottom, from(#151515), color-stop(20%, #151515), color-stop(20%, transparent), color-stop(40%, transparent), color-stop(40%, #151515), color-stop(60%, #151515), color-stop(60%, transparent), color-stop(80%, transparent), color-stop(80%, #151515), to(#151515));
@@ -608,8 +613,9 @@ nav .wrapper {
 }
 
 .projects .grid li p {             /*currently working on this for centering of project p*/
-  text-align: justify;
-	margin: 0 0 10px 0;
+	/* justify-self: center; */
+	text-align: justify;
+	/* margin: 0 0 10px 0; */
 }
 
 @media (max-width: 950px) {
@@ -639,6 +645,10 @@ nav .wrapper {
 	    flex-basis: 100%;
 	text-align: center;
 	}
+/* 	.projects .author {
+	font-size: 14px;
+	padding-bottom: 2.5%;
+} */
 
 	.projects .grid li {
 		-ms-flex-preferred-size: 100%;
@@ -691,6 +701,14 @@ nav .wrapper {
 		-webkit-box-sizing: border-box;
 		        box-sizing: border-box;
 	}
+}
+
+@media (max-width: 320px) {
+	.projects .grid li.medium {
+    padding:20px 0;
+    -ms-flex-preferred-size: 280px;
+        flex-basis: 280px;
+  }
 }
 
 
@@ -801,6 +819,7 @@ footer {
   text-transform: uppercase;
 }
 
+
 footer div a {
   color: #fff;
   text-decoration: none;
@@ -875,7 +894,7 @@ span#circle4:hover svg{
 		        order: 1 !important;
 		margin:0 0 20px 0;
 		text-align: center;
-		min-width: 405px;
+		min-width: 320px;
 	}
 	footer div.two {
 		-webkit-box-ordinal-group: 4 !important;
@@ -893,6 +912,48 @@ span#circle4:hover svg{
 	}
 }
 
+@media (max-width: 475px) {
+	footer {
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		    -ms-flex-direction: column;
+		        flex-direction: column;
+		margin-bottom:20px;
+  }
+  div span.fa-layers {
+    margin: 3px;
+  }
+	footer div.one {
+		-webkit-box-ordinal-group: 2 !important;
+		    -ms-flex-order: 1 !important;
+		        order: 1 !important;
+		margin:0 0 20px 0;
+		text-align: center;
+		min-width: 320px;
+	}
+	footer div.two {
+		-webkit-box-ordinal-group: 4 !important;
+		    -ms-flex-order: 3 !important;
+		        order: 3 !important;
+		text-align: center;
+		min-width: 320px;
+	}
+	footer div.three {
+		-webkit-box-ordinal-group: 3 !important;
+		    -ms-flex-order: 2 !important;
+		        order: 2 !important;
+		text-align: center;
+		min-width: 320px;
+	}
+}
+
+@media (max-width: 375px) {
+  .wrapper {
+    padding: 0 5%;
+    -ms-flex-preferred-size:100vw;
+        flex-basis:100vw;
+  }
+}
 .fab {
   padding: 10px;
   font-size: 30px;
@@ -907,3 +968,6 @@ span#circle4:hover svg{
     opacity: 0.7;
 }
 
+cite {
+  margin-bottom: 80px;
+}

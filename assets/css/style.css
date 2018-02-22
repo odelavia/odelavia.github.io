@@ -22,8 +22,10 @@ html {
 }
 
 body {
+  position: relative;
   min-width: 320px;
   flex-direction: column;
+  width:100vw !important;
 }
 ul {
 	list-style: none;
@@ -42,8 +44,8 @@ a:hover {
 section {
 	display: flex;
 	flex-direction: column;
-	align-items: center;                                                                       */
-	padding: 80px 80px;
+	align-items: center;
+  padding: 60px 20px !important;  /*doesnt work for some reason, taking value from up top of 0.*/
 }
 
 section:not(.hero):nth-child(even) {
@@ -70,7 +72,7 @@ hr {
 section h3.title {
 	text-transform: capitalize;
 	font: bold 32px "Open Sans", sans-serif;
-	margin-bottom: 30px;
+	margin-bottom: 20px;
 	text-align: center;
 	justify-content: center;
 }
@@ -236,6 +238,9 @@ nav .wrapper {
     opacity: 1;
     min-height: 100vh;
     visibility: visible;
+    body {
+      position:fixed;
+    }
   }
   nav .label-toggle {
     background: linear-gradient(to bottom, #151515 0%, #151515 20%, transparent 20%, transparent 40%, #151515 40%, #151515 60%, transparent 60%, transparent 80%, #151515 80%, #151515 100%);
@@ -514,8 +519,9 @@ nav .wrapper {
 }
 
 .projects .grid li p {             /*currently working on this for centering of project p*/
-  text-align: justify;
-	margin: 0 0 10px 0;
+	/* justify-self: center; */
+	text-align: justify;
+	/* margin: 0 0 10px 0; */
 }
 
 @media (max-width: 950px) {
@@ -542,6 +548,10 @@ nav .wrapper {
 	flex-basis: 100%;
 	text-align: center;
 	}
+/* 	.projects .author {
+	font-size: 14px;
+	padding-bottom: 2.5%;
+} */
 
 	.projects .grid li {
 		flex-basis: 100%;
@@ -588,6 +598,13 @@ nav .wrapper {
 		width: 252px;
 		box-sizing: border-box;
 	}
+}
+
+@media (max-width: 320px) {
+	.projects .grid li.medium {
+    padding:20px 0;
+    flex-basis: 280px;
+  }
 }
 
 
@@ -670,6 +687,7 @@ footer {
   text-transform: uppercase;
 }
 
+
 footer div a {
   color: #fff;
   text-decoration: none;
@@ -733,7 +751,7 @@ span#circle4:hover svg{
 		order: 1 !important;
 		margin:0 0 20px 0;
 		text-align: center;
-		min-width: 405px;
+		min-width: 320px;
 	}
 	footer div.two {
 		order: 3 !important;
@@ -747,6 +765,38 @@ span#circle4:hover svg{
 	}
 }
 
+@media (max-width: 475px) {
+	footer {
+		flex-direction: column;
+		margin-bottom:20px;
+  }
+  div span.fa-layers {
+    margin: 3px;
+  }
+	footer div.one {
+		order: 1 !important;
+		margin:0 0 20px 0;
+		text-align: center;
+		min-width: 320px;
+	}
+	footer div.two {
+		order: 3 !important;
+		text-align: center;
+		min-width: 320px;
+	}
+	footer div.three {
+		order: 2 !important;
+		text-align: center;
+		min-width: 320px;
+	}
+}
+
+@media (max-width: 375px) {
+  .wrapper {
+    padding: 0 5%;
+    flex-basis:100vw;
+  }
+}
 .fab {
   padding: 10px;
   font-size: 30px;
@@ -761,3 +811,6 @@ span#circle4:hover svg{
     opacity: 0.7;
 }
 
+cite {
+  margin-bottom: 80px;
+}
