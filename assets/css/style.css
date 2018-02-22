@@ -156,7 +156,7 @@ header h2 {
   margin: 1em 0;
 }
 
-nav.sticky div.logo {
+nav.sticky div.logo a {
   color: white;
   transition: all .5s ease;
 }
@@ -185,7 +185,7 @@ nav.sticky ul a {
   transition: all .5s ease;
 }
 
-nav ul a:hover {
+nav ul a:not(.logo):hover {
   opacity: .8;
 }
 nav li {
@@ -295,7 +295,7 @@ nav .wrapper {
 	width: 100%;
 	height: 100%;
 	background-size: cover;
-	z-index: -1;
+	/* z-index: -1; */
 	background-color: #DCC7AA;
 }
 
@@ -314,6 +314,10 @@ nav .wrapper {
 }
 
 .hero a.btn {
+  border: 3px solid transparent;
+  border-radius: 50px;
+  background-color: transparent;
+  width: 225px;
   padding: 20px 46px;
 	/* z-index: -2; */
 }

@@ -19,19 +19,19 @@
 	<body>
 		<nav class="navBar">
       <nav class="wrapper">
-        <div class="logo">Oliver De La Via</div><!-- Logo -->
+        <div class="logo"><a href=".home">Oliver De La Via</a></div><!-- Logo -->
         <input type="checkbox" id="menu-toggle" />
           <label for="menu-toggle" class="label-toggle"></label>
         <ul>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Skills</a></li>
-          <li><a href="#">Projects</a></li>
-          <li><a href="#">Contact</a></li>
+          <li><a href=".sec01">About</a></li>
+          <li><a href=".sec02">Skills</a></li>
+          <li><a href=".sec03">Projects</a></li>
+          <li><a href=".sec04">Contact</a></li>
         </ul>
       </nav>
     </nav>
 
-		<section class="hero">
+		<section class="hero home">
 			<div class="background-image" style="background-image: url(assets/img/damian-zaleski-banner.jpg);"></div>
 			<div class="hero-content-area">
 				<!-- <h1>Hi, I'm Oliver De La Via</h1>
@@ -42,13 +42,13 @@
 					</a>
 				</h1>
 				<div class="hire-me-btn">
-					<a href="#" class="btn">Hire Me</a>
+					<a href=".sec04" class="btn">Hire Me</a>
 				</div>
 			</div>
-			<div class="page-scroll learn-more"><a href="#me">Learn more<br><i class="fa fa-chevron-down"></i></a></div>
+			<div class="page-scroll learn-more"><a href=".sec01">Learn more<br><i class="fa fa-chevron-down"></i></a></div>
 		</section>
 
-		<section class="about">
+		<section class="about  sec01">
 			<h3 class="title">About Me:</h3>
 			<hr>
 			<p>I’m a self-taught web developer. My expertise is <strong>full-stack JavaScript</strong>. I've been teaching myself since November of 2017 and am working on adding more projects to my portfolio. I'm a craftsman by trade (residential contracting and oil painting) and have been such since I can remember. I believe my passion for making things will transfer well to this tech industry!</p>
@@ -61,7 +61,7 @@
 			</ul>
 		</section>
 
-		<section class="skills">
+		<section class="skills  sec02">
 			<h3 class="title">Skills and Education</h3>
 			<hr>
 			<ul>
@@ -99,7 +99,7 @@
 			<p>I graduated from VCU with a BFA in Communication Arts in the Fall of 2014 (It's the school's fancy term for Illustration/Design). I went on to specialize in painting but do well with graphic design. After traveling the world on and off for the last few years, I decided I needed a major career change and fell in love with programming over the last few months. My only background in the field is three years (good things must come in threes!) of Computer Science Classes in high school, most of which was forgotten. Since I've picking up programming again, I've been using FreeCodeCamp, Udemy, Youtube Videos and a plethora of other resources to engrain as much information as possible. I know I still have yet to learn so much, but <em>boy</em> am I excited.</p>
 		</section>
 
-		<section class="projects">
+		<section class="projects  sec03">
 			<h3 class="title">Current/Upcoming Projects:</h3>
 			<hr>
 			<ul class="grid">
@@ -149,7 +149,7 @@
 			</ul>
 		</section>
 
-		<section class="contact last" id="last">
+		<section class="contact last  sec04" id="last">
 			<h3 class="title">Get In Touch</h3>
 			<p>Email me through my contact form. No spam, I promise!</p>
 			<hr>
@@ -160,7 +160,7 @@
 			<form>
 				<textarea cols="30" rows="3" placeholder="What can I help you with?"></textarea>
 			</form> <br>
-			<a href="#" class="btn">Send message</a>
+			<a href="mailto:test@test.com" class="btn">Send message</a>
 
 		</section>
 		<footer>
@@ -168,22 +168,30 @@
 			  Images courtesy of <a href="#">ooplah.com</a>
 			</div>
 			<div class="icons one">
-			  	<span class="fa-layers fa-fw" id="circle1">
-					<i class="far fa-circle fa-4x" data-fa-transform="0"></i>
-					<i class="fab fa-inverse fa-facebook-f fa-3x" data-fa-transform="shrink-7"></i>
-				</span>
-				<span class="fa-layers fa-fw" id="circle2">
-					<i class="far fa-circle fa-4x" data-fa-transform="0"></i>
-					<i class="fab fa-inverse fa-linkedin fa-3x" data-fa-transform="shrink-7"></i>
-				</span>
-				<span class="fa-layers fa-fw" id="circle3">
-					<i class="far fa-circle fa-4x" data-fa-transform="0"></i>
-					<i class="fab fa-inverse fa-github fa-3x" data-fa-transform="shrink-7"></i>
-				</span>
-				<span class="fa-layers fa-fw" id="circle4">
-					<i class="far fa-circle fa-4x" data-fa-transform="0"></i>
-					<i class="fab fa-inverse fa-instagram fa-3x" data-fa-transform="shrink-7"></i>
-				</span>
+        <a href="https://www.facebook.com/oliver.delavia">
+          <span class="fa-layers fa-fw" id="circle1">
+            <i class="far fa-circle fa-4x" data-fa-transform="0"></i>
+            <i class="fab fa-inverse fa-facebook-f fa-3x" data-fa-transform="shrink-7"></i>
+          </span>
+        </a>
+        <a href="https://www.linkedin.com/in/oliver-de-la-via-9bb2b39a/">
+          <span class="fa-layers fa-fw" id="circle2">
+            <i class="far fa-circle fa-4x" data-fa-transform="0"></i>
+            <i class="fab fa-inverse fa-linkedin fa-3x" data-fa-transform="shrink-7"></i>
+          </span>
+        </a>
+        <a href="https://github.com/odelavia">
+          <span class="fa-layers fa-fw" id="circle3">
+            <i class="far fa-circle fa-4x" data-fa-transform="0"></i>
+            <i class="fab fa-inverse fa-github fa-3x" data-fa-transform="shrink-7"></i>
+          </span>
+        </a>
+        <a href="https://www.instagram.com/odelavia/">
+          <span class="fa-layers fa-fw" id="circle4">
+            <i class="far fa-circle fa-4x" data-fa-transform="0"></i>
+            <i class="fab fa-inverse fa-instagram fa-3x" data-fa-transform="shrink-7"></i>
+          </span>
+      </a>
 			</div>
 			<div class="three">
 				Copyright <span class="span">&copy</span> <a href="#">testingtesting123.com</a>

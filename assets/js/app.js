@@ -65,3 +65,15 @@ window.onload = function() {
     css.innerHTML = ".typewrite > .wrap { border-right: 0.08em solid #F7C331}"; //text cursor
     document.body.appendChild(css);
 };
+
+//nav scroll
+// navigation scroll lijepo radi materem
+$('a').click(function(event) {
+  var id = $(this).attr("href");
+  var offset = 70;
+  var target = $(id).offset().top - offset;
+  $('html, body').animate({
+      scrollTop: target
+  }, 500);
+  event.preventDefault();
+});
