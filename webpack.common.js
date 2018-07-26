@@ -7,7 +7,7 @@ module.exports = {
   output: {
     path: path.join(__dirname, './client/dist'),
     publicPath: '/',
-    filename: '[name].[hash].js',
+    filename: 'bundle.js',
   },
   module: {
     rules: [
@@ -31,8 +31,9 @@ module.exports = {
     ],
   },
   devServer: {
-    historyApiFallback: true,
-  },
+      historyApiFallback: true,
+      port: 8090
+    },
   plugins: [
     new CleanWebpackPlugin('dist', {}),
     new HtmlWebpackPlugin({
