@@ -1,6 +1,6 @@
 {
   "name": "oliverdelavia.com-v4",
-  "version": "1.0.0",
+  "version": "4.0.0",
   "description": "personal portfolio website",
   "keywords": [
     "react",
@@ -13,7 +13,7 @@
   "main": "index.js",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/odelavia/react-od.com.git"
+    "url": "git+https://github.com/odelavia/odelavia.github.io.git"
   },
   "scripts": {
     "prestart": "npm run build:prod",
