@@ -5,7 +5,7 @@ const CleanWebpackPlugin = require('clean-webpack-plugin'); // deletes old dist 
 module.exports = {
   entry: { main: './client/src/index.js' },
   output: {
-    path: path.join(__dirname, './client/dist'),
+    path: path.join(__dirname, './'),
     publicPath: '/',
     filename: 'bundle.js',
   },
