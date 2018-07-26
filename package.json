@@ -24,6 +24,7 @@
     "build:dev": "webpack-dev-server --hot --watch --config webpack.dev.js",
     "build:prod": "webpack --config webpack.prod.js"
   },
+  "homepage": ".",
   "dependencies": {
     "body-parser": "^1.18.2",
     "clean-webpack-plugin": "^0.1.19",
