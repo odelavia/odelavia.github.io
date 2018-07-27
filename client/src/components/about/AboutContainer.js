@@ -1,10 +1,8 @@
 import React, { Component } from 'react';
-import IndexTab from './IndexTab';
-import App from './App';
-import About from './About';
-import Proficiency from './Proficiency';
-import Interests from './Interests';
-import ReadMe from './ReadMe';
+import FileTabs from './FileTabs';
+import FileEnumeration from './FileEnumeration';
+import FileBodies from './FileBodies';
+
 
 class AboutContainer extends Component {
   constructor(props) {
@@ -89,67 +87,35 @@ class AboutContainer extends Component {
 
   render() {
     return (
-      <section className="about-wrapper">
-        <div className="about-btns-wrapper">
-          <div className="about-btns-container">
-            <button className="close-btn" onClick={this.onFileSelection}></button>
-            <button className="max-btn" onClick={this.onFileSelection}></button>
-            <button className="min-btn" onClick={this.onFileSelection}></button>
-          </div>
-        </div>
+      <div className="about-section-wrapper">
+        <section className="about-text-wrapper">
+          <h3>
+            World of Experience
+          </h3>
+          <hr />
 
-        <div className="filetab-wrapper">
-          <div id="fileOne" className={this.state.fileOne ? 'filetab active' : 'filetab'}>
-            index.js
+          <p>
+            Oliver De La Via is a software developer with strong roots in residential/commercial painting, carpentry and oil portraiture. He's traveled all over the US, South America, Europe and parts of Africa by foot, bicycle, and car. He informs his work with his observations across all industries be it tech, art, retail, food, etc in an effort to keep software UI accessible, responsive and intuitive.
+          </p>
+          <p>Click on the mock text editor's file tabs to learn more</p>
+        </section>
+        <section className="about-editor-wrapper">
+          <div className="editor-container">
+            <div className="about-btns-wrapper">
+              <div className="about-btns-container">
+                <button className="close-btn" onClick={()=>console.log('closed')}></button>
+                <button className="min-btn" onClick={()=>console.log('minimized')}></button>
+                <button className="max-btn" onClick={()=>console.log('maximized')}></button>
+              </div>
+            </div>
+            <FileTabs {...this.state}/>
+            <div className="body-wrapper">
+              <FileEnumeration />
+              <FileBodies {...this.state} />
+            </div>
           </div>
-          <div id="fileTwo" className={this.state.fileTwo ? 'filetab active' : 'filetab'}>
-            App.js
-          </div>
-          <div id="fileThree" className={this.state.fileThree ? 'filetab active' : 'filetab'}>
-            About.js
-          </div>
-          <div id="fileFour" className={this.state.fileFour ? 'filetab active' : 'filetab'}>
-            Proficiency.js
-          </div>
-          <div id="fileFive" className={this.state.fileFive ? 'filetab active' : 'filetab'}>
-            Interests.js
-          </div>
-          <div id="fileSix" className={this.state.fileSix ? 'filetab active' : 'filetab'}>
-            README.md
-          </div>
-        </div>
-
-        <div className="body-wrapper">
-          <div className="line-num-container">
-            <span className="line-num typed">1</span>
-            <span className="line-num">2</span>
-            <span className="line-num typed">3</span>
-            <span className="line-num">4</span>
-            <span className="line-num typed">5</span>
-            <span className="line-num">6</span>
-            <span className="line-num typed">7</span>
-            <span className="line-num">8</span>
-            <span className="line-num typed">9</span>
-            <span className="line-num">10</span>
-            <span className="line-num typed">11</span>
-            <span className="line-num">12</span>
-            <span className="line-num typed">13</span>
-            <span className="line-num">14</span>
-            <span className="line-num typed">15</span>
-            <span className="line-num">16</span>
-            <span className="line-num typed">17</span>
-            <span className="line-num">18</span>
-            <span className="line-num typed">19</span>
-            <span className="line-num">20</span>
-          </div>
-          {this.state.fileOne ? <IndexTab /> : null}
-          {this.state.fileTwo ? <App /> : null}
-          {this.state.fileThree ? <About /> : null}
-          {this.state.fileFour ? <Proficiency /> : null}
-          {this.state.fileFive ? <Interests /> : null}
-          {this.state.fileSix ? <ReadMe /> : null}
-        </div>
-      </section>
+        </section>
+      </div>
     );
   }
 };

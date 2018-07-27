@@ -25,9 +25,9 @@ const Proficiency = () => (
       (
     </code>
       <article className="pad1 line-5-text html-tag">&lt;<span className="html-element">article</span>&gt;</article>
-        <div className="pad2 line-6-text html-tag">&lt;<span className="html-element">p</span>&gt;</div>
+        <div className="pad2 line-6-text html-tag">&lt;<span className="html-element">h2</span>&gt;</div>
           <code className="pad3 line-7-text">My Proficiencies:</code>
-        <div className="line-8-text html-tag pad2">&lt;/<span className="html-element">p</span>&gt;</div>
+        <div className="line-8-text html-tag pad2">&lt;/<span className="html-element">h2</span>&gt;</div>
         <div className="line-9-text html-tag pad2">&lt;<span className="html-element">p</span>&gt;</div>
           <code className="pad3 line-10-text">
             I'm proficient in...
