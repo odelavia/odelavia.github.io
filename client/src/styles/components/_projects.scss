@@ -59,19 +59,19 @@
         background-size:cover;
       }
 
-      .project-description {
+      div[class^="project-description"] {
         position: absolute;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        padding: 10px;
+        padding: 10px 20px;
         top: 0;
         bottom: 0;
         left: 0;
         right: 0;
-        background: lighten(red, 20%);
-        background-blend-mode: multiply;
+        // background: lighten(red, 20%);
+        background-blend-mode: hue;
         color: #fff;
         visibility: hidden;
         opacity: 0;
@@ -85,6 +85,41 @@
           font-size: 20px;
           margin-bottom: 75px;
         }
+
+        &[class$="-1"] {
+          background: darken(#f0a9b7, 20%);
+        }
+        &[class$="-2"] {
+          background: darken(#4b5fbd, 40%);
+        }
+        &[class$="-3"] {
+          background: darken(#f2fc62, 40%);
+        }
+        &[class$="-4"] {
+          background: darken(#20372a, 20%);
+        }
+        &[class$="-5"] {
+          background: lighten(#ff3c15, 20%);
+        }
+        &[class$="-6"] {
+          background: darken(#49bdff, 40%);
+        }
+        &[class$="-7"] {
+          background: darken(#e8354d, 40%);
+        }
+        &[class$="-8"] {
+          background: darken(#647077, 40%);
+        }
+        &[class$="-9"] {
+          background: darken(#4639ab, 20%);
+        }
+        &[class$="-10"] {
+          background: darken(#df5c1f, 40%);
+        }
+        &[class$="-11"] {
+          background: darken(#5c70d6, 40%);
+        }
+
         span {
           position: relative;
           font-size: 20px;
@@ -103,9 +138,9 @@
       }
 
       &:hover {
-        .project-description {
-        visibility: visible;
-        opacity: .8;
+        div[class^="project-description"] {
+          visibility: visible;
+          opacity: .8;
         }
 
         .project-img {
@@ -121,7 +156,7 @@
   .projects-wrapper {
     .projects-container {
       .test-project {
-        .project-description {
+        div[class^="project-description"] {
           h4 {
             font-size: 75px;
           }
@@ -152,7 +187,7 @@
   .projects-wrapper {
     .projects-container {
       .test-project {
-        .project-description {
+        div[class^="project-description"] {
 
           h4 {
             font-size: 70px;
@@ -178,7 +213,7 @@
   .projects-wrapper {
     .projects-container {
       .test-project {
-        .project-description {
+        div[class^="project-description"] {
 
           h4 {
             font-size: 50px;
@@ -208,7 +243,7 @@
   .projects-wrapper {
     .projects-container {
       .test-project {
-        .project-description {
+        div[class^="project-description"] {
 
           h4 {
             font-size: 40px;
@@ -252,7 +287,7 @@
   .projects-wrapper {
     .projects-container {
       .test-project {
-        .project-description {
+        div[class^="project-description"] {
 
           h4 {
             font-size: 35px;
@@ -280,7 +315,7 @@
   .projects-wrapper {
     .projects-container {
       .test-project {
-        .project-description {
+        div[class^="project-description"] {
 
           h4 {
             font-size: 30px;
@@ -309,7 +344,7 @@
   .projects-wrapper {
     .projects-container {
       .test-project {
-        .project-description {
+        div[class^="project-description"] {
 
           h4 {
             font-size: 22px;
@@ -336,9 +371,7 @@
   .projects-wrapper {
     .projects-container {
       .test-project {
-        .project-description {
-          padding: 0 20px;
-
+        div[class^="project-description"] {
           h4 {
             font-size: 20px;
           }
@@ -373,7 +406,7 @@
   .projects-wrapper {
     .projects-container {
       .test-project {
-        .project-description {
+        div[class^="project-description"] {
           p {
             margin-bottom: 20px;
           }
@@ -396,7 +429,7 @@
   .projects-wrapper {
     .projects-container {
       .test-project {
-        .project-description {
+        div[class^="project-description"] {
 
           h4 {
             font-size: 18px;

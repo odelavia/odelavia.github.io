@@ -1092,97 +1092,118 @@ Link.nav-link:not(.btn) {
         height: calc((3/5) * 50vw);
         background-position: center;
         background-size: cover; }
-      .projects-wrapper .projects-container .test-project .project-description {
+      .projects-wrapper .projects-container .test-project div[class^="project-description"] {
         position: absolute;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        padding: 10px;
+        padding: 10px 20px;
         top: 0;
         bottom: 0;
         left: 0;
         right: 0;
-        background: #ff6666;
-        background-blend-mode: multiply;
+        background-blend-mode: hue;
         color: #fff;
         visibility: hidden;
         opacity: 0;
         transition: opacity .2s, visibility .2s; }
-        .projects-wrapper .projects-container .test-project .project-description h4 {
+        .projects-wrapper .projects-container .test-project div[class^="project-description"] h4 {
           font-weight: 500;
           font-size: 40px; }
-        .projects-wrapper .projects-container .test-project .project-description p {
+        .projects-wrapper .projects-container .test-project div[class^="project-description"] p {
           font-size: 20px;
           margin-bottom: 75px; }
-        .projects-wrapper .projects-container .test-project .project-description span {
+        .projects-wrapper .projects-container .test-project div[class^="project-description"][class$="-1"] {
+          background: #e1526e; }
+        .projects-wrapper .projects-container .test-project div[class^="project-description"][class$="-2"] {
+          background: #10152c; }
+        .projects-wrapper .projects-container .test-project div[class^="project-description"][class$="-3"] {
+          background: #868f03; }
+        .projects-wrapper .projects-container .test-project div[class^="project-description"][class$="-4"] {
+          background: black; }
+        .projects-wrapper .projects-container .test-project div[class^="project-description"][class$="-5"] {
+          background: #ff917b; }
+        .projects-wrapper .projects-container .test-project div[class^="project-description"][class$="-6"] {
+          background: #004f7c; }
+        .projects-wrapper .projects-container .test-project div[class^="project-description"][class$="-7"] {
+          background: #490811; }
+        .projects-wrapper .projects-container .test-project div[class^="project-description"][class$="-8"] {
+          background: #070808; }
+        .projects-wrapper .projects-container .test-project div[class^="project-description"][class$="-9"] {
+          background: #27205f; }
+        .projects-wrapper .projects-container .test-project div[class^="project-description"][class$="-10"] {
+          background: #2c1206; }
+        .projects-wrapper .projects-container .test-project div[class^="project-description"][class$="-11"] {
+          background: #151f52; }
+        .projects-wrapper .projects-container .test-project div[class^="project-description"] span {
           position: relative;
           font-size: 20px; }
-          .projects-wrapper .projects-container .test-project .project-description span a ~ a {
+          .projects-wrapper .projects-container .test-project div[class^="project-description"] span a ~ a {
             margin-left: 65px; }
-          .projects-wrapper .projects-container .test-project .project-description span .live-repo {
+          .projects-wrapper .projects-container .test-project div[class^="project-description"] span .live-repo {
             position: absolute;
             font-size: 50px;
             line-height: -20;
             margin-left: 10px; }
-      .projects-wrapper .projects-container .test-project:hover .project-description {
+      .projects-wrapper .projects-container .test-project:hover div[class^="project-description"] {
         visibility: visible;
         opacity: .8; }
       .projects-wrapper .projects-container .test-project:hover .project-img {
         background-size: 120%; }
 
 @media (max-width: 2560px) {
-  .projects-wrapper .projects-container .test-project .project-description h4 {
+  .projects-wrapper .projects-container .test-project div[class^="project-description"] h4 {
     font-size: 75px; }
-  .projects-wrapper .projects-container .test-project .project-description p {
+  .projects-wrapper .projects-container .test-project div[class^="project-description"] p {
     font-size: 40px;
     margin-bottom: 75px; }
-  .projects-wrapper .projects-container .test-project .project-description span {
+  .projects-wrapper .projects-container .test-project div[class^="project-description"] span {
     position: relative;
     font-size: 35px; }
-    .projects-wrapper .projects-container .test-project .project-description span a ~ a {
+    .projects-wrapper .projects-container .test-project div[class^="project-description"] span a ~ a {
       margin-left: 150px; }
-    .projects-wrapper .projects-container .test-project .project-description span .live-repo {
+    .projects-wrapper .projects-container .test-project div[class^="project-description"] span .live-repo {
       font-size: 70px;
       line-height: -20;
       margin-left: 45px; } }
 
 @media (max-width: 2400px) {
-  .projects-wrapper .projects-container .test-project .project-description h4 {
+  .projects-wrapper .projects-container .test-project div[class^="project-description"] h4 {
     font-size: 70px; }
-  .projects-wrapper .projects-container .test-project .project-description p {
+  .projects-wrapper .projects-container .test-project div[class^="project-description"] p {
     font-size: 35px;
     margin-bottom: 75px; }
-  .projects-wrapper .projects-container .test-project .project-description span {
+  .projects-wrapper .projects-container .test-project div[class^="project-description"] span {
     position: relative;
     font-size: 30px; }
-    .projects-wrapper .projects-container .test-project .project-description span .live-repo {
+    .projects-wrapper .projects-container .test-project div[class^="project-description"] span .live-repo {
       font-size: 65px; } }
 
 @media (max-width: 1900px) {
-  .projects-wrapper .projects-container .test-project .project-description h4 {
+  .projects-wrapper .projects-container .test-project div[class^="project-description"] h4 {
     font-size: 50px; }
-  .projects-wrapper .projects-container .test-project .project-description p {
+  .projects-wrapper .projects-container .test-project div[class^="project-description"] p {
     font-size: 25px; }
-  .projects-wrapper .projects-container .test-project .project-description span {
+  .projects-wrapper .projects-container .test-project div[class^="project-description"] span {
     position: relative;
     font-size: 20px; }
-    .projects-wrapper .projects-container .test-project .project-description span a ~ a {
+    .projects-wrapper .projects-container .test-project div[class^="project-description"] span a ~ a {
       margin-left: 90px; }
-    .projects-wrapper .projects-container .test-project .project-description span .live-repo {
+    .projects-wrapper .projects-container .test-project div[class^="project-description"] span .live-repo {
       font-size: 45px;
       margin-left: 25px; } }
 
 @media (max-width: 1440px) {
-  .projects-wrapper .projects-container .test-project .project-description h4 {
+  .projects-wrapper .projects-container .test-project div[class^="project-description"] h4 {
     font-size: 40px; }
-  .projects-wrapper .projects-container .test-project .project-description p {
+  .projects-wrapper .projects-container .test-project div[class^="project-description"] p {
     font-size: 20px;
     margin-bottom: 75px; }
-  .projects-wrapper .projects-container .test-project .project-description span {
+  .projects-wrapper .projects-container .test-project div[class^="project-description"] span {
     position: relative;
     font-size: 16px; }
-    .projects-wrapper .projects-container .test-project .project-description span .live-repo {
+    .projects-wrapper .projects-container .test-project div[class^="project-description"] span .live-repo {
       font-size: 35px;
       margin-left: 25px; } }
 
@@ -1193,80 +1214,78 @@ Link.nav-link:not(.btn) {
       height: calc((2.45/5) * 100vw); } }
 
 @media (max-width: 768px) {
-  .projects-wrapper .projects-container .test-project .project-description h4 {
+  .projects-wrapper .projects-container .test-project div[class^="project-description"] h4 {
     font-size: 35px; }
-  .projects-wrapper .projects-container .test-project .project-description p {
+  .projects-wrapper .projects-container .test-project div[class^="project-description"] p {
     font-size: 18px;
     margin-bottom: 75px; }
-  .projects-wrapper .projects-container .test-project .project-description span {
+  .projects-wrapper .projects-container .test-project div[class^="project-description"] span {
     position: relative;
     font-size: 16px; }
-    .projects-wrapper .projects-container .test-project .project-description span .live-repo {
+    .projects-wrapper .projects-container .test-project div[class^="project-description"] span .live-repo {
       font-size: 30px;
       line-height: -20;
       margin-left: 25px; } }
 
 @media (max-width: 660px) {
-  .projects-wrapper .projects-container .test-project .project-description h4 {
+  .projects-wrapper .projects-container .test-project div[class^="project-description"] h4 {
     font-size: 30px; }
-  .projects-wrapper .projects-container .test-project .project-description p {
+  .projects-wrapper .projects-container .test-project div[class^="project-description"] p {
     font-size: 16px;
     margin-bottom: 40px; }
-  .projects-wrapper .projects-container .test-project .project-description span {
+  .projects-wrapper .projects-container .test-project div[class^="project-description"] span {
     position: relative;
     font-size: 14px; }
-    .projects-wrapper .projects-container .test-project .project-description span .live-repo {
+    .projects-wrapper .projects-container .test-project div[class^="project-description"] span .live-repo {
       font-size: 25px;
       line-height: -20;
       margin-left: 25px; } }
 
 @media (max-width: 510px) {
-  .projects-wrapper .projects-container .test-project .project-description h4 {
+  .projects-wrapper .projects-container .test-project div[class^="project-description"] h4 {
     font-size: 22px; }
-  .projects-wrapper .projects-container .test-project .project-description p {
+  .projects-wrapper .projects-container .test-project div[class^="project-description"] p {
     font-size: 14px;
     margin-bottom: 40px; }
-  .projects-wrapper .projects-container .test-project .project-description span {
+  .projects-wrapper .projects-container .test-project div[class^="project-description"] span {
     position: relative;
     font-size: 12px; }
-    .projects-wrapper .projects-container .test-project .project-description span .live-repo {
+    .projects-wrapper .projects-container .test-project div[class^="project-description"] span .live-repo {
       font-size: 18px;
       margin-left: 25px; } }
 
 @media (max-width: 480px) {
-  .projects-wrapper .projects-container .test-project .project-description {
-    padding: 0 20px; }
-    .projects-wrapper .projects-container .test-project .project-description h4 {
-      font-size: 20px; }
-    .projects-wrapper .projects-container .test-project .project-description p {
-      font-size: 12px;
-      margin-bottom: 40px; }
-    .projects-wrapper .projects-container .test-project .project-description span {
-      position: relative;
-      font-size: 12px; }
-      .projects-wrapper .projects-container .test-project .project-description span a ~ a {
-        margin-left: 35px; }
-      .projects-wrapper .projects-container .test-project .project-description span .live-repo {
-        font-size: 16px;
-        line-height: -20;
-        margin-left: 10px; }
+  .projects-wrapper .projects-container .test-project div[class^="project-description"] h4 {
+    font-size: 20px; }
+  .projects-wrapper .projects-container .test-project div[class^="project-description"] p {
+    font-size: 12px;
+    margin-bottom: 40px; }
+  .projects-wrapper .projects-container .test-project div[class^="project-description"] span {
+    position: relative;
+    font-size: 12px; }
+    .projects-wrapper .projects-container .test-project div[class^="project-description"] span a ~ a {
+      margin-left: 35px; }
+    .projects-wrapper .projects-container .test-project div[class^="project-description"] span .live-repo {
+      font-size: 16px;
+      line-height: -20;
+      margin-left: 10px; }
   .projects-wrapper .projects-container .test-project .project-img {
     height: calc((2/5) * 100vw); } }
 
 @media (max-width: 425px) {
-  .projects-wrapper .projects-container .test-project .project-description p {
+  .projects-wrapper .projects-container .test-project div[class^="project-description"] p {
     margin-bottom: 20px; }
-  .projects-wrapper .projects-container .test-project .project-description span a ~ a {
+  .projects-wrapper .projects-container .test-project div[class^="project-description"] span a ~ a {
     margin-left: 40px; }
-  .projects-wrapper .projects-container .test-project .project-description span .live-repo {
+  .projects-wrapper .projects-container .test-project div[class^="project-description"] span .live-repo {
     margin-left: 15px; } }
 
 @media (max-width: 320px) {
-  .projects-wrapper .projects-container .test-project .project-description h4 {
+  .projects-wrapper .projects-container .test-project div[class^="project-description"] h4 {
     font-size: 18px; }
-  .projects-wrapper .projects-container .test-project .project-description p {
+  .projects-wrapper .projects-container .test-project div[class^="project-description"] p {
     font-size: 11px; }
-  .projects-wrapper .projects-container .test-project .project-description span {
+  .projects-wrapper .projects-container .test-project div[class^="project-description"] span {
     font-size: 12px; } }
 
 .contact-section {
@@ -1727,4 +1746,4 @@ footer .container {
   footer .container {
     width: calc(100vw - 50px); } }
 
-/*# sourceMappingURL=style.99a23e5884baaef2a30f.css.map*/
+/*# sourceMappingURL=style.ea8def67a476b6653c09.css.map*/
