@@ -137,7 +137,8 @@
         }
       }
 
-      &:hover {
+      &:hover,
+      &:active {
         div[class^="project-description"] {
           visibility: visible;
           opacity: .8;
@@ -441,6 +442,19 @@
             font-size: 12px;
           }
         }
+      }
+    }
+  }
+}
+
+@media (pointer: coarse) {
+  .projects-wrapper {
+    .projects-container {
+      .test-project {
+          div[class^="project-description"] {
+            visibility: visible;
+            opacity: .8;
+          }
       }
     }
   }

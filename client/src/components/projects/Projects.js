@@ -24,7 +24,7 @@ const Projects = () => (
       <div className="test-project">
         <div className="project-description-2">
           <h4>Contractor Proposal Generator</h4>
-          <p>Commercial/residential renovation proposal template generator</p>
+          <p>Commercial/residential proposal template generator</p>
           <span>
             <a>Live</a>
             <span className="live-repo">//</span>

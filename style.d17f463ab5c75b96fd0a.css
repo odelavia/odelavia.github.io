@@ -1146,10 +1146,10 @@ Link.nav-link:not(.btn) {
             font-size: 50px;
             line-height: -20;
             margin-left: 10px; }
-      .projects-wrapper .projects-container .test-project:hover div[class^="project-description"] {
+      .projects-wrapper .projects-container .test-project:hover div[class^="project-description"], .projects-wrapper .projects-container .test-project:active div[class^="project-description"] {
         visibility: visible;
         opacity: .8; }
-      .projects-wrapper .projects-container .test-project:hover .project-img {
+      .projects-wrapper .projects-container .test-project:hover .project-img, .projects-wrapper .projects-container .test-project:active .project-img {
         background-size: 120%; }
 
 @media (max-width: 2560px) {
@@ -1287,6 +1287,11 @@ Link.nav-link:not(.btn) {
     font-size: 11px; }
   .projects-wrapper .projects-container .test-project div[class^="project-description"] span {
     font-size: 12px; } }
+
+@media (pointer: coarse) {
+  .projects-wrapper .projects-container .test-project div[class^="project-description"] {
+    visibility: visible;
+    opacity: .8; } }
 
 .contact-section {
   display: flex;
@@ -1746,4 +1751,4 @@ footer .container {
   footer .container {
     width: calc(100vw - 50px); } }
 
-/*# sourceMappingURL=style.ea8def67a476b6653c09.css.map*/
+/*# sourceMappingURL=style.d17f463ab5c75b96fd0a.css.map*/
