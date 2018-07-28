@@ -1166,7 +1166,6 @@ button.submit {
   right: 0; }
 
 .form_wrapper {
-  min-width: 300px;
   position: relative;
   background-color: transparent; }
 
@@ -1428,13 +1427,17 @@ input[type="button"]:hover, input[type="submit"]:hover {
   .contact-section {
     max-width: 375px; }
     .contact-section input[type="text"], .contact-section input[type="email"], .contact-section textarea {
-      max-width: 280px; } }
+      max-width: 300px; } }
 
 @media (max-width: 320px) {
   .contact-section {
     max-width: 320px; }
+    .contact-section .form_wrapper {
+      max-width: 280px; }
+    .contact-section .input-container {
+      max-width: 280px; }
     .contact-section input[type="text"], .contact-section input[type="email"], .contact-section textarea {
-      max-width: 240px; } }
+      max-width: 280px; } }
 
 .step-wizard {
   position: relative;
@@ -1565,4 +1568,4 @@ footer .container {
   footer .container {
     width: calc(100vw - 50px); } }
 
-/*# sourceMappingURL=style.534cb08f6f724e0d76cf.css.map*/
+/*# sourceMappingURL=style.21361176fba7db10896e.css.map*/
