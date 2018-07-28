@@ -20,7 +20,6 @@ body {
 h1, h2, h3, h4, h5 {
   font-family: "Raleway";
   margin: 0;
-  font-weight: 800;
   line-height: 1.3; }
 
 h1 {
@@ -28,14 +27,14 @@ h1 {
   letter-spacing: 0; }
 
 h2 {
-  font-size: 50px;
+  font-size: 35px;
   transform-origin: 0;
-  font-weight: 900;
+  font-weight: 700;
   text-transform: uppercase;
   pointer-events: none; }
 
 h3 {
-  font-size: 35px;
+  font-size: 30px;
   margin-top: 317px;
   margin-bottom: 15px;
   font-weight: 600; }
@@ -91,7 +90,7 @@ img {
   border-color: #e24b6c;
   box-shadow: 0 2px 2px 0 rgba(30, 233, 182, 0.14), 0 3px 1px -2px rgba(233, 30, 99, 0.2), 0 1px 5px 0 rgba(233, 30, 99, 0.12);
   border: none;
-  border-radius: 30px;
+  border-radius: 4px;
   padding: 10px 10px;
   font-weight: 600;
   font-size: 16px;
@@ -935,7 +934,7 @@ Link.nav-link:not(.btn) {
   background-color: #cecece;
   max-width: 100%;
   max-height: 100%;
-  border-radius: 5px;
+  border-radius: 4px;
   box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.15); }
   .editor-container .about-btns-wrapper {
     display: grid;
@@ -975,7 +974,9 @@ Link.nav-link:not(.btn) {
       width: 100px;
       overflow-x: auto;
       height: auto;
-      padding: 5px 10px; }
+      padding: 5px 10px;
+      border-top-right-radius: 4px;
+      border-top-left-radius: 4px; }
       .editor-container .filetab-wrapper .filetab:hover:not(.active) {
         opacity: .8; }
       .editor-container .filetab-wrapper .filetab.active {
@@ -1047,6 +1048,17 @@ Link.nav-link:not(.btn) {
   .editor-container .pad3 {
     padding-left: 45px; }
 
+@media (max-width: 1440px) {
+  .about-section-wrapper {
+    grid-template-columns: 100vw;
+    grid-template-areas: "about-text" "about-code"; }
+    .about-section-wrapper .about-text-wrapper {
+      margin-bottom: 50px; } }
+
+@media (max-width: 768px) {
+  .about-section-wrapper .about-text-wrapper h3 {
+    font-size: 30px; } }
+
 .projects-wrapper {
   background-color: #21ce99;
   padding: 50px; }
@@ -1071,7 +1083,7 @@ Link.nav-link:not(.btn) {
       overflow: hidden; }
       .projects-wrapper .projects-container .test-project .project-img {
         background-image: url(http://upload.wikimedia.org/wikipedia/commons/thumb/e/ee/Chris_Christie_at_townhall.jpg/195px-Chris_Christie_at_townhall.jpg);
-        border-radius: 10px;
+        border-radius: 4px;
         width: 350px;
         height: 235px;
         background-position: center;
@@ -1090,7 +1102,7 @@ Link.nav-link:not(.btn) {
         color: #fff;
         visibility: hidden;
         opacity: 0;
-        border-radius: 10px;
+        border-radius: 4px;
         transition: opacity .2s, visibility .2s; }
       .projects-wrapper .projects-container .test-project:hover .project-description {
         visibility: visible;
@@ -1102,17 +1114,18 @@ Link.nav-link:not(.btn) {
   display: flex;
   justify-content: center;
   background-color: #21ce99;
-  padding-top: 50px;
-  padding-bottom: 100px;
+  padding: 100px 0;
   width: 100vw; }
   .contact-section .container {
     display: flex;
     justify-content: center; }
 
 .contact-section .row {
-  margin: 50px;
+  border-radius: 4px;
+  padding: 40px 40px 95px 40px;
   justify-content: center;
-  height: auto; }
+  height: auto;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.12), 0 1px 5px 0 rgba(0, 0, 0, 0.2); }
 
 .contact-section .title,
 .contact-section .description {
@@ -1126,16 +1139,22 @@ Link.nav-link:not(.btn) {
 .contact-section .description {
   font-size: 18px;
   font-weight: 400;
-  margin-bottom: 50px; }
+  margin-bottom: 40px; }
+
+.input-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-bottom: 40px; }
 
 .form-buttons {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 90px 1fr 90px;
   grid-template-areas: "prev . next";
   justify-content: space-between; }
 
 label {
-  font-weight: 400; }
+  font-weight: 500; }
 
 button.previous {
   grid-area: prev;
@@ -1149,8 +1168,6 @@ button.submit {
 .form_wrapper {
   min-width: 300px;
   position: relative;
-  /* top: 50%; */
-  /* margin-top: -160px; */
   background-color: transparent; }
 
 fieldset {
@@ -1163,43 +1180,41 @@ fieldset {
   /* box-shadow: rgba(0,0,0,0.1) 0px 1px 30px; */
   border-radius: 0px;
   border: none;
-  padding: 10px 20px !important;
-  /* min-height: 200px; */ }
+  padding: 10px 20px !important; }
 
 input {
-  /* display: block; */
-  width: 100%;
   height: 40px;
-  /* padding-right: 30px; */
-  /* margin: 15px 0px; */ }
+  margin-top: 8px; }
 
-/* text-area {
-  width: 100%;
-} */
 input[type="text"], input[type="email"], textarea {
   outline: none;
-  border: none;
   padding: 5px 45px 5px 5px !important;
   transition: all 250ms;
+  width: 372px;
   padding: 15px;
   border: 1px solid #21ce99;
-  border-radius: 0px;
-  margin-bottom: 10px;
-  font-size: 13px; }
+  border-radius: 4px;
+  font-size: 13px;
+  resize: none;
+  margin-top: 8px; }
+
+input:-webkit-autofill {
+  background-color: white !important;
+  box-shadow: 0 0 0 30px white inset !important;
+  -webkit-box-shadow: 0 0 0 30px white inset !important; }
+
+span.error-message {
+  margin-top: 5px;
+  font-weight: 500;
+  color: red; }
 
 input:focus, textarea:focus {
-  -moz-box-shadow: none !important;
-  -webkit-box-shadow: none !important;
-  box-shadow: none !important;
   border: 1px solid #ee0979;
   outline-width: 0;
   transition: All 0.5s ease-in;
   -webkit-transition: All 0.5s ease-in;
   -moz-transition: All 0.5s ease-in;
   -o-transition: All 0.5s ease-in; }
-
-input[type="text"]:focus, input[type="email"]:focus {
-  opacity: 0.5; }
 
 fieldset .contact-button-container {
   display: flex;
@@ -1261,14 +1276,12 @@ input[type="button"], input[type="submit"] {
   background-color: #fff;
   transition: all 150ms;
   box-shadow: rgba(0, 0, 0, 0.2) 0px 1px 5px;
-  width: 100px;
+  width: 90px;
   background: #21ce99;
   font-weight: bold;
   color: white;
   border: 0 none;
-  border-radius: 25px;
-  cursor: pointer;
-  padding: 10px 5px; }
+  cursor: pointer; }
 
 input[type="button"]:hover, input[type="submit"]:hover {
   background-color: #21ce99;
@@ -1380,6 +1393,12 @@ input[type="button"]:hover, input[type="submit"]:hover {
   .contact-section .description {
     font-size: 14px; } }
 
+@media (max-width: 510px) {
+  .contact-section {
+    padding: 40px 0; }
+    .contact-section .container .row {
+      box-shadow: none; } }
+
 @media (max-width: 425px) {
   .contact-section {
     max-width: 425px; }
@@ -1398,33 +1417,12 @@ input[type="button"]:hover, input[type="submit"]:hover {
       .contact-section form .renderfield label {
         display: flex;
         justify-self: flex-start; }
-    .contact-section .input-container {
-      display: flex;
-      justify-content: center; }
     .contact-section input[type="text"], .contact-section input[type="email"], .contact-section textarea {
-      padding: 5px 0;
-      max-width: 375px; }
+      max-width: 325px; }
     .contact-section form {
-      display: flex;
       flex-direction: column;
       align-content: center;
-      align-items: center; }
-    .contact-section .form-buttons {
-      display: grid;
-      grid-template-columns: 1fr 1fr 1fr;
-      grid-template-areas: "prev . next";
-      width: 200px;
-      margin-left: 0;
-      margin-right: 0;
-      justify-content: center;
-      justify-self: center; }
-    .contact-section button.previous {
-      grid-area: prev;
-      left: 0; }
-    .contact-section button.next,
-    .contact-section button.submit {
-      grid-area: next;
-      right: 0; } }
+      align-items: center; } }
 
 @media (max-width: 375px) {
   .contact-section {
@@ -1567,4 +1565,4 @@ footer .container {
   footer .container {
     width: calc(100vw - 50px); } }
 
-/*# sourceMappingURL=style.8d9c1c705712684a9ac6.css.map*/
+/*# sourceMappingURL=style.534cb08f6f724e0d76cf.css.map*/
