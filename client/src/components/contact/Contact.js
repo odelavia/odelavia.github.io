@@ -20,7 +20,7 @@ class Contact extends Component {
         <div className="container">
           <div className="row">
             <h2 className="title">Snail Mail</h2>
-            <p className="description">Fill out the form to get in touch. I'll get back to you as soon as possible.</p>
+            <p className="description">Fill this out to get in touch</p>
             <div className="form_wrapper">
               <Wizard onSubmit={this.showResults} />
             </div>

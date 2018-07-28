@@ -5,7 +5,10 @@ const RenderField = ({ input, label, type, meta: { touched, error } }) => (
     <label>{label}</label>
     <div className="input-container">
       <input {...input} placeholder={label} type={type} />
-      {touched && error && <span>{error}</span>}
+      {
+        touched && error &&
+        <span className="error-message">{error}</span>
+      }
     </div>
   </div>
 );

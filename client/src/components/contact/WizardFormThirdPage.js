@@ -17,9 +17,9 @@ const WizardFormThirdPage = props => {
   const { handleSubmit, pristine, previousPage, submitting } = props;
   return (
     <form onSubmit={handleSubmit}>
-      <div>
+      <div className="renderField">
         <label>Message</label>
-        <div>
+        <div className="input-container">
           <Field name="message" component="textarea" placeholder="Message..." />
         </div>
       </div>

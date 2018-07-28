@@ -33,7 +33,7 @@
 
    .project-img {
     background-image: url(http://upload.wikimedia.org/wikipedia/commons/thumb/e/ee/Chris_Christie_at_townhall.jpg/195px-Chris_Christie_at_townhall.jpg);
-    border-radius: 10px;
+    border-radius: 4px;
     width: 350px;
     height: 235px;
     background-position: center;
@@ -54,7 +54,7 @@
     color: #fff;
     visibility: hidden;
     opacity: 0;
-    border-radius: 10px;
+    border-radius: 4px;
     transition: opacity .2s, visibility .2s;
   }
 
