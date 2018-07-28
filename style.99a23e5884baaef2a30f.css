@@ -1065,34 +1065,40 @@ Link.nav-link:not(.btn) {
   .projects-wrapper .projects-text {
     display: flex;
     flex-direction: column;
-    align-items: center; }
+    align-items: center;
+    margin: 0 0 40px 0; }
     .projects-wrapper .projects-text h3 {
       font-weight: 700;
       text-align: center; }
     .projects-wrapper .projects-text p {
+      display: flex;
+      justify-self: center;
       font-size: 16px;
-      font-weight: 600; }
+      font-weight: 600;
+      margin-bottom: 0;
+      width: auto; }
   .projects-wrapper .projects-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-gap: 25px;
-    max-width: 725px;
-    margin: 0 auto; }
+    margin: 0 auto;
+    border-radius: 4px;
+    overflow: hidden; }
     .projects-wrapper .projects-container .test-project {
       position: relative;
-      overflow: hidden; }
+      overflow: hidden;
+      height: 100%; }
       .projects-wrapper .projects-container .test-project .project-img {
-        background-image: url(http://upload.wikimedia.org/wikipedia/commons/thumb/e/ee/Chris_Christie_at_townhall.jpg/195px-Chris_Christie_at_townhall.jpg);
-        border-radius: 4px;
-        width: 350px;
-        height: 235px;
+        max-width: 100%;
+        height: calc((3/5) * 50vw);
         background-position: center;
         background-size: cover; }
       .projects-wrapper .projects-container .test-project .project-description {
         position: absolute;
         display: flex;
+        flex-direction: column;
         justify-content: center;
         align-items: center;
+        padding: 10px;
         top: 0;
         bottom: 0;
         left: 0;
@@ -1102,13 +1108,166 @@ Link.nav-link:not(.btn) {
         color: #fff;
         visibility: hidden;
         opacity: 0;
-        border-radius: 4px;
         transition: opacity .2s, visibility .2s; }
+        .projects-wrapper .projects-container .test-project .project-description h4 {
+          font-weight: 500;
+          font-size: 40px; }
+        .projects-wrapper .projects-container .test-project .project-description p {
+          font-size: 20px;
+          margin-bottom: 75px; }
+        .projects-wrapper .projects-container .test-project .project-description span {
+          position: relative;
+          font-size: 20px; }
+          .projects-wrapper .projects-container .test-project .project-description span a ~ a {
+            margin-left: 65px; }
+          .projects-wrapper .projects-container .test-project .project-description span .live-repo {
+            position: absolute;
+            font-size: 50px;
+            line-height: -20;
+            margin-left: 10px; }
       .projects-wrapper .projects-container .test-project:hover .project-description {
         visibility: visible;
         opacity: .8; }
       .projects-wrapper .projects-container .test-project:hover .project-img {
         background-size: 120%; }
+
+@media (max-width: 2560px) {
+  .projects-wrapper .projects-container .test-project .project-description h4 {
+    font-size: 75px; }
+  .projects-wrapper .projects-container .test-project .project-description p {
+    font-size: 40px;
+    margin-bottom: 75px; }
+  .projects-wrapper .projects-container .test-project .project-description span {
+    position: relative;
+    font-size: 35px; }
+    .projects-wrapper .projects-container .test-project .project-description span a ~ a {
+      margin-left: 150px; }
+    .projects-wrapper .projects-container .test-project .project-description span .live-repo {
+      font-size: 70px;
+      line-height: -20;
+      margin-left: 45px; } }
+
+@media (max-width: 2400px) {
+  .projects-wrapper .projects-container .test-project .project-description h4 {
+    font-size: 70px; }
+  .projects-wrapper .projects-container .test-project .project-description p {
+    font-size: 35px;
+    margin-bottom: 75px; }
+  .projects-wrapper .projects-container .test-project .project-description span {
+    position: relative;
+    font-size: 30px; }
+    .projects-wrapper .projects-container .test-project .project-description span .live-repo {
+      font-size: 65px; } }
+
+@media (max-width: 1900px) {
+  .projects-wrapper .projects-container .test-project .project-description h4 {
+    font-size: 50px; }
+  .projects-wrapper .projects-container .test-project .project-description p {
+    font-size: 25px; }
+  .projects-wrapper .projects-container .test-project .project-description span {
+    position: relative;
+    font-size: 20px; }
+    .projects-wrapper .projects-container .test-project .project-description span a ~ a {
+      margin-left: 90px; }
+    .projects-wrapper .projects-container .test-project .project-description span .live-repo {
+      font-size: 45px;
+      margin-left: 25px; } }
+
+@media (max-width: 1440px) {
+  .projects-wrapper .projects-container .test-project .project-description h4 {
+    font-size: 40px; }
+  .projects-wrapper .projects-container .test-project .project-description p {
+    font-size: 20px;
+    margin-bottom: 75px; }
+  .projects-wrapper .projects-container .test-project .project-description span {
+    position: relative;
+    font-size: 16px; }
+    .projects-wrapper .projects-container .test-project .project-description span .live-repo {
+      font-size: 35px;
+      margin-left: 25px; } }
+
+@media (max-width: 1025px) {
+  .projects-wrapper .projects-container {
+    grid-template-columns: 1fr; }
+    .projects-wrapper .projects-container .test-project .project-img {
+      height: calc((2.45/5) * 100vw); } }
+
+@media (max-width: 768px) {
+  .projects-wrapper .projects-container .test-project .project-description h4 {
+    font-size: 35px; }
+  .projects-wrapper .projects-container .test-project .project-description p {
+    font-size: 18px;
+    margin-bottom: 75px; }
+  .projects-wrapper .projects-container .test-project .project-description span {
+    position: relative;
+    font-size: 16px; }
+    .projects-wrapper .projects-container .test-project .project-description span .live-repo {
+      font-size: 30px;
+      line-height: -20;
+      margin-left: 25px; } }
+
+@media (max-width: 660px) {
+  .projects-wrapper .projects-container .test-project .project-description h4 {
+    font-size: 30px; }
+  .projects-wrapper .projects-container .test-project .project-description p {
+    font-size: 16px;
+    margin-bottom: 40px; }
+  .projects-wrapper .projects-container .test-project .project-description span {
+    position: relative;
+    font-size: 14px; }
+    .projects-wrapper .projects-container .test-project .project-description span .live-repo {
+      font-size: 25px;
+      line-height: -20;
+      margin-left: 25px; } }
+
+@media (max-width: 510px) {
+  .projects-wrapper .projects-container .test-project .project-description h4 {
+    font-size: 22px; }
+  .projects-wrapper .projects-container .test-project .project-description p {
+    font-size: 14px;
+    margin-bottom: 40px; }
+  .projects-wrapper .projects-container .test-project .project-description span {
+    position: relative;
+    font-size: 12px; }
+    .projects-wrapper .projects-container .test-project .project-description span .live-repo {
+      font-size: 18px;
+      margin-left: 25px; } }
+
+@media (max-width: 480px) {
+  .projects-wrapper .projects-container .test-project .project-description {
+    padding: 0 20px; }
+    .projects-wrapper .projects-container .test-project .project-description h4 {
+      font-size: 20px; }
+    .projects-wrapper .projects-container .test-project .project-description p {
+      font-size: 12px;
+      margin-bottom: 40px; }
+    .projects-wrapper .projects-container .test-project .project-description span {
+      position: relative;
+      font-size: 12px; }
+      .projects-wrapper .projects-container .test-project .project-description span a ~ a {
+        margin-left: 35px; }
+      .projects-wrapper .projects-container .test-project .project-description span .live-repo {
+        font-size: 16px;
+        line-height: -20;
+        margin-left: 10px; }
+  .projects-wrapper .projects-container .test-project .project-img {
+    height: calc((2/5) * 100vw); } }
+
+@media (max-width: 425px) {
+  .projects-wrapper .projects-container .test-project .project-description p {
+    margin-bottom: 20px; }
+  .projects-wrapper .projects-container .test-project .project-description span a ~ a {
+    margin-left: 40px; }
+  .projects-wrapper .projects-container .test-project .project-description span .live-repo {
+    margin-left: 15px; } }
+
+@media (max-width: 320px) {
+  .projects-wrapper .projects-container .test-project .project-description h4 {
+    font-size: 18px; }
+  .projects-wrapper .projects-container .test-project .project-description p {
+    font-size: 11px; }
+  .projects-wrapper .projects-container .test-project .project-description span {
+    font-size: 12px; } }
 
 .contact-section {
   display: flex;
@@ -1568,4 +1727,4 @@ footer .container {
   footer .container {
     width: calc(100vw - 50px); } }
 
-/*# sourceMappingURL=style.21361176fba7db10896e.css.map*/
+/*# sourceMappingURL=style.99a23e5884baaef2a30f.css.map*/
