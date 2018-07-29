@@ -1,8 +1,7 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import WizardFormFirstPage from './WizardFormFirstPage';
-import WizardFormSecondPage from './WizardFormSecondPage';
-import WizardFormThirdPage from './WizardFormThirdPage';
+import AsyncComponent from '../common/AsyncComponent';
 
 class Wizard extends Component {
   constructor(props) {
@@ -27,17 +26,13 @@ class Wizard extends Component {
     const { onSubmit } = this.props;
     const { page } = this.state;
     if (page === 1) {
-      return ( <WizardFormFirstPage onSubmit={this.nextPage} /> );
+      return <WizardFormFirstPage onSubmit={this.nextPage} />
     } else if (page === 2) {
-      return ( <WizardFormSecondPage
-              previousPage={this.previousPage}
-              onSubmit={this.nextPage}
-              /> );
+      const AsyncWizardPage2 = AsyncComponent(()=> import('./WizardFormSecondPage'));
+      return <AsyncWizardPage2 previousPage={this.previousPage} onSubmit={this.nextPage} />
     } else if (page === 3) {
-      return (<WizardFormThirdPage
-              previousPage={this.previousPage}
-              onSubmit={onSubmit}
-              />);
+      const AsyncWizardPage3 = AsyncComponent(()=> import('./WizardFormThirdPage'));
+      return <AsyncWizardPage3 previousPage={this.previousPage} onSubmit={onSubmit} />
     }
   }
 
