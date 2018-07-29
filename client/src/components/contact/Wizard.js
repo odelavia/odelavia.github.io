@@ -7,12 +7,14 @@ import WizardFormThirdPage from './WizardFormThirdPage';
 class Wizard extends Component {
   constructor(props) {
     super(props);
-    this.nextPage = this.nextPage.bind(this);
-    this.previousPage = this.previousPage.bind(this);
     this.state = {
       page: 1,
     };
+    this.nextPage = this.nextPage.bind(this);
+    this.previousPage = this.previousPage.bind(this);
+    this.renderPage = this.renderPage.bind(this);
   }
+
   nextPage() {
     this.setState({ page: this.state.page + 1 });
   }
@@ -21,29 +23,28 @@ class Wizard extends Component {
     this.setState({ page: this.state.page - 1 });
   }
 
-  render() {
+  renderPage() {
     const { onSubmit } = this.props;
     const { page } = this.state;
+    if (page === 1) {
+      return ( <WizardFormFirstPage onSubmit={this.nextPage} /> );
+    } else if (page === 2) {
+      return ( <WizardFormSecondPage
+              previousPage={this.previousPage}
+              onSubmit={this.nextPage}
+              /> );
+    } else if (page === 3) {
+      return (<WizardFormThirdPage
+              previousPage={this.previousPage}
+              onSubmit={onSubmit}
+              />);
+    }
+  }
+
+  render() {
     return (
       <div>
-        {
-          page === 1 &&
-          <WizardFormFirstPage onSubmit={this.nextPage} />
-        }
-        {
-          page === 2 &&
-          <WizardFormSecondPage
-            previousPage={this.previousPage}
-            onSubmit={this.nextPage}
-          />
-        }
-        {
-          page === 3 &&
-          <WizardFormThirdPage
-            previousPage={this.previousPage}
-            onSubmit={onSubmit}
-          />
-        }
+        {this.renderPage()}
       </div>
     );
   }

@@ -1,12 +1,12 @@
 import React from 'react';
 import { BrowserRouter, Route, Link } from 'react-router-dom';
-import NavBar from '../components/layout/NavBar';
+import NavBar from '../components/common/NavBar';
 import Home from '../components/Home';
 import Skills from '../components/Skills'
 import Projects from '../components/projects/Projects'
 import Blog from '../components/Blog'
 import Contact from '../components/contact/Contact'
-import Footer from '../components/layout/Footer'
+import Footer from '../components/common/Footer'
 
 const AppRoutes = () => (
   <BrowserRouter>

@@ -3,9 +3,6 @@ import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import { openNav, closeNav } from '../../actions/navBar';
 
-/**
- * Component that alerts if you click outside of it
- */
 class OutsideAlerter extends Component {
   constructor(props) {
     super(props);
@@ -26,7 +23,6 @@ class OutsideAlerter extends Component {
   }
 
   handleClickOutside(event) {
-    // console.log(event)
     if (this.wrapperRef && !this.wrapperRef.contains(event.target)) {
       if ( event.target.parentNode.className == 'navbar-toggler'|| event.target.className == 'navbar-toggler') return
       if(this.props.display == 'block' && event.target.parentNode.className != 'navbar-toggler') {
@@ -46,7 +42,6 @@ OutsideAlerter.propTypes = {
 };
 
 const mapStateToProps = (state) => {
-  // console.log('this is redux state', state.navBar);
   return {
     navOpen:state.navBar.navOpen,
     display: state.navBar.display
