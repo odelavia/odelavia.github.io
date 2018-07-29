@@ -427,3 +427,11 @@ Link.nav-link:not(.btn) {
     width: 320px;
   }
 }
+
+@media (pointer: coarse) {
+  .nav-item {
+    &:before {
+      content: none;
+    }
+  }
+}

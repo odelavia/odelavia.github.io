@@ -705,6 +705,10 @@ Link.nav-link:not(.btn) {
   NavBar {
     width: 320px; } }
 
+@media (pointer: coarse) {
+  .nav-item:before {
+    content: none; } }
+
 .hero {
   position: relative;
   z-index: 1;
@@ -1771,4 +1775,4 @@ footer .container {
   footer .container {
     width: calc(100vw - 50px); } }
 
-/*# sourceMappingURL=style.b873.css.map*/
+/*# sourceMappingURL=style.1d61.css.map*/
