@@ -1,0 +1,74 @@
+{
+  "projects": [
+    {
+      "title":"2 Bears",
+      "description":"Mobile point of sales app for Belgian non-profit, Mov feast",
+      "siteLink":"https://github.com/chingu-voyage5/2-Bears",
+      "repoLink":"https://github.com/chingu-voyage5/2-Bears",
+      "backgroundImage":"http://www.hellothierry.com/media/01_american_ligth/58_MG_3373.jpg"
+    },
+    {
+      "title":"Contractor Proposal Generator",
+      "description":"Commercial/residential proposal template generator",
+      "siteLink":"#",
+      "repoLink":"https://github.com/odelavia/contractor-proposal-generator",
+      "backgroundImage":"https://images.pexels.com/photos/877695/pexels-photo-877695.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+    },
+    {
+      "title":"Facetagger",
+      "description":"A face-tagging game for the people in your pictures that utilizes the Clarifai API",
+      "siteLink":"#",
+      "repoLink":"#",
+      "backgroundImage":"http://www.hellothierry.com/media/01_american_ligth/82_MG_3496.jpg"
+    },
+    {
+      "title":"Gecho",
+      "description":"A video music playing app that utilizes Youtube's API",
+      "siteLink":"https://gecho.herokuapp.com/",
+      "repoLink":"https://github.com/chingu-voyage4/Geckos-Team-32",
+      "backgroundImage":"https://image.ibb.co/mPFbmx/homepage.png"
+    },
+    {
+      "title":"Hangman",
+      "description":"A modern attempt at the classic Hangman game",
+      "siteLink":"#",
+      "repoLink":"https://github.com/odelavia/vanillaJS-hangman-app",
+      "backgroundImage":"http://www.hellothierry.com/media/01_american_ligth/58_MG_3373.jpg"
+    },
+    {
+      "title":"Glasskey",
+      "description":"A twist on the GlassDoor App, use the app to see employee reviews",
+      "siteLink":"#",
+      "repoLink":"#",
+      "backgroundImage":"https://images.pexels.com/photos/877695/pexels-photo-877695.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+    },
+    {
+      "title":"Blog",
+      "description":"A blog built from scratch",
+      "siteLink":"#",
+      "repoLink":"#",
+      "backgroundImage":"http://www.hellothierry.com/media/01_american_ligth/82_MG_3496.jpg"
+    },
+    {
+      "title":"Note",
+      "description":"Note-keeping app",
+      "siteLink":"#",
+      "repoLink":"#",
+      "backgroundImage":"https://image.ibb.co/mPFbmx/homepage.png"
+    },
+    {
+      "title":"Todo",
+      "description":"Another to-do app",
+      "siteLink":"#",
+      "repoLink":"#",
+      "backgroundImage":"http://www.hellothierry.com/media/01_american_ligth/58_MG_3373.jpg"
+    },
+    {
+      "title":"Auth",
+      "description":"An authorization app for mobile",
+      "siteLink":"#",
+      "repoLink":"#",
+      "backgroundImage":"https://images.pexels.com/photos/877695/pexels-photo-877695.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+    }
+  ]
+}

@@ -6,7 +6,7 @@ const initialState = {
 }
 
 export default (state = initialState, action) => {
-  console.log('this is a cool string',action)
+  console.log('action:',action)
 
   switch(action.type) {
     case OPEN_NAV:

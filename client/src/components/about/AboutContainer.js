@@ -109,7 +109,7 @@ class AboutContainer extends Component {
               </div>
             </div>
             <FileTabs {...this.state}/>
-            <div className="body-wrapper">
+            <div id="editorbody-scroll" className="body-wrapper">
               <FileEnumeration />
               <FileBodies {...this.state} />
             </div>

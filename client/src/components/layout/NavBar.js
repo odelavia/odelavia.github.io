@@ -39,7 +39,7 @@ class NavBar extends Component {
 
   onScrollColorChange() {
     let lastScrollY = window.scrollY
-    console.log (lastScrollY)
+    // console.log (lastScrollY)
     if (this.state.scrolledDown == false ) {
       if (lastScrollY > 100 ) {
         this.setState ({
@@ -106,7 +106,7 @@ class NavBar extends Component {
 }
 
 const mapStateToProps = (state) => {
-  console.log('this is redux state', state.navBar);
+  // console.log('this is redux state', state.navBar);
   return {
     navOpen:state.navBar.navOpen,
     display: state.navBar.display
