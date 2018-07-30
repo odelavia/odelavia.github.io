@@ -29,6 +29,7 @@ class Projects extends Component {
   }
 
   render() {
+    console.log('projects')
     return(
       <div className="projects-wrapper">
         <div className="projects-text">

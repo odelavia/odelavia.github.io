@@ -15,6 +15,7 @@ class Contact extends Component {
   };
 
   render() {
+    console.log('contact')
     return (
       <div className="contact-section">
         <div className="container">

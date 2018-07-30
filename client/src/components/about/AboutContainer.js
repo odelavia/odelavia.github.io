@@ -86,6 +86,7 @@ class AboutContainer extends Component {
   }
 
   render() {
+    // console.log('about')
     return (
       <div className="about-section-wrapper">
         <section className="about-text-wrapper">
