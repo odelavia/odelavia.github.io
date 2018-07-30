@@ -896,7 +896,7 @@ Link.nav-link:not(.btn) {
         position: absolute;
         justify-self: center;
         align-self: flex-end;
-        margin-bottom: 50px; }
+        margin-bottom: 20px; }
       .hero .container.full .content .social li {
         font-size: 11px;
         font-family: "source-code-pro", "Andale Mono WT", "Andale Mono", "Lucida Console", "Courier New", Courier, monospace;
@@ -1016,7 +1016,7 @@ Link.nav-link:not(.btn) {
 
 @media screen and (pointer: coarse) and (orientation: portrait) {
   .hero .container.full .content .social {
-    margin-bottom: 20px; } }
+    margin-bottom: 50px; } }
 
 .about-section-wrapper {
   display: grid;
@@ -2102,4 +2102,4 @@ footer .container {
   footer .container {
     width: calc(100vw - 50px); } }
 
-/*# sourceMappingURL=style.a1a1.css.map*/
+/*# sourceMappingURL=style.2d3e.css.map*/
