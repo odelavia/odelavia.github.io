@@ -1,9 +1,4 @@
 .hero {
-  position: relative;
-  z-index: 1;
-  max-height: 100vh;
-  height: 100vh;
-  min-height: 320px;
   color: #fff;
 
   &:before {
@@ -16,38 +11,56 @@
     background: #171717;
   }
   .container {
-    margin: 0 auto;
-    width: 100%;
-    margin-right: auto;
-    margin-left: auto;
     &.full {
       position: relative;
       height: 100vh;
       .content {
         position: relative;
         display: grid;
-        grid-template-columns: 1fr 1fr 20px;
-        grid-template-areas: "hero tagline social";
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: "hero tagline";
         z-index: 10;
-        width: 100%;
+        max-width: 90vw;
+        padding: 0 0 20 0px;
         margin: 0 auto;
+        .splash-image {
+          grid-area: hero;
+          position: relative;
+          display: flex;
+          justify-self: center;
+          align-self: center;
+          height: 465px;
+          width: 465px;
+          padding-left: 30px;
+          border-radius: 250px;
+          box-shadow: 0px 10px 25px 0px rgba(0, 0, 0, 0.3);
+          overflow: hidden;
+          img {
+            position: relative;
+            display: flex;
+            justify-self: center;
+            justify-items: center;
+            align-self: center;
+            margin-bottom: -5px;
+            max-width: 320px;
+          }
+        }
         h1 {
           grid-area: tagline;
           position: relative;
           max-width: 650px;
           display: flex;
           align-self: center;
-          font-size: 55px;
-          right: 100px;
+          justify-content: center;
+          font-size: 40px;
+          right: 25px;
         }
         .social {
-          grid-area: social;
           display:flex;
-          position: relative;
-          top: -56vh;
-          right: 20px;
-          transform: rotate(90deg) translateY(100%);
-          transform-origin: bottom;
+          position: absolute;
+          justify-self: center;
+          align-self: flex-end;
+          margin-bottom: 20px;
         }
         .social li {
           font-size: 11px;
@@ -87,27 +100,6 @@
           z-index: 1;
         }
       }
-      .splash-image {
-        grid-area: hero;
-        position: relative;
-        display: flex;
-        justify-self: center;
-        align-self: center;
-        height: 465px;
-        width: 465px;
-        padding-left: 30px;
-        border-radius: 250px;
-        box-shadow: 0px 10px 25px 0px rgba(0, 0, 0, 0.3);
-        overflow: hidden;
-        img {
-          position: relative;
-          display: flex;
-          justify-self: center;
-          align-self: center;
-          margin-bottom: -5px;
-          max-width: 320px;
-        }
-      }
     }
   }
 }
@@ -119,27 +111,20 @@
       &.full {
         .content {
           h1 {
-            right: 100px;
+            right: 25px;
           }
         }
       }
     }
   }
 }
-// @media (max-width: 2400px) {
-//   .hero h1 {
-//     font-size: 76px;
-//     top: -100px;
-//     right: 100px;
-//   }
-// }
 @media (max-width: 1900px) {
   .hero {
     .container {
       &.full {
         .content {
           h1 {
-            font-size: 45px;
+            font-size: 40px;
           }
         }
       }
@@ -165,7 +150,7 @@
       &.full {
         .content {
           h1 {
-            font-size: 30px;
+            font-size: 35px;
             // right:0;
           }
         }
@@ -175,15 +160,50 @@
 }
 @media (max-width: 1025px) {
 }
-@media (max-width: 990px) {}
+@media (max-width: 990px) {
+  .hero {
+    .container {
+      &.full {
+        .content {
+          grid-template-columns: 1fr 1fr;
+          grid-template-areas: "hero tagline";
+          .splash-image {
+            height: 465px;
+            width: 465px;
+            padding-left: 30px;
+            border-radius: 250px;
+            img {
+              margin-bottom: -5px;
+              max-width: 320px;
+            }
+          }
+          h1 {
+            max-width: 650px;
+            display: flex;
+            align-self: center;
+            font-size: 35px;
+            right: 25px;
+          }
+          .social {
+            display:flex;
+            position: absolute;
+          }
+        }
+      }
+    }
+  }
+}
 @media (max-width: 830px) {
   .hero {
     .container {
       &.full {
         .content {
           h1 {
-            font-size: 25px;
-            max-width: 200px;
+            font-size: 30px;
+            max-width: 500px;
+          }
+          .social {
+            position: absolute;
           }
         }
       }
@@ -191,9 +211,6 @@
   }
 }
 @media (max-width: 768px) {
-  .social {
-    right: -20px;
-  }
   .social li {
     font-size: 8px;
     margin-right: 30px;
@@ -202,8 +219,15 @@
     .container {
       &.full {
         .content {
+          .splash-image {
+            height: 320px;
+            width: 320px;
+            img {
+              max-width: 220px;
+            }
+          }
           h1 {
-            font-size: 20px;
+            font-size: 30px;
           }
         }
       }
@@ -212,9 +236,57 @@
 }
 @media (max-width: 660px) {}
 @media (max-width: 576px) {
+  .hero {
+    .container {
+      &.full {
+        .content {
+          // padding: 5vw;
+          .splash-image {
+            height: 220px;
+            width: 220px;
+            img {
+              max-width: 151px;
+            }
+          }
+          h1 {
+            font-size: 20px;
+          }
+        }
+      }
+    }
+  }
 }
 @media (max-width: 510px) {}
 @media (max-width: 425px) {
+  .hero {
+    .container {
+      &.full {
+        .content {
+          display: grid;
+          grid-template-columns: 1fr;
+          grid-template-areas: "hero" "tagline";
+          align-items: center;
+          flex-wrap: wrap;
+          // height: 98vh;
+          .splash-image {
+            bottom: -50px;
+            height: 220px;
+            width: 220px;
+            padding-left: 0;
+            img {
+              max-width: 151px;
+            }
+          }
+          h1 {
+            right: 0;
+            top: -10vh;
+            justify-self: center;
+            width: 60vw;
+          }
+        }
+      }
+    }
+  }
 }
 @media (max-width: 375px) {
 }
