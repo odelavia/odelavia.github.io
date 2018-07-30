@@ -7,7 +7,7 @@ footer {
 footer .container {
   font-family: 'roboto';
   display: grid;
-  grid-template-columns: 1fr auto 1fr;
+  grid-template-columns: minmax(auto, 500px) minmax(auto, 100px) minmax(auto, 500px);
   grid-template-areas: "links . copy";
   margin: 50px 0;
 }

@@ -1,20 +1,3 @@
-// #f0a9b7
-// #00a975
-// #faaa4a
-// #4b5fbd
-// #20372a
-// #49bdff
-// #ff3c15
-// #1ba506
-// #002395
-// #647077
-// #4639ab
-// #df5c1f
-// #5c70d6
-// #e84135
-
-
-
 .projects-wrapper {
   background-color: $robinhood-green;
   padding: 50px;
@@ -152,7 +135,18 @@
   }
 }
 
-@media (min-width: 2400px) {}
+@media (min-width: 2400px) {
+  .projects-wrapper {
+    .projects-text {
+      h3 {
+        font-size: 55px;
+      }
+      p {
+        font-size: 22px;
+      }
+    }
+  }
+}
 @media (max-width: 2560px) {
   .projects-wrapper {
     .projects-container {
@@ -186,6 +180,14 @@
 }
 @media (max-width: 2400px) {
   .projects-wrapper {
+    .projects-text {
+      h3 {
+        font-size: 50px;
+      }
+      p {
+        font-size: 20px;
+      }
+    }
     .projects-container {
       .test-project {
         div[class^="project-description"] {
@@ -212,6 +214,11 @@
 }
 @media (max-width: 1900px) {
   .projects-wrapper {
+    .projects-text {
+      h3 {
+        font-size: 45px;
+      }
+    }
     .projects-container {
       .test-project {
         div[class^="project-description"] {
@@ -242,6 +249,11 @@
 }
 @media (max-width: 1440px) {
   .projects-wrapper {
+    .projects-text {
+      p {
+        font-size: 18px;
+      }
+    }
     .projects-container {
       .test-project {
         div[class^="project-description"] {
@@ -267,7 +279,15 @@
     }
   }
 }
-@media (max-width: 1280px) {}
+@media (max-width: 1280px) {
+  .projects-wrapper {
+    .projects-text {
+      h3 {
+        font-size: 40px;
+      }
+    }
+  }
+}
 @media (max-width: 1025px) {
   .projects-wrapper {
     .projects-container {
@@ -282,7 +302,15 @@
     }
   }
 }
-@media (max-width: 990px) {}
+@media (max-width: 990px) {
+  .projects-wrapper {
+    .projects-text {
+      h3 {
+        font-size: 35px;
+      }
+    }
+  }
+}
 @media (max-width: 830px) {}
 @media (max-width: 768px) {
   .projects-wrapper {
@@ -405,6 +433,11 @@
 }
 @media (max-width: 425px) {
   .projects-wrapper {
+    .projects-text {
+      h3 {
+        font-size: 30px;
+      }
+    }
     .projects-container {
       .test-project {
         div[class^="project-description"] {

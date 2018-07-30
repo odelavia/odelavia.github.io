@@ -1,0 +1,36 @@
+{
+  "blogposts": [
+    {
+      "title":"The Chingu Experience:",
+      "description":"My Voyage-4 Cohort",
+      "author":"Oliver De La Via",
+      "published":"June 2, 2017",
+      "postLink":"https://medium.com/@oliverdelavia/the-chingu-experience-my-voyage-4-cohort-cfa25c25f156",
+      "backgroundImage":"https://i.imgur.com/ukrb7wG.jpg"
+    },
+    {
+      "title":"Contractor Proposal Generator",
+      "description":"Commercial/residential proposal template generator",
+      "author":"Oliver De La Via",
+      "published":"June 2, 2017",
+      "postLink":"https://medium.com/@oliverdelavia/the-chingu-experience-my-voyage-4-cohort-cfa25c25f156",
+      "backgroundImage":"https://i.imgur.com/nYX2HKq.jpg"
+    },
+    {
+      "title":"Facetagger",
+      "description":"A face-tagging game for the people in your pictures that utilizes the Clarifai API",
+      "author":"Oliver De La Via",
+      "published":"June 2, 2017",
+      "postLink":"https://medium.com/@oliverdelavia/the-chingu-experience-my-voyage-4-cohort-cfa25c25f156",
+      "backgroundImage":"https://i.imgur.com/mogw1Zt.jpg"
+    },
+    {
+      "title":"Gecho",
+      "description":"A video music playing app that utilizes Youtube's API",
+      "author":"Oliver De La Via",
+      "published":"June 2, 2017",
+      "postLink":"https://medium.com/@oliverdelavia/the-chingu-experience-my-voyage-4-cohort-cfa25c25f156",
+      "backgroundImage":"https://i.imgur.com/O5ZTIQA.jpg"
+    }
+  ]
+}
