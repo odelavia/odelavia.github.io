@@ -31,7 +31,7 @@
     {
       "title":"Hangman",
       "description":"A modern attempt at the classic Hangman game",
-      "siteLink":"#",
+      "siteLink":"http://jscript-hangman.surge.sh/",
       "repoLink":"https://github.com/odelavia/vanillaJS-hangman-app",
       "backgroundImage":"https://i.imgur.com/O5ZTIQA.jpg"
     },
@@ -52,14 +52,14 @@
     {
       "title":"Note",
       "description":"Note-keeping app",
-      "siteLink":"#",
+      "siteLink":"http://abstracted-note.surge.sh/",
       "repoLink":"#",
       "backgroundImage":"https://i.imgur.com/6zSwaTJ.jpg"
     },
     {
-      "title":"Todo",
+      "title":"Errands",
       "description":"Another to-do app",
-      "siteLink":"#",
+      "siteLink":"http://errands.surge.sh/",
       "repoLink":"#",
       "backgroundImage":"https://i.imgur.com/O5ZTIQA.jpg"
     },
