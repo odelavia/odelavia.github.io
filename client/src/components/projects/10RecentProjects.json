@@ -8,9 +8,9 @@
       "backgroundImage":"https://i.imgur.com/O5ZTIQA.jpg"
     },
     {
-      "title":"Contractor Proposal Generator",
+      "title":"Contractor PropGen",
       "description":"Commercial/residential proposal template generator",
-      "siteLink":"#",
+      "siteLink":"http://propgen.surge.sh/",
       "repoLink":"https://github.com/odelavia/contractor-proposal-generator",
       "backgroundImage":"https://i.imgur.com/nYX2HKq.jpg"
     },
@@ -39,35 +39,35 @@
       "title":"Glasskey",
       "description":"A twist on the GlassDoor App, use the app to see employee reviews",
       "siteLink":"#",
-      "repoLink":"#",
+      "repoLink":"https://github.com/odelavia/Glasskey",
       "backgroundImage":"https://i.imgur.com/nYX2HKq.jpg"
     },
     {
       "title":"Blog",
       "description":"A blog built from scratch",
       "siteLink":"#",
-      "repoLink":"#",
+      "repoLink":"https://github.com/odelavia/RESTful-Blog",
       "backgroundImage":"https://i.imgur.com/mogw1Zt.jpg"
     },
     {
       "title":"Note",
       "description":"Note-keeping app",
       "siteLink":"http://abstracted-note.surge.sh/",
-      "repoLink":"#",
+      "repoLink":"https://github.com/odelavia/vanillaJS-notes-app",
       "backgroundImage":"https://i.imgur.com/6zSwaTJ.jpg"
     },
     {
       "title":"Errands",
       "description":"Another to-do app",
       "siteLink":"http://errands.surge.sh/",
-      "repoLink":"#",
+      "repoLink":"https://github.com/odelavia/vanillaJS-todo-app",
       "backgroundImage":"https://i.imgur.com/O5ZTIQA.jpg"
     },
     {
       "title":"Auth",
       "description":"An authorization app for mobile",
-      "siteLink":"#",
-      "repoLink":"#",
+      "siteLink":"/",
+      "repoLink":"https://github.com/odelavia/React-Native-Auth-App",
       "backgroundImage":"https://i.imgur.com/nYX2HKq.jpg"
     }
   ]
