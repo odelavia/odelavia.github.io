@@ -22,6 +22,12 @@ const FileEnumeration = () => (
   <span className="line-num">18</span>
   <span className="line-num typed">19</span>
   <span className="line-num">20</span>
+  <span className="line-num typed">20</span>
+  <span className="line-num">21</span>
+  <span className="line-num typed">22</span>
+  <span className="line-num">23</span>
+  <span className="line-num typed">24</span>
+  <span className="line-num">25</span>
  </div>
 )
 

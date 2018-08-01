@@ -32,15 +32,18 @@ class Projects extends Component {
     console.log('projects')
     return(
       <div className="projects-wrapper">
-        <div className="projects-text">
-          <h3>My Work</h3>
-          <p>Insight, prototyping, and continuous validation informs my work.
-            Creativity fuels it.
-          </p>
-          <p>It’s the perfect balance between design thinking and design doing.</p>
-        </div>
         <div className="projects-container">
-          {this.createProjects(data.projects)}
+          <div className="projects-text">
+            <h3>My Work</h3>
+            <hr/>
+            <p>Insight, prototyping, and continuous validation inform my work.
+              Creativity fuels it.
+            </p>
+            <p>It’s the perfect balance between design thinking and design doing.</p>
+          </div>
+          <div className="projects">
+            {this.createProjects(data.projects)}
+          </div>
         </div>
       </div>
     );

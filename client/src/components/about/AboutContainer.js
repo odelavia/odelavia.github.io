@@ -91,14 +91,14 @@ class AboutContainer extends Component {
       <div className="about-section-wrapper">
         <section className="about-text-wrapper">
           <h3>
-            World of Experience
+            World Experience
           </h3>
           <hr />
 
           <p>
-            Oliver De La Via is a software developer with strong roots in residential/commercial painting, carpentry and oil portraiture. He's traveled all over the US, South America, Europe and parts of Africa by foot, bicycle, and car. He informs his work with his observations across all industries be it tech, art, retail, food, etc in an effort to keep software UI accessible, responsive and intuitive.
+            I am a software developer with strong roots in residential painting, carpentry and oil portraiture. My passion is solving problems. My goal is to keep user experiences beautiful, clean, and intutive. I've walked and ridden my bike across 4 continents and inform my work with observations made during those adventures. Innovation is everywhere!
           </p>
-          <p>Click on the mock text editor's file tabs to learn more</p>
+          <p>Click on my text editor's file tabs below to learn more</p>
         </section>
         <section className="about-editor-wrapper">
           <div className="editor-container">

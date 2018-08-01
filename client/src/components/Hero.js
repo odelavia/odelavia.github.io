@@ -9,7 +9,10 @@ const Hero = () => (
         <div className="splash-image">
           <img src={heroImage} alt="portrait" />
         </div>
-        <h1 className="tagline">Passionate about implementing creative solutions for the digital world.</h1>
+        <div className="tagline">
+          <h1>Hi, I'm Oliver!</h1> <br/>
+          <h1>I'm Passionate about implementing creative solutions for the digital world.</h1>
+        </div>
         <ul className="social">
           <li>
             <a href="https://github.com/odelavia" className="special" target="_blank" rel="noopener">github</a>

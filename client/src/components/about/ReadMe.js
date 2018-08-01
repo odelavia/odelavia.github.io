@@ -7,7 +7,7 @@ const ReadMe = () => (
     </code>
     <code className="line-2-text">
       This text editor example and its contents is meant to be a representation of who I am.<br/>
-      This component as well as the rest of the site is built in React 16.3.2
+      This component as well as the rest of the site is built in React V16.3.2
     </code>
     <code className="line-3-text commented-out" />
 
@@ -41,7 +41,7 @@ const ReadMe = () => (
     </code>
     <code className="line-12-text">
       <span className="html-method pad-behind">*</span>
-      Scroll down if the text gets cut off.
+      Scroll down if text seems to be cut off.
     </code>
     <code className="line-13-text">
       <span className="html-method pad-behind">*</span>

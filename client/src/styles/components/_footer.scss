@@ -2,12 +2,12 @@ footer {
   display: flex;
   justify-content: center;
   background-color: #272b2e;
-  padding: 20px;
+  padding: 20px 40px;
 }
 footer .container {
   font-family: 'roboto';
   display: grid;
-  grid-template-columns: minmax(auto, 500px) minmax(auto, 100px) minmax(auto, 500px);
+  grid-template-columns: minmax(auto, 500px) minmax(auto, 60px) minmax(auto, 500px);
   grid-template-areas: "links . copy";
   margin: 50px 0;
 }
@@ -91,7 +91,11 @@ footer .container {
 }
 @media (max-width: 990px) {}
 @media (max-width: 830px) {}
-@media (max-width: 768px) {}
+@media (max-width: 768px) {
+  footer {
+    padding: 20px;
+  }
+}
 @media (max-width: 660px) {}
 @media (max-width: 576px) {}
 @media (max-width: 510px) {

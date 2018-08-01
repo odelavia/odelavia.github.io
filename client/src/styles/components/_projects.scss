@@ -1,6 +1,22 @@
 .projects-wrapper {
   background-color: $robinhood-green;
-  padding: 50px;
+  &:before,
+  &:after {
+    content: "";
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: $robinhood-green;
+  }
+}
+
+.projects-container {
+  background-color: $robinhood-green;
+  padding: 40px;
+  max-width: 1300px;
+  margin: 0 auto;
 
   .projects-text {
     display: flex;
@@ -9,8 +25,16 @@
     margin: 0 0 40px 0;
 
     h3 {
+      font-size: 50px;
       font-weight: 700;
       text-align: center;
+    }
+
+    hr {
+      height: 5px;
+      width: 50px;
+      background-color: #eee;
+      border: none;
     }
 
     p {
@@ -23,21 +47,27 @@
     }
   }
 
-  .projects-container {
+  .projects {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
+    grid-gap: 40px;
     margin: 0 auto;
-    border-radius: 4px;
+    // border-radius: 4px;
     overflow: hidden;
 
     .test-project {
     position: relative;
     overflow: hidden;
     height: 100%;
+    max-height: 705px;
+    border-radius: 4px;
+    box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.15);
 
       .project-img {
         max-width: 100%;
-        height: calc((3/5) * 50vw);
+        // height: calc((3/5) * 50vw);
+        max-height: 705px;
+        height: calc((2.45/5) * 100vw);
         background-position: center;
         background-size:cover;
       }
@@ -135,21 +165,26 @@
   }
 }
 
-@media (min-width: 2400px) {
-  .projects-wrapper {
+// @media (min-width: 2400px) {
+//   .projects-container {
+//     .projects-text {
+//       h3 {
+//         font-size: 55px;
+//       }
+//       p {
+//         font-size: 22px;
+//       }
+//     }
+//   }
+// }
+@media (max-width: 2560px) {
+  .projects-container {
     .projects-text {
       h3 {
-        font-size: 55px;
-      }
-      p {
-        font-size: 22px;
+        font-size: 50px;
       }
     }
-  }
-}
-@media (max-width: 2560px) {
-  .projects-wrapper {
-    .projects-container {
+    .projects {
       .test-project {
         div[class^="project-description"] {
           h4 {
@@ -179,7 +214,7 @@
   }
 }
 @media (max-width: 2400px) {
-  .projects-wrapper {
+  .projects-container {
     .projects-text {
       h3 {
         font-size: 50px;
@@ -188,7 +223,7 @@
         font-size: 20px;
       }
     }
-    .projects-container {
+    .projects {
       .test-project {
         div[class^="project-description"] {
 
@@ -213,13 +248,13 @@
   }
 }
 @media (max-width: 1900px) {
-  .projects-wrapper {
+  .projects-container {
     .projects-text {
       h3 {
         font-size: 45px;
       }
     }
-    .projects-container {
+    .projects {
       .test-project {
         div[class^="project-description"] {
 
@@ -248,13 +283,13 @@
   }
 }
 @media (max-width: 1440px) {
-  .projects-wrapper {
+  .projects-container {
     .projects-text {
       p {
         font-size: 18px;
       }
     }
-    .projects-container {
+    .projects {
       .test-project {
         div[class^="project-description"] {
 
@@ -280,7 +315,7 @@
   }
 }
 @media (max-width: 1280px) {
-  .projects-wrapper {
+  .projects-container {
     .projects-text {
       h3 {
         font-size: 40px;
@@ -289,8 +324,8 @@
   }
 }
 @media (max-width: 1025px) {
-  .projects-wrapper {
-    .projects-container {
+  .projects-container {
+    .projects {
       grid-template-columns: 1fr;
 
       .test-project {
@@ -303,7 +338,7 @@
   }
 }
 @media (max-width: 990px) {
-  .projects-wrapper {
+  .projects-container {
     .projects-text {
       h3 {
         font-size: 35px;
@@ -313,8 +348,9 @@
 }
 @media (max-width: 830px) {}
 @media (max-width: 768px) {
-  .projects-wrapper {
-    .projects-container {
+  .projects-container {
+    padding: 20px;
+    .projects {
       .test-project {
         div[class^="project-description"] {
 
@@ -341,8 +377,8 @@
   }
 }
 @media (max-width: 660px) {
-  .projects-wrapper {
-    .projects-container {
+  .projects-container {
+    .projects  {
       .test-project {
         div[class^="project-description"] {
 
@@ -370,8 +406,8 @@
 }
 @media (max-width: 576px) {}
 @media (max-width: 510px) {
-  .projects-wrapper {
-    .projects-container {
+  .projects-container {
+    .projects {
       .test-project {
         div[class^="project-description"] {
 
@@ -397,8 +433,8 @@
   }
 }
 @media (max-width: 480px) {
-  .projects-wrapper {
-    .projects-container {
+  .projects-container {
+    .projects {
       .test-project {
         div[class^="project-description"] {
           h4 {
@@ -432,13 +468,13 @@
   }
 }
 @media (max-width: 425px) {
-  .projects-wrapper {
+  .projects-container {
     .projects-text {
       h3 {
         font-size: 30px;
       }
     }
-    .projects-container {
+    .projects {
       .test-project {
         div[class^="project-description"] {
           p {
@@ -460,8 +496,8 @@
 }
 @media (max-width: 375px) {}
 @media (max-width: 320px) {
-  .projects-wrapper {
-    .projects-container {
+  .projects-container {
+    .projects {
       .test-project {
         div[class^="project-description"] {
 
@@ -481,8 +517,8 @@
 }
 
 @media (pointer: coarse) {
-  .projects-wrapper {
-    .projects-container {
+  .projects-container {
+    .projects {
       .test-project {
           div[class^="project-description"] {
             visibility: visible;

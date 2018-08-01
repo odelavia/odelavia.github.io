@@ -5,14 +5,14 @@ const Footer = () => (
   <footer className="footer ">
     <div className="container">
       <nav className="pull-left">
-        <a href="https://www.oliverdelaviadev.com" className="sig">
-          De La Via Studio
+        <a rel="noopener" target="_blank" href="mailto:odelavia@gmail.com" className="sig">
+          odelavia@gmail.com
         </a>
-        <Link  to="/about" className="footer-aboutlink">
-          More About Me
-        </Link>
-        <a href="https://medium.com/@oliverdelavia"  className="footer-bloglink">
-          Blog
+        <a  href="https://www.linkedin.com/in/oliver-de-la-via-9bb2b39a/" className="footer-aboutlink">
+          LinkedIn
+        </a>
+        <a href="https://github.com/odelavia"  className="footer-bloglink">
+          Github
         </a>
       </nav>
       <div className="copyright pull-right">

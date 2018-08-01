@@ -96,7 +96,7 @@ class NavBar extends Component {
               </li>
               {/*<Link className="nav-item blog" to="/blog">Blog</Link>*/}
               <a className="nav-item blog" href="http://www.medium.com/@oliverdelavia">blog</a>
-              <NavLink className="nav-item contact" to="/contact" onClick={this.resetMobileNav}>Contact</NavLink>
+              <NavLink className="nav-item last contact" to="/contact" onClick={this.resetMobileNav}>Contact</NavLink>
             </ul>
           </OutsideAlerter>
           </div>
