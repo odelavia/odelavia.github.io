@@ -77,26 +77,10 @@ class NavBar extends Component {
           <OutsideAlerter >
             <ul className="navbar-collapse" style={{right: this.state.right}}>
               <NavLink id="home" className="nav-item" to="/" onClick={this.resetMobileNav}>Home</NavLink>
-              <li className="dropdown">
-                <NavLink className="nav-item dropdown-toggle" to="/projects" data-toggle="dropdown" onClick={this.resetMobileNav}>Projects</NavLink>
-                <div className="dropdown-menu dropdown-with-icons">
-                  <a href="./projects.html" className="dropdown-item">
-                    Project1
-                  </a>
-                  <a href="./projects.html" className="dropdown-item">
-                    Project2
-                  </a>
-                  <a href="./projects.html" className="dropdown-item">
-                    Project3
-                  </a>
-                  <a href="./projects.html" className="dropdown-item">
-                    Project4
-                  </a>
-                </div>
-              </li>
-              {/*<Link className="nav-item blog" to="/blog">Blog</Link>*/}
+              <a className="nav-item" href="/" onClick={this.resetMobileNav}>Resume</a>
+              {/*<NavLink className="nav-item blog" to="/blog">Blog</NavLink>*/}
               <a className="nav-item blog" href="http://www.medium.com/@oliverdelavia">blog</a>
-              <NavLink className="nav-item last contact" to="/contact" onClick={this.resetMobileNav}>Contact</NavLink>
+              <a className="nav-item last contact" href="mailto:odelavia@gmail.com" onClick={this.resetMobileNav}>Contact</a>
             </ul>
           </OutsideAlerter>
           </div>

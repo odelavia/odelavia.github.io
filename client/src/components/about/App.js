@@ -50,11 +50,20 @@ const App = () => (
       (
     </code>
 
-    <article className="pad1 line-5-text html-tag">&lt;<span className="html-element">div</span>&gt;</article>
+    <article className="pad1 line-5-text html-tag">&lt;<span className="html-element">article</span>&gt;</article>
+      <div className="pad2 line-6-text html-tag">&lt;<span className="html-element">h1</span>&gt;</div>
+        <code className="pad3 line-7-text">About me:</code>
+      <div className="line-8-text html-tag pad2">&lt;/<span className="html-element">h1</span>&gt;</div>
       <code className="pad2 line-5-text html-tag">&lt;/<span className="html-element">About</span>&gt;</code>
+      <div className="pad2 line-6-text html-tag">&lt;<span className="html-element">h1</span>&gt;</div>
+        <code className="pad3 line-7-text">My proficiencies:</code>
+      <div className="line-8-text html-tag pad2">&lt;/<span className="html-element">h1</span>&gt;</div>
       <code className="pad2 line-5-text html-tag">&lt;/<span className="html-element">Proficiency</span>&gt;</code>
+      <div className="pad2 line-6-text html-tag">&lt;<span className="html-element">h1</span>&gt;</div>
+        <code className="pad3 line-7-text">My interests:</code>
+      <div className="line-8-text html-tag pad2">&lt;/<span className="html-element">h1</span>&gt;</div>
       <code className="pad2 line-5-text html-tag">&lt;/<span className="html-element">Interests</span>&gt;</code>
-    <article className="pad1 line-5-text html-tag">&lt;/<span className="html-element">div</span>&gt;</article>
+    <article className="pad1 line-5-text html-tag">&lt;/<span className="html-element">article</span>&gt;</article>
     <code className="line-8-text">);</code>
     <code className="line-9-text">
       <span className="html-keyword pad-space">export default</span>

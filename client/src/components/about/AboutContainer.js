@@ -11,10 +11,10 @@ class AboutContainer extends Component {
     this.state = {
       fileOne: false,
       fileTwo: false,
-      fileThree: true,
+      fileThree: false,
       fileFour: false,
       fileFive: false,
-      fileSix: false,
+      fileSix: true,
     }
     this.onFileSelection = this.onFileSelection.bind(this)
   }

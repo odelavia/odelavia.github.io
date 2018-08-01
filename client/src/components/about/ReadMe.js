@@ -6,8 +6,8 @@ const ReadMe = () => (
       <span className="html-method"># Oliver's About Section V4.0.1</span>
     </code>
     <code className="line-2-text">
-      This text editor example and its contents is meant to be a representation of who I am.<br/>
-      This component as well as the rest of the site is built in React V16.3.2
+      This website and its contents are a representation of who I am.<br/>
+      This component as well as the rest of the site is built with React V16.3.2
     </code>
     <code className="line-3-text commented-out" />
 
@@ -55,11 +55,11 @@ const ReadMe = () => (
     </code>
     <code className="line-16-text">
       <span className="html-method pad-behind">*</span>
-      A mouse to click and scroll(or your finger if you're viewing this on a mobile device)
+      A mouse to click and scroll (your finger if you're viewing this on a mobile device)
     </code>
     <code className="line-16-text">
       <span className="html-method pad-behind">*</span>
-      Internet acess but if you're viewing this, you definitely have that (PWA in early stages of development)
+      Internet access but if you're viewing this, you probably have that (PWA in early stages of development)
     </code>
   </div>
   );
