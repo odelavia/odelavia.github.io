@@ -320,7 +320,8 @@ hr {
   height: 0;
   overflow: visible;
   width: 50%;
-  text-align: center; }
+  text-align: center;
+  margin: 20px auto; }
 
 pre {
   font-family: monospace, monospace;
@@ -496,20 +497,18 @@ blockquote {
   justify-content: space-between;
   width: 100%;
   max-width: 1140px;
-  padding-right: 15px;
-  padding-left: 15px;
+  padding: 0 40px;
   margin-right: auto;
   margin-left: auto; }
 
 .navbar-brand {
   font-family: 'Raleway', sans-serif;
-  /* display: inline-block; */
   display: flex;
   margin-right: 1rem;
   white-space: nowrap;
   position: relative;
   height: 50px;
-  font-size: 40px;
+  font-size: 50px;
   font-weight: 800;
   line-height: 30px;
   padding: 0.625rem 0;
@@ -533,20 +532,16 @@ blockquote {
   border-radius: 0.25rem; }
 
 nav .navbar-toggler {
-  padding: 1px 6px;
   font-size: 5px;
-  height: 27px;
-  width: 37px;
-  height: 27px;
+  height: 24px;
+  width: 24px;
   vertical-align: middle;
   outline: 0;
   cursor: pointer;
   z-index: 1050; }
 
 .navbar-toggler-icon {
-  display: inline-block;
-  /* background: no-repeat center center; */
-  /* background-size: 100% 100%; */ }
+  display: inline-block; }
 
 nav .navbar-toggler .navbar-toggler-icon {
   width: 22px;
@@ -562,10 +557,8 @@ nav .navbar-toggler .navbar-toggler-icon {
 .navbar-collapse {
   display: grid;
   grid-template-columns: 2fr repeat(4, auto);
-  grid-template-areas: ". projects blog contact";
+  grid-template-areas: "projects blog contact";
   align-items: center;
-  /* flex-direction: row; */
-  /* margin-left: auto!important; */
   padding-left: 0;
   margin-bottom: 0;
   list-style: none;
@@ -575,7 +568,7 @@ nav .navbar-toggler .navbar-toggler-icon {
   display: inline-block;
   position: relative;
   font-family: "Roboto Condensed", sans-serif;
-  font-size: 14px;
+  font-size: 19px;
   font-weight: 600;
   padding: 0 30px; }
   .nav-item:hover:before {
@@ -591,8 +584,10 @@ nav .navbar-toggler .navbar-toggler-icon {
     width: 0;
     transition: all 350ms cubic-bezier(0.285, 0.105, 0.465, 1.015); }
 
+.nav-item.last {
+  padding: 0 0 0 30px; }
+
 .nav-link {
-  /* display: block; */
   display: flex;
   font-family: "Roboto Condensed", sans-serif;
   font-weight: 600;
@@ -738,13 +733,13 @@ Link.nav-link:not(.btn) {
 
 @media (max-width: 1440px) {
   .navbar-brand {
-    font-size: 34px; } }
+    font-size: 40px; } }
 
 @media (max-width: 1280px) {
   .navbar-container {
     max-width: none; }
   .navbar-brand {
-    font-size: 32px; } }
+    font-size: 36px; } }
 
 @media (max-width: 1025px) {
   .navbar-brand {
@@ -770,10 +765,7 @@ Link.nav-link:not(.btn) {
     transition: all 0.5s cubic-bezier(0.685, 0.0473, 0.346, 1); }
   .navbar-toggler {
     display: inline-block;
-    width: 37px;
-    padding: 1px 6px;
     font-size: 5px;
-    height: 27px;
     vertical-align: middle;
     outline: 0; }
   nav.navbar-transparent .navbar-toggler .navbar-toggler-icon {
@@ -810,6 +802,7 @@ Link.nav-link:not(.btn) {
     -ms-transition: all 0.5s cubic-bezier(0.685, 0.0473, 0.346, 1);
     transition: all 0.5s cubic-bezier(0.685, 0.0473, 0.346, 1); }
     .navbar-collapse .nav-item {
+      font-size: 16px;
       display: block;
       margin-bottom: 20px; }
       .navbar-collapse .nav-item:before {
@@ -829,6 +822,12 @@ Link.nav-link:not(.btn) {
   .nav-open .navbar-collapse .navbar-btn {
     background-color: #d0d1d3;
     border-color: #898d90; } }
+
+@media (max-width: 768px) {
+  .navbar-container {
+    padding: 0 20px; }
+  nav .navbar-toggler {
+    margin: 0; } }
 
 @media (max-width: 320px) {
   nav {
@@ -859,9 +858,7 @@ Link.nav-link:not(.btn) {
       grid-template-columns: 1fr 1fr;
       grid-template-areas: "hero tagline";
       z-index: 10;
-      max-width: 90vw;
-      padding: 0 0 20 0px;
-      margin: 0 auto; }
+      max-width: 90vw; }
       .hero .container.full .content .splash-image {
         grid-area: hero;
         position: relative;
@@ -882,15 +879,17 @@ Link.nav-link:not(.btn) {
           align-self: center;
           margin-bottom: -5px;
           max-width: 320px; }
-      .hero .container.full .content h1 {
+      .hero .container.full .content .tagline {
         grid-area: tagline;
         position: relative;
         max-width: 650px;
         display: flex;
+        flex-direction: column;
         align-self: center;
         justify-content: center;
-        font-size: 40px;
         right: 25px; }
+        .hero .container.full .content .tagline h1 {
+          font-size: 46px; }
       .hero .container.full .content .social {
         display: flex;
         position: absolute;
@@ -898,7 +897,7 @@ Link.nav-link:not(.btn) {
         align-self: flex-end;
         margin-bottom: 20px; }
       .hero .container.full .content .social li {
-        font-size: 11px;
+        font-size: 16px;
         font-family: "source-code-pro", "Andale Mono WT", "Andale Mono", "Lucida Console", "Courier New", Courier, monospace;
         text-transform: uppercase;
         letter-spacing: 2px;
@@ -929,72 +928,73 @@ Link.nav-link:not(.btn) {
         z-index: 1; }
 
 @media (min-width: 2400px) {
-  .hero .container.full .content h1 {
+  .hero .container.full .content .tagline {
     right: 25px; } }
 
 @media (max-width: 1900px) {
-  .hero .container.full .content h1 {
+  .hero .container.full .content .tagline h1 {
     font-size: 40px; } }
 
 @media (max-width: 1440px) {
   .hero .container.full .content h1 {
     font-size: 35px; } }
 
-@media (max-width: 1280px) {
-  .hero .container.full .content h1 {
-    font-size: 35px; } }
+@media (max-width: 1025px) {
+  .hero .container.full .tagline h1 {
+    font-size: 42px; } }
 
-@media (max-width: 990px) {
-  .hero .container.full .content {
-    grid-template-columns: 1fr 1fr;
-    grid-template-areas: "hero tagline"; }
-    .hero .container.full .content .splash-image {
-      height: 465px;
-      width: 465px;
-      padding-left: 30px;
-      border-radius: 250px; }
-      .hero .container.full .content .splash-image img {
-        margin-bottom: -5px;
-        max-width: 320px; }
-    .hero .container.full .content h1 {
-      max-width: 650px;
-      display: flex;
-      align-self: center;
-      font-size: 35px;
-      right: 25px; }
-    .hero .container.full .content .social {
-      display: flex;
-      position: absolute; } }
-
-@media (max-width: 830px) {
-  .hero .container.full .content h1 {
-    font-size: 30px;
-    max-width: 500px; }
+@media (max-width: 973px) {
+  .hero .container.full .content .splash-image {
+    height: 465px;
+    width: 465px;
+    padding-left: 30px;
+    border-radius: 250px; }
+    .hero .container.full .content .splash-image img {
+      margin-bottom: -5px;
+      max-width: 320px; }
+  .hero .container.full .content .tagline {
+    max-width: 650px;
+    display: flex;
+    align-self: center;
+    right: 25px; }
+    .hero .container.full .content .tagline h1 {
+      font-size: 36px; }
   .hero .container.full .content .social {
+    display: flex;
     position: absolute; } }
 
-@media (max-width: 768px) {
-  .social li {
-    font-size: 8px;
-    margin-right: 30px; }
+@media (max-width: 908px) {
+  .hero .container.full .content .tagline h1 {
+    font-size: 30px; } }
+
+@media (max-width: 840px) {
   .hero .container.full .content .splash-image {
     height: 320px;
     width: 320px; }
     .hero .container.full .content .splash-image img {
-      max-width: 220px; }
-  .hero .container.full .content h1 {
-    font-size: 30px; } }
+      max-width: 220px; } }
 
-@media (max-width: 576px) {
+@media (max-width: 768px) {
+  .social li {
+    font-size: 8px;
+    margin-right: 30px; } }
+
+@media (max-width: 666px) {
+  .hero .container.full .content .tagline h1 {
+    font-size: 26px; }
+  .hero .container.full .content .social li {
+    font-size: 14px; } }
+
+@media (max-width: 596px) {
   .hero .container.full .content .splash-image {
     height: 220px;
     width: 220px; }
     .hero .container.full .content .splash-image img {
       max-width: 151px; }
-  .hero .container.full .content h1 {
-    font-size: 20px; } }
+  .hero .container.full .content .tagline h1 {
+    font-size: 22px; } }
 
-@media (max-width: 425px) {
+@media (max-width: 468px) {
   .hero .container.full .content {
     display: grid;
     grid-template-columns: 1fr;
@@ -1008,11 +1008,18 @@ Link.nav-link:not(.btn) {
       padding-left: 0; }
       .hero .container.full .content .splash-image img {
         max-width: 151px; }
-    .hero .container.full .content h1 {
+    .hero .container.full .content .tagline {
       right: 0;
       top: -10vh;
       justify-self: center;
       width: 60vw; } }
+
+@media (max-width: 336px) {
+  .hero .container.full .content .tagline h1 {
+    font-size: 20px; } }
+
+@media (pointer: coarse) and (max-width: 468px) {
+  padding-top: 50; }
 
 @media screen and (pointer: coarse) and (orientation: portrait) {
   .hero .container.full .content .social {
@@ -1020,22 +1027,23 @@ Link.nav-link:not(.btn) {
 
 .about-section-wrapper {
   display: grid;
-  grid-template-columns: 33.3vw 66.6vw;
+  grid-template-columns: 45% 55%;
   grid-template-areas: "about-text about-code";
-  max-width: 1250px;
-  padding: 50px 0 50px 0; }
+  max-width: 1300px;
+  padding: 50px 0;
+  margin: 0 auto; }
 
 .about-text-wrapper {
   grid-area: about-text;
   color: #131313;
-  padding: 0 50px; }
+  padding: 0 40px; }
   .about-text-wrapper h3 {
-    text-align: center;
     font-weight: 700; }
+    .about-text-wrapper h3:before {
+      content: ">\A0"; }
   .about-text-wrapper hr {
-    height: 5px;
+    height: 1px;
     width: 50px;
-    background-color: #21ce99;
     border: none; }
   .about-text-wrapper p {
     font-size: 16px;
@@ -1043,10 +1051,11 @@ Link.nav-link:not(.btn) {
     line-height: 1.5; }
 
 .about-editor-wrapper {
-  padding: 0 50px; }
+  padding: 0 40px; }
 
 .editor-container {
   grid-area: about-code;
+  overflow: hidden;
   background-color: #cecece;
   max-width: 100%;
   max-height: 100%;
@@ -1186,8 +1195,6 @@ Link.nav-link:not(.btn) {
   border-radius: 4px; }
 
 @media (min-width: 2400px) {
-  .about-section-wrapper .about-text-wrapper h3 {
-    font-size: 55px; }
   .about-section-wrapper .about-text-wrapper p {
     font-size: 22px; } }
 
@@ -1197,13 +1204,9 @@ Link.nav-link:not(.btn) {
   .about-section-wrapper .about-text-wrapper p {
     font-size: 20px; } }
 
-@media (max-width: 1900px) {
-  .about-section-wrapper .about-text-wrapper h3 {
-    font-size: 45px; } }
-
 @media (max-width: 1440px) {
   .about-section-wrapper {
-    grid-template-columns: 100vw;
+    grid-template-columns: 100%;
     grid-template-areas: "about-text" "about-code"; }
     .about-section-wrapper .about-text-wrapper {
       margin-bottom: 50px; }
@@ -1218,44 +1221,71 @@ Link.nav-link:not(.btn) {
   .about-section-wrapper .about-text-wrapper h3 {
     font-size: 35px; } }
 
+@media (max-width: 768px) {
+  .about-section-wrapper .about-text-wrapper,
+  .about-section-wrapper .about-editor-wrapper {
+    padding: 0 20px; } }
+
 @media (max-width: 425px) {
   .about-section-wrapper .about-text-wrapper h3 {
     font-size: 30px; } }
 
 .projects-wrapper {
+  background-color: #21ce99; }
+  .projects-wrapper:before, .projects-wrapper:after {
+    content: "";
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: #21ce99; }
+
+.projects-container {
   background-color: #21ce99;
-  padding: 50px; }
-  .projects-wrapper .projects-text {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 0 0 40px 0; }
-    .projects-wrapper .projects-text h3 {
+  padding: 40px;
+  max-width: 1300px;
+  margin: 0 auto; }
+  .projects-container .projects-text {
+    display: block;
+    margin: 0 0 50px 0; }
+    .projects-container .projects-text h3 {
+      font-size: 50px;
       font-weight: 700;
-      text-align: center; }
-    .projects-wrapper .projects-text p {
+      text-align: left; }
+      .projects-container .projects-text h3:before {
+        content: ">\A0"; }
+    .projects-container .projects-text hr {
+      height: 1px;
+      width: 50px;
+      border: none; }
+    .projects-container .projects-text p {
       display: flex;
-      justify-self: center;
+      justify-self: c;
       font-size: 16px;
       font-weight: 600;
       margin-bottom: 0;
       width: auto; }
-  .projects-wrapper .projects-container {
+  .projects-container .projects {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
+    grid-gap: 40px;
     margin: 0 auto;
-    border-radius: 4px;
     overflow: hidden; }
-    .projects-wrapper .projects-container .test-project {
+    .projects-container .projects .test-project {
       position: relative;
       overflow: hidden;
-      height: 100%; }
-      .projects-wrapper .projects-container .test-project .project-img {
+      height: 100%;
+      max-height: 705px;
+      border-radius: 4px;
+      box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.15); }
+      .projects-container .projects .test-project .project-img {
         max-width: 100%;
-        height: calc((3/5) * 50vw);
+        max-height: 705px;
+        height: calc((2.45/5) * 100vw);
         background-position: center;
         background-size: cover; }
-      .projects-wrapper .projects-container .test-project div[class^="project-description"] {
+      .projects-container .projects .test-project div[class^="project-description"] {
         position: absolute;
         display: flex;
         flex-direction: column;
@@ -1271,212 +1301,208 @@ Link.nav-link:not(.btn) {
         visibility: hidden;
         opacity: 0;
         transition: opacity .2s, visibility .2s; }
-        .projects-wrapper .projects-container .test-project div[class^="project-description"] h4 {
+        .projects-container .projects .test-project div[class^="project-description"] h4 {
           font-weight: 500;
           font-size: 40px; }
-        .projects-wrapper .projects-container .test-project div[class^="project-description"] p {
+        .projects-container .projects .test-project div[class^="project-description"] p {
           font-size: 20px;
           margin-bottom: 75px; }
-        .projects-wrapper .projects-container .test-project div[class^="project-description"][class$="-1"] {
+        .projects-container .projects .test-project div[class^="project-description"][class$="-1"] {
           background: #e1526e; }
-        .projects-wrapper .projects-container .test-project div[class^="project-description"][class$="-2"] {
+        .projects-container .projects .test-project div[class^="project-description"][class$="-2"] {
           background: #10152c; }
-        .projects-wrapper .projects-container .test-project div[class^="project-description"][class$="-3"] {
+        .projects-container .projects .test-project div[class^="project-description"][class$="-3"] {
           background: #868f03; }
-        .projects-wrapper .projects-container .test-project div[class^="project-description"][class$="-4"] {
+        .projects-container .projects .test-project div[class^="project-description"][class$="-4"] {
           background: black; }
-        .projects-wrapper .projects-container .test-project div[class^="project-description"][class$="-5"] {
+        .projects-container .projects .test-project div[class^="project-description"][class$="-5"] {
           background: #ff917b; }
-        .projects-wrapper .projects-container .test-project div[class^="project-description"][class$="-6"] {
+        .projects-container .projects .test-project div[class^="project-description"][class$="-6"] {
           background: #004f7c; }
-        .projects-wrapper .projects-container .test-project div[class^="project-description"][class$="-7"] {
+        .projects-container .projects .test-project div[class^="project-description"][class$="-7"] {
           background: #490811; }
-        .projects-wrapper .projects-container .test-project div[class^="project-description"][class$="-8"] {
+        .projects-container .projects .test-project div[class^="project-description"][class$="-8"] {
           background: #070808; }
-        .projects-wrapper .projects-container .test-project div[class^="project-description"][class$="-9"] {
+        .projects-container .projects .test-project div[class^="project-description"][class$="-9"] {
           background: #27205f; }
-        .projects-wrapper .projects-container .test-project div[class^="project-description"][class$="-10"] {
+        .projects-container .projects .test-project div[class^="project-description"][class$="-10"] {
           background: #2c1206; }
-        .projects-wrapper .projects-container .test-project div[class^="project-description"][class$="-11"] {
+        .projects-container .projects .test-project div[class^="project-description"][class$="-11"] {
           background: #151f52; }
-        .projects-wrapper .projects-container .test-project div[class^="project-description"] span {
+        .projects-container .projects .test-project div[class^="project-description"] span {
           position: relative;
           font-size: 20px; }
-          .projects-wrapper .projects-container .test-project div[class^="project-description"] span a ~ a {
+          .projects-container .projects .test-project div[class^="project-description"] span a ~ a {
             margin-left: 65px; }
-          .projects-wrapper .projects-container .test-project div[class^="project-description"] span .live-repo {
+          .projects-container .projects .test-project div[class^="project-description"] span .live-repo {
             position: absolute;
             font-size: 50px;
             line-height: -20;
             margin-left: 10px; }
-      .projects-wrapper .projects-container .test-project:hover div[class^="project-description"], .projects-wrapper .projects-container .test-project:active div[class^="project-description"] {
+      .projects-container .projects .test-project:hover div[class^="project-description"], .projects-container .projects .test-project:active div[class^="project-description"] {
         visibility: visible;
         opacity: .8; }
-      .projects-wrapper .projects-container .test-project:hover .project-img, .projects-wrapper .projects-container .test-project:active .project-img {
+      .projects-container .projects .test-project:hover .project-img, .projects-container .projects .test-project:active .project-img {
         background-size: 120%; }
 
-@media (min-width: 2400px) {
-  .projects-wrapper .projects-text h3 {
-    font-size: 55px; }
-  .projects-wrapper .projects-text p {
-    font-size: 22px; } }
-
 @media (max-width: 2560px) {
-  .projects-wrapper .projects-container .test-project div[class^="project-description"] h4 {
+  .projects-container .projects-text h3 {
+    font-size: 50px; }
+  .projects-container .projects .test-project div[class^="project-description"] h4 {
     font-size: 75px; }
-  .projects-wrapper .projects-container .test-project div[class^="project-description"] p {
+  .projects-container .projects .test-project div[class^="project-description"] p {
     font-size: 40px;
     margin-bottom: 75px; }
-  .projects-wrapper .projects-container .test-project div[class^="project-description"] span {
+  .projects-container .projects .test-project div[class^="project-description"] span {
     position: relative;
     font-size: 35px; }
-    .projects-wrapper .projects-container .test-project div[class^="project-description"] span a ~ a {
+    .projects-container .projects .test-project div[class^="project-description"] span a ~ a {
       margin-left: 150px; }
-    .projects-wrapper .projects-container .test-project div[class^="project-description"] span .live-repo {
+    .projects-container .projects .test-project div[class^="project-description"] span .live-repo {
       font-size: 70px;
       line-height: -20;
       margin-left: 45px; } }
 
 @media (max-width: 2400px) {
-  .projects-wrapper .projects-text h3 {
+  .projects-container .projects-text h3 {
     font-size: 50px; }
-  .projects-wrapper .projects-text p {
+  .projects-container .projects-text p {
     font-size: 20px; }
-  .projects-wrapper .projects-container .test-project div[class^="project-description"] h4 {
+  .projects-container .projects .test-project div[class^="project-description"] h4 {
     font-size: 70px; }
-  .projects-wrapper .projects-container .test-project div[class^="project-description"] p {
+  .projects-container .projects .test-project div[class^="project-description"] p {
     font-size: 35px;
     margin-bottom: 75px; }
-  .projects-wrapper .projects-container .test-project div[class^="project-description"] span {
+  .projects-container .projects .test-project div[class^="project-description"] span {
     position: relative;
     font-size: 30px; }
-    .projects-wrapper .projects-container .test-project div[class^="project-description"] span .live-repo {
+    .projects-container .projects .test-project div[class^="project-description"] span .live-repo {
       font-size: 65px; } }
 
 @media (max-width: 1900px) {
-  .projects-wrapper .projects-text h3 {
-    font-size: 45px; }
-  .projects-wrapper .projects-container .test-project div[class^="project-description"] h4 {
+  .projects-container .projects .test-project div[class^="project-description"] h4 {
     font-size: 50px; }
-  .projects-wrapper .projects-container .test-project div[class^="project-description"] p {
+  .projects-container .projects .test-project div[class^="project-description"] p {
     font-size: 25px; }
-  .projects-wrapper .projects-container .test-project div[class^="project-description"] span {
+  .projects-container .projects .test-project div[class^="project-description"] span {
     position: relative;
     font-size: 20px; }
-    .projects-wrapper .projects-container .test-project div[class^="project-description"] span a ~ a {
+    .projects-container .projects .test-project div[class^="project-description"] span a ~ a {
       margin-left: 90px; }
-    .projects-wrapper .projects-container .test-project div[class^="project-description"] span .live-repo {
+    .projects-container .projects .test-project div[class^="project-description"] span .live-repo {
       font-size: 45px;
       margin-left: 25px; } }
 
 @media (max-width: 1440px) {
-  .projects-wrapper .projects-text p {
+  .projects-container .projects-text p {
     font-size: 18px; }
-  .projects-wrapper .projects-container .test-project div[class^="project-description"] h4 {
+  .projects-container .projects .test-project div[class^="project-description"] h4 {
     font-size: 40px; }
-  .projects-wrapper .projects-container .test-project div[class^="project-description"] p {
+  .projects-container .projects .test-project div[class^="project-description"] p {
     font-size: 20px;
     margin-bottom: 75px; }
-  .projects-wrapper .projects-container .test-project div[class^="project-description"] span {
+  .projects-container .projects .test-project div[class^="project-description"] span {
     position: relative;
     font-size: 16px; }
-    .projects-wrapper .projects-container .test-project div[class^="project-description"] span .live-repo {
+    .projects-container .projects .test-project div[class^="project-description"] span .live-repo {
       font-size: 35px;
       margin-left: 25px; } }
 
 @media (max-width: 1280px) {
-  .projects-wrapper .projects-text h3 {
+  .projects-container .projects-text h3 {
     font-size: 40px; } }
 
 @media (max-width: 1025px) {
-  .projects-wrapper .projects-container {
+  .projects-container .projects {
     grid-template-columns: 1fr; }
-    .projects-wrapper .projects-container .test-project .project-img {
+    .projects-container .projects .test-project .project-img {
       height: calc((2.45/5) * 100vw); } }
 
 @media (max-width: 990px) {
-  .projects-wrapper .projects-text h3 {
+  .projects-container .projects-text h3 {
     font-size: 35px; } }
 
 @media (max-width: 768px) {
-  .projects-wrapper .projects-container .test-project div[class^="project-description"] h4 {
-    font-size: 35px; }
-  .projects-wrapper .projects-container .test-project div[class^="project-description"] p {
-    font-size: 18px;
-    margin-bottom: 75px; }
-  .projects-wrapper .projects-container .test-project div[class^="project-description"] span {
-    position: relative;
-    font-size: 16px; }
-    .projects-wrapper .projects-container .test-project div[class^="project-description"] span .live-repo {
-      font-size: 30px;
-      line-height: -20;
-      margin-left: 25px; } }
+  .projects-container {
+    padding: 20px; }
+    .projects-container .projects .test-project div[class^="project-description"] h4 {
+      font-size: 35px; }
+    .projects-container .projects .test-project div[class^="project-description"] p {
+      font-size: 18px;
+      margin-bottom: 75px; }
+    .projects-container .projects .test-project div[class^="project-description"] span {
+      position: relative;
+      font-size: 16px; }
+      .projects-container .projects .test-project div[class^="project-description"] span .live-repo {
+        font-size: 30px;
+        line-height: -20;
+        margin-left: 25px; } }
 
 @media (max-width: 660px) {
-  .projects-wrapper .projects-container .test-project div[class^="project-description"] h4 {
+  .projects-container .projects .test-project div[class^="project-description"] h4 {
     font-size: 30px; }
-  .projects-wrapper .projects-container .test-project div[class^="project-description"] p {
+  .projects-container .projects .test-project div[class^="project-description"] p {
     font-size: 16px;
     margin-bottom: 40px; }
-  .projects-wrapper .projects-container .test-project div[class^="project-description"] span {
+  .projects-container .projects .test-project div[class^="project-description"] span {
     position: relative;
     font-size: 14px; }
-    .projects-wrapper .projects-container .test-project div[class^="project-description"] span .live-repo {
+    .projects-container .projects .test-project div[class^="project-description"] span .live-repo {
       font-size: 25px;
       line-height: -20;
       margin-left: 25px; } }
 
 @media (max-width: 510px) {
-  .projects-wrapper .projects-container .test-project div[class^="project-description"] h4 {
+  .projects-container .projects .test-project div[class^="project-description"] h4 {
     font-size: 22px; }
-  .projects-wrapper .projects-container .test-project div[class^="project-description"] p {
+  .projects-container .projects .test-project div[class^="project-description"] p {
     font-size: 14px;
     margin-bottom: 40px; }
-  .projects-wrapper .projects-container .test-project div[class^="project-description"] span {
+  .projects-container .projects .test-project div[class^="project-description"] span {
     position: relative;
     font-size: 12px; }
-    .projects-wrapper .projects-container .test-project div[class^="project-description"] span .live-repo {
+    .projects-container .projects .test-project div[class^="project-description"] span .live-repo {
       font-size: 18px;
       margin-left: 25px; } }
 
 @media (max-width: 480px) {
-  .projects-wrapper .projects-container .test-project div[class^="project-description"] h4 {
+  .projects-container .projects .test-project div[class^="project-description"] h4 {
     font-size: 20px; }
-  .projects-wrapper .projects-container .test-project div[class^="project-description"] p {
+  .projects-container .projects .test-project div[class^="project-description"] p {
     font-size: 12px;
     margin-bottom: 40px; }
-  .projects-wrapper .projects-container .test-project div[class^="project-description"] span {
+  .projects-container .projects .test-project div[class^="project-description"] span {
     position: relative;
     font-size: 12px; }
-    .projects-wrapper .projects-container .test-project div[class^="project-description"] span a ~ a {
+    .projects-container .projects .test-project div[class^="project-description"] span a ~ a {
       margin-left: 35px; }
-    .projects-wrapper .projects-container .test-project div[class^="project-description"] span .live-repo {
+    .projects-container .projects .test-project div[class^="project-description"] span .live-repo {
       font-size: 16px;
       line-height: -20;
       margin-left: 10px; }
-  .projects-wrapper .projects-container .test-project .project-img {
+  .projects-container .projects .test-project .project-img {
     height: calc((2/5) * 100vw); } }
 
 @media (max-width: 425px) {
-  .projects-wrapper .projects-text h3 {
+  .projects-container .projects-text h3 {
     font-size: 30px; }
-  .projects-wrapper .projects-container .test-project div[class^="project-description"] p {
+  .projects-container .projects .test-project div[class^="project-description"] p {
     margin-bottom: 20px; }
-  .projects-wrapper .projects-container .test-project div[class^="project-description"] span a ~ a {
+  .projects-container .projects .test-project div[class^="project-description"] span a ~ a {
     margin-left: 40px; }
-  .projects-wrapper .projects-container .test-project div[class^="project-description"] span .live-repo {
+  .projects-container .projects .test-project div[class^="project-description"] span .live-repo {
     margin-left: 15px; } }
 
 @media (max-width: 320px) {
-  .projects-wrapper .projects-container .test-project div[class^="project-description"] h4 {
+  .projects-container .projects .test-project div[class^="project-description"] h4 {
     font-size: 18px; }
-  .projects-wrapper .projects-container .test-project div[class^="project-description"] p {
+  .projects-container .projects .test-project div[class^="project-description"] p {
     font-size: 11px; }
-  .projects-wrapper .projects-container .test-project div[class^="project-description"] span {
+  .projects-container .projects .test-project div[class^="project-description"] span {
     font-size: 12px; } }
 
 @media (pointer: coarse) {
-  .projects-wrapper .projects-container .test-project div[class^="project-description"] {
+  .projects-container .projects .test-project div[class^="project-description"] {
     visibility: visible;
     opacity: .8; } }
 
@@ -1988,12 +2014,12 @@ footer {
   display: flex;
   justify-content: center;
   background-color: #272b2e;
-  padding: 20px; }
+  padding: 20px 40px; }
 
 footer .container {
   font-family: 'roboto';
   display: grid;
-  grid-template-columns: minmax(auto, 500px) minmax(auto, 100px) minmax(auto, 500px);
+  grid-template-columns: minmax(auto, 500px) minmax(auto, 60px) minmax(auto, 500px);
   grid-template-areas: "links . copy";
   margin: 50px 0; }
 
@@ -2051,6 +2077,10 @@ footer .container {
       justify-self: center;
       justify-content: center; } }
 
+@media (max-width: 768px) {
+  footer {
+    padding: 20px; } }
+
 @media (max-width: 510px) {
   footer {
     width: 100vw; }
@@ -2102,4 +2132,4 @@ footer .container {
   footer .container {
     width: calc(100vw - 50px); } }
 
-/*# sourceMappingURL=style.ddde.css.map*/
+/*# sourceMappingURL=style.ba9f.css.map*/
