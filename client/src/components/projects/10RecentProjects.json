@@ -2,73 +2,83 @@
   "projects": [
     {
       "title":"2 Bears",
-      "description":"Mobile point of sales app for Belgian non-profit, Mov feast",
+      "description":"Mobile point of sales app for Belgian non-profit, Mov feast. I led my team of three. The requirements were to build a point-of-sale foood ordering app that generates QR codes on the receipts. Waiters then scan the code on the reciept so they track orders and how much of an order they have left to serve. We ended up building a self-checkout functionality on top of that.",
       "siteLink":"https://github.com/chingu-voyage5/2-Bears",
       "repoLink":"https://github.com/chingu-voyage5/2-Bears",
+      "stack":["JavaScript", "React-Native", "ReactJS", "Redux", "HTLM5", "NodeJS", "ExpressJS", "PostgreSQL", "Sequelize"],
       "backgroundImage":"https://i.imgur.com/O5ZTIQA.jpg"
     },
     {
-      "title":"Contractor PropGen",
-      "description":"Commercial/residential proposal template generator",
+      "title":"C-Prop Generator",
+      "description":"Proposal generator for residential contracting. This was built out of a need for my father's business. The requirements were that you can type into it like google docs and print the proposals out once done. I am adding an authorization and save functionality so that proposals can be looked up at a later time and indexed.",
       "siteLink":"http://propgen.surge.sh/",
       "repoLink":"https://github.com/odelavia/contractor-proposal-generator",
-      "backgroundImage":"https://i.imgur.com/nYX2HKq.jpg"
+      "stack":["JavaScript", "ReactJS", "Sass", "CSS3", "HTLM5", "NodeJS", "ExpressJS", "Webpack"],
+      "backgroundImage":"https://imgur.com/xKpYBx6.jpg"
     },
     {
       "title":"Facetagger",
-      "description":"A face-tagging game for the people in your pictures that utilizes the Clarifai API",
-      "siteLink":"#",
-      "repoLink":"#",
+      "description":"A face-tagging game for your pleasure! Utilizes the that utilizes the Clarifai API. Paste image links with people's faces in them and add to your score. Make a profile and add some basic information about you. Leaderboards coming soon!",
+      "siteLink":"javascript:void(0); //",
+      "repoLink":"javascript:void(0); //",
+      "stack":["JavaScript", "ReactJS", "Sass", "CSS3", "HTLM5", "NodeJS", "ExpressJS", "PostgreSQL", "Sequelize", "Webpack"],
       "backgroundImage":"https://i.imgur.com/mogw1Zt.jpg"
     },
     {
       "title":"Gecho",
-      "description":"A video music playing app that utilizes Youtube's API",
+      "description":"A video music playing app that utilizes Youtube's API. This project was a tremendous learning experience. I was on a team of four and it was my first dive into React, server and database code. I quickly caught up to the team and jumping around wherever I was needed. Search for and listen to music videos as a guest or sign in and save your favorites. You can even customize your accounts theme and avatar! ",
       "siteLink":"https://gecho.herokuapp.com/",
       "repoLink":"https://github.com/chingu-voyage4/Geckos-Team-32",
+      "stack":["JavaScript", "ReactJS", "Redux", "Sass", "CSS3", "HTLM5", "NodeJS", "ExpressJS", "MongoDB", "Mongoose", "Webpack"],
       "backgroundImage":"https://i.imgur.com/6zSwaTJ.jpg"
     },
     {
       "title":"Hangman",
-      "description":"A modern attempt at the classic Hangman game",
+      "description":"A modern attempt at the classic Hangman game. I really engrained my object-oriented programming skills here. I utilized es6 standards. To play simply choose how many guesses you want to play with and how many words. Start typing the letters to play. Hit reset if you want to try again! ",
       "siteLink":"http://jscript-hangman.surge.sh/",
       "repoLink":"https://github.com/odelavia/vanillaJS-hangman-app",
+      "stack":["JavaScript", "CSS3", "HTLM5"],
+      "backgroundImage":"https://imgur.com/RrKACFg.jpg"
+    },
+    {
+      "title":"Tech-stack",
+      "description":"A mobile app that allows you to sign in and see what tech stack you've learned. Keep track of all the technologies you've learned. When you're finished just sign out! Due to deploying apps to mobile stores costing $99/year, there isn't a live version for this yet. Feel free to look through my code in the Repo though!",
+      "siteLink":"javascript:void(0); //",
+      "repoLink":"https://github.com/odelavia/React-Native-Auth-App",
+      "stack":["JavaScript", "React-Native", "ReactJS", "Redux", "HTLM5", "Firebase"],
       "backgroundImage":"https://i.imgur.com/O5ZTIQA.jpg"
     },
     {
       "title":"Glasskey",
-      "description":"A twist on the GlassDoor App, use the app to see employee reviews",
-      "siteLink":"#",
+      "description":"A twist on the GlassDoor App. Use the app to see employee reviews. Sign to search through Employees and rate them. make a comment or check out the other comments for that employee. Feel free to delete you comments or campgrounds but only if you've signed in as their original poster.",
+      "siteLink":"javascript:void(0); //",
       "repoLink":"https://github.com/odelavia/Glasskey",
+      "stack":["JavaScript", "CSS3", "HTLM5", "NodeJS", "ExpressJS", "MongoDB", "Mongoose", "Webpack"],
       "backgroundImage":"https://i.imgur.com/nYX2HKq.jpg"
     },
     {
       "title":"Blog",
-      "description":"A blog built from scratch",
-      "siteLink":"#",
+      "description":"A blog built from scratch. I learned a lot about how CMS's work and how to connect everything to the backend here. I'm rebuilding in React to add to this site.",
+      "siteLink":"javascript:void(0); //",
       "repoLink":"https://github.com/odelavia/RESTful-Blog",
+            "stack":["JavaScript", "EJS", "CSS3", "HTLM5", "NodeJS", "ExpressJS", "MongoDB", "Mongoose", "Webpack"],
       "backgroundImage":"https://i.imgur.com/mogw1Zt.jpg"
     },
     {
       "title":"Note",
-      "description":"Note-keeping app",
+      "description":"Note-keeping app. Write, edit, delete and sort through your notes. Never write things on your palm again!",
       "siteLink":"http://abstracted-note.surge.sh/",
       "repoLink":"https://github.com/odelavia/vanillaJS-notes-app",
+      "stack":["JavaScript", "CSS3", "HTLM5"],
       "backgroundImage":"https://i.imgur.com/6zSwaTJ.jpg"
     },
     {
       "title":"Errands",
-      "description":"Another to-do app",
+      "description":"Another to-do app. Keep track of all your errands and succeed! Hide the errands you've already completed or delete them, you decide.",
       "siteLink":"http://errands.surge.sh/",
       "repoLink":"https://github.com/odelavia/vanillaJS-todo-app",
-      "backgroundImage":"https://i.imgur.com/O5ZTIQA.jpg"
-    },
-    {
-      "title":"Auth",
-      "description":"An authorization app for mobile",
-      "siteLink":"/",
-      "repoLink":"https://github.com/odelavia/React-Native-Auth-App",
-      "backgroundImage":"https://i.imgur.com/nYX2HKq.jpg"
+      "stack":["JavaScript", "CSS3", "HTLM5"],
+      "backgroundImage":"https://imgur.com/9JE07WX.jpg"
     }
   ]
 }

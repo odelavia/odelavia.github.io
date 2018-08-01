@@ -79,6 +79,7 @@
         .special {
           position: relative;
           display: inline-block;
+          padding: 0 30px
         }
         .special:after {
           content: "";
@@ -95,7 +96,7 @@
           color: #e24b6c;
         }
         .special:hover:after {
-          width: 60%;
+          width: 45px;
         }
         .special span {
           position: relative;
@@ -293,6 +294,9 @@
             top: -10vh;
             justify-self: center;
             width: 60vw;
+          }
+          .social li {
+            margin:0;
           }
         }
       }

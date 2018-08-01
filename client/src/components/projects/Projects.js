@@ -18,6 +18,7 @@ class Projects extends Component {
         title={project.title}
         description={project.description}
         siteLink={project.siteLink}
+        tech={project.stack}
         repoLink={project.repoLink}
         backgroundImage={project.backgroundImage}
       />
@@ -37,9 +38,9 @@ class Projects extends Component {
             <h3>My Work</h3>
             <hr/>
             <p>Insight, prototyping, and continuous validation inform my work.
-              Creativity fuels it.
-            </p>
-            <p>It’s the perfect balance between design thinking and design doing.</p>
+              Creativity fuels it.<br/>
+              It’s the perfect balance between design thinking and design doing.</p>
+            <p>Check out my projects below.</p>
           </div>
           <div className="projects">
             {this.createProjects(data.projects)}
