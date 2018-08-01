@@ -1,5 +1,5 @@
 import React from 'react';
-import heroImage from '../assets/img/splash.png'
+import heroImage from '../assets/img/splash3.png'
 
 const Hero = () => (
   <div className="section" id="top">

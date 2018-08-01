@@ -237,7 +237,7 @@ img {
   border-radius: 4px;
   padding: 10px 10px;
   font-weight: 600;
-  font-size: 16px;
+  font-size: 18px;
   text-decoration: none;
   outline: 0;
   transition: box-shadow 0.2s cubic-bezier(0.4, 0, 1, 1), background-color 0.2s cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow 0.2s cubic-bezier(0.4, 0, 1, 1);
@@ -572,7 +572,7 @@ nav .navbar-toggler .navbar-toggler-icon {
   font-weight: 600;
   padding: 0 30px; }
   .nav-item:hover:before {
-    width: 60%; }
+    width: 40px; }
   .nav-item:before {
     content: "";
     position: absolute;
@@ -908,7 +908,8 @@ Link.nav-link:not(.btn) {
         margin-right: 0; }
       .hero .container.full .content .special {
         position: relative;
-        display: inline-block; }
+        display: inline-block;
+        padding: 0 30px; }
       .hero .container.full .content .special:after {
         content: "";
         position: absolute;
@@ -922,7 +923,7 @@ Link.nav-link:not(.btn) {
       .hero .container.full .content .special:hover {
         color: #e24b6c; }
       .hero .container.full .content .special:hover:after {
-        width: 60%; }
+        width: 45px; }
       .hero .container.full .content .special span {
         position: relative;
         z-index: 1; }
@@ -1012,7 +1013,9 @@ Link.nav-link:not(.btn) {
       right: 0;
       top: -10vh;
       justify-self: center;
-      width: 60vw; } }
+      width: 60vw; }
+    .hero .container.full .content .social li {
+      margin: 0; } }
 
 @media (max-width: 336px) {
   .hero .container.full .content .tagline h1 {
@@ -1038,6 +1041,7 @@ Link.nav-link:not(.btn) {
   color: #131313;
   padding: 0 40px; }
   .about-text-wrapper h3 {
+    font-size: 50px;
     font-weight: 700; }
     .about-text-wrapper h3:before {
       content: ">\A0"; }
@@ -1199,8 +1203,6 @@ Link.nav-link:not(.btn) {
     font-size: 22px; } }
 
 @media (max-width: 2400px) {
-  .about-section-wrapper .about-text-wrapper h3 {
-    font-size: 50px; }
   .about-section-wrapper .about-text-wrapper p {
     font-size: 20px; } }
 
@@ -1261,8 +1263,7 @@ Link.nav-link:not(.btn) {
       border: none; }
     .projects-container .projects-text p {
       display: flex;
-      justify-self: c;
-      font-size: 16px;
+      font-size: 22px;
       font-weight: 600;
       margin-bottom: 0;
       width: auto; }
@@ -1270,241 +1271,131 @@ Link.nav-link:not(.btn) {
     display: grid;
     grid-template-columns: 1fr;
     grid-gap: 40px;
-    margin: 0 auto;
-    overflow: hidden; }
+    margin: 0 auto; }
     .projects-container .projects .test-project {
       position: relative;
-      overflow: hidden;
-      height: 100%;
-      max-height: 705px;
+      display: grid;
+      grid-template-columns: 1fr 62%;
+      grid-template-areas: "proj-img proj-text";
+      background-color: white;
+      min-height: 435px;
+      width: 100%;
+      max-width: 1300px;
       border-radius: 4px;
-      box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.15); }
-      .projects-container .projects .test-project .project-img {
-        max-width: 100%;
-        max-height: 705px;
-        height: calc((2.45/5) * 100vw);
-        background-position: center;
-        background-size: cover; }
-      .projects-container .projects .test-project div[class^="project-description"] {
-        position: absolute;
+      box-shadow: 0 50px 100px rgba(50, 50, 93, 0.05), 0 15px 35px rgba(50, 50, 93, 0.1), 0 5px 15px rgba(0, 0, 0, 0.1);
+      justify-content: flex-end; }
+      .projects-container .projects .test-project div[class^="img-container"] {
+        grid-area: proj-img;
         display: flex;
-        flex-direction: column;
-        justify-content: center;
         align-items: center;
-        padding: 10px 20px;
-        top: 0;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        background-blend-mode: hue;
-        color: #fff;
-        visibility: hidden;
-        opacity: 0;
-        transition: opacity .2s, visibility .2s; }
-        .projects-container .projects .test-project div[class^="project-description"] h4 {
-          font-weight: 500;
-          font-size: 40px; }
-        .projects-container .projects .test-project div[class^="project-description"] p {
-          font-size: 20px;
-          margin-bottom: 75px; }
-        .projects-container .projects .test-project div[class^="project-description"][class$="-1"] {
-          background: #e1526e; }
-        .projects-container .projects .test-project div[class^="project-description"][class$="-2"] {
-          background: #10152c; }
-        .projects-container .projects .test-project div[class^="project-description"][class$="-3"] {
+        justify-content: center;
+        left: 0px;
+        height: 100%;
+        box-shadow: 10px 0px 25px 0px rgba(0, 0, 0, 0.1);
+        border-top-left-radius: 4px;
+        border-bottom-left-radius: 4px; }
+        .projects-container .projects .test-project div[class^="img-container"] .project-img {
+          min-width: 360px;
+          min-height: 280px;
+          width: calc(100% - 40px);
+          background-color: black;
+          background-position: center;
+          background-size: cover;
+          border-radius: 4px; }
+        .projects-container .projects .test-project div[class^="img-container"][class$="-1"] {
+          background: #f0a9b7; }
+        .projects-container .projects .test-project div[class^="img-container"][class$="-2"] {
+          background: #4b5fbd; }
+        .projects-container .projects .test-project div[class^="img-container"][class$="-3"] {
           background: #868f03; }
-        .projects-container .projects .test-project div[class^="project-description"][class$="-4"] {
-          background: black; }
-        .projects-container .projects .test-project div[class^="project-description"][class$="-5"] {
+        .projects-container .projects .test-project div[class^="img-container"][class$="-4"] {
+          background: #d87906; }
+        .projects-container .projects .test-project div[class^="img-container"][class$="-5"] {
           background: #ff917b; }
-        .projects-container .projects .test-project div[class^="project-description"][class$="-6"] {
+        .projects-container .projects .test-project div[class^="img-container"][class$="-6"] {
           background: #004f7c; }
-        .projects-container .projects .test-project div[class^="project-description"][class$="-7"] {
+        .projects-container .projects .test-project div[class^="img-container"][class$="-7"] {
           background: #490811; }
-        .projects-container .projects .test-project div[class^="project-description"][class$="-8"] {
-          background: #070808; }
-        .projects-container .projects .test-project div[class^="project-description"][class$="-9"] {
+        .projects-container .projects .test-project div[class^="img-container"][class$="-8"] {
+          background: #353c40; }
+        .projects-container .projects .test-project div[class^="img-container"][class$="-9"] {
           background: #27205f; }
-        .projects-container .projects .test-project div[class^="project-description"][class$="-10"] {
-          background: #2c1206; }
-        .projects-container .projects .test-project div[class^="project-description"][class$="-11"] {
+        .projects-container .projects .test-project div[class^="img-container"][class$="-10"] {
+          background: #853713; }
+        .projects-container .projects .test-project div[class^="img-container"][class$="-11"] {
           background: #151f52; }
-        .projects-container .projects .test-project div[class^="project-description"] span {
-          position: relative;
+      .projects-container .projects .test-project .project-description {
+        grid-area: proj-text;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-areas: "proj-title" "proj-desc" "proj-stack" "proj-btns";
+        grid-gap: 36px;
+        flex-direction: column;
+        padding: 40px;
+        color: #525F7F;
+        height: 100%;
+        min-width: 62%;
+        border-radius: 4px;
+        background-color: white; }
+        .projects-container .projects .test-project .project-description h4 {
+          font-weight: 500;
+          font-size: 36px; }
+        .projects-container .projects .test-project .project-description p {
           font-size: 20px; }
-          .projects-container .projects .test-project div[class^="project-description"] span a ~ a {
-            margin-left: 65px; }
-          .projects-container .projects .test-project div[class^="project-description"] span .live-repo {
-            position: absolute;
+        .projects-container .projects .test-project .project-description .proj-stack {
+          display: flex;
+          flex-wrap: wrap; }
+          .projects-container .projects .test-project .project-description .proj-stack span {
+            padding: 5px;
+            border: solid 1px #21ce99;
+            margin: 0 5px 10px 0;
+            border-radius: 4px;
+            max-height: 30px; }
+        .projects-container .projects .test-project .project-description span {
+          position: relative;
+          display: flex;
+          justify-content: space-between;
+          font-size: 20px; }
+          .projects-container .projects .test-project .project-description span a {
+            color: black; }
+          .projects-container .projects .test-project .project-description span .live-repo {
             font-size: 50px;
-            line-height: -20;
-            margin-left: 10px; }
-      .projects-container .projects .test-project:hover div[class^="project-description"], .projects-container .projects .test-project:active div[class^="project-description"] {
-        visibility: visible;
-        opacity: .8; }
-      .projects-container .projects .test-project:hover .project-img, .projects-container .projects .test-project:active .project-img {
-        background-size: 120%; }
-
-@media (max-width: 2560px) {
-  .projects-container .projects-text h3 {
-    font-size: 50px; }
-  .projects-container .projects .test-project div[class^="project-description"] h4 {
-    font-size: 75px; }
-  .projects-container .projects .test-project div[class^="project-description"] p {
-    font-size: 40px;
-    margin-bottom: 75px; }
-  .projects-container .projects .test-project div[class^="project-description"] span {
-    position: relative;
-    font-size: 35px; }
-    .projects-container .projects .test-project div[class^="project-description"] span a ~ a {
-      margin-left: 150px; }
-    .projects-container .projects .test-project div[class^="project-description"] span .live-repo {
-      font-size: 70px;
-      line-height: -20;
-      margin-left: 45px; } }
+            line-height: -20; }
 
 @media (max-width: 2400px) {
-  .projects-container .projects-text h3 {
-    font-size: 50px; }
   .projects-container .projects-text p {
-    font-size: 20px; }
-  .projects-container .projects .test-project div[class^="project-description"] h4 {
-    font-size: 70px; }
-  .projects-container .projects .test-project div[class^="project-description"] p {
-    font-size: 35px;
-    margin-bottom: 75px; }
-  .projects-container .projects .test-project div[class^="project-description"] span {
-    position: relative;
-    font-size: 30px; }
-    .projects-container .projects .test-project div[class^="project-description"] span .live-repo {
-      font-size: 65px; } }
-
-@media (max-width: 1900px) {
-  .projects-container .projects .test-project div[class^="project-description"] h4 {
-    font-size: 50px; }
-  .projects-container .projects .test-project div[class^="project-description"] p {
-    font-size: 25px; }
-  .projects-container .projects .test-project div[class^="project-description"] span {
-    position: relative;
-    font-size: 20px; }
-    .projects-container .projects .test-project div[class^="project-description"] span a ~ a {
-      margin-left: 90px; }
-    .projects-container .projects .test-project div[class^="project-description"] span .live-repo {
-      font-size: 45px;
-      margin-left: 25px; } }
+    font-size: 20px; } }
 
 @media (max-width: 1440px) {
   .projects-container .projects-text p {
-    font-size: 18px; }
-  .projects-container .projects .test-project div[class^="project-description"] h4 {
-    font-size: 40px; }
-  .projects-container .projects .test-project div[class^="project-description"] p {
-    font-size: 20px;
-    margin-bottom: 75px; }
-  .projects-container .projects .test-project div[class^="project-description"] span {
-    position: relative;
-    font-size: 16px; }
-    .projects-container .projects .test-project div[class^="project-description"] span .live-repo {
-      font-size: 35px;
-      margin-left: 25px; } }
+    font-size: 18px; } }
 
 @media (max-width: 1280px) {
   .projects-container .projects-text h3 {
     font-size: 40px; } }
 
 @media (max-width: 1025px) {
-  .projects-container .projects {
-    grid-template-columns: 1fr; }
-    .projects-container .projects .test-project .project-img {
-      height: calc((2.45/5) * 100vw); } }
+  .projects-container {
+    padding: 20px; }
+    .projects-container .projects-text h3 {
+      font-size: 36px; }
+    .projects-container .projects .test-project {
+      display: flex;
+      justify-content: stretch; }
+      .projects-container .projects .test-project div[class^="img-container"] {
+        width: 0;
+        height: 0;
+        display: none; }
+      .projects-container .projects .test-project .project-description {
+        width: 100%; } }
 
 @media (max-width: 990px) {
   .projects-container .projects-text h3 {
     font-size: 35px; } }
 
-@media (max-width: 768px) {
-  .projects-container {
-    padding: 20px; }
-    .projects-container .projects .test-project div[class^="project-description"] h4 {
-      font-size: 35px; }
-    .projects-container .projects .test-project div[class^="project-description"] p {
-      font-size: 18px;
-      margin-bottom: 75px; }
-    .projects-container .projects .test-project div[class^="project-description"] span {
-      position: relative;
-      font-size: 16px; }
-      .projects-container .projects .test-project div[class^="project-description"] span .live-repo {
-        font-size: 30px;
-        line-height: -20;
-        margin-left: 25px; } }
-
-@media (max-width: 660px) {
-  .projects-container .projects .test-project div[class^="project-description"] h4 {
-    font-size: 30px; }
-  .projects-container .projects .test-project div[class^="project-description"] p {
-    font-size: 16px;
-    margin-bottom: 40px; }
-  .projects-container .projects .test-project div[class^="project-description"] span {
-    position: relative;
-    font-size: 14px; }
-    .projects-container .projects .test-project div[class^="project-description"] span .live-repo {
-      font-size: 25px;
-      line-height: -20;
-      margin-left: 25px; } }
-
-@media (max-width: 510px) {
-  .projects-container .projects .test-project div[class^="project-description"] h4 {
-    font-size: 22px; }
-  .projects-container .projects .test-project div[class^="project-description"] p {
-    font-size: 14px;
-    margin-bottom: 40px; }
-  .projects-container .projects .test-project div[class^="project-description"] span {
-    position: relative;
-    font-size: 12px; }
-    .projects-container .projects .test-project div[class^="project-description"] span .live-repo {
-      font-size: 18px;
-      margin-left: 25px; } }
-
-@media (max-width: 480px) {
-  .projects-container .projects .test-project div[class^="project-description"] h4 {
-    font-size: 20px; }
-  .projects-container .projects .test-project div[class^="project-description"] p {
-    font-size: 12px;
-    margin-bottom: 40px; }
-  .projects-container .projects .test-project div[class^="project-description"] span {
-    position: relative;
-    font-size: 12px; }
-    .projects-container .projects .test-project div[class^="project-description"] span a ~ a {
-      margin-left: 35px; }
-    .projects-container .projects .test-project div[class^="project-description"] span .live-repo {
-      font-size: 16px;
-      line-height: -20;
-      margin-left: 10px; }
-  .projects-container .projects .test-project .project-img {
-    height: calc((2/5) * 100vw); } }
-
-@media (max-width: 425px) {
+@media (max-width: 375px) {
   .projects-container .projects-text h3 {
-    font-size: 30px; }
-  .projects-container .projects .test-project div[class^="project-description"] p {
-    margin-bottom: 20px; }
-  .projects-container .projects .test-project div[class^="project-description"] span a ~ a {
-    margin-left: 40px; }
-  .projects-container .projects .test-project div[class^="project-description"] span .live-repo {
-    margin-left: 15px; } }
-
-@media (max-width: 320px) {
-  .projects-container .projects .test-project div[class^="project-description"] h4 {
-    font-size: 18px; }
-  .projects-container .projects .test-project div[class^="project-description"] p {
-    font-size: 11px; }
-  .projects-container .projects .test-project div[class^="project-description"] span {
-    font-size: 12px; } }
-
-@media (pointer: coarse) {
-  .projects-container .projects .test-project div[class^="project-description"] {
-    visibility: visible;
-    opacity: .8; } }
+    font-size: 30px; } }
 
 .blog-wrapper {
   background-color: #f5f5f5; }
@@ -1697,8 +1588,11 @@ Link.nav-link:not(.btn) {
   width: 100%;
   color: #040D14; }
 
+.contact-section .title {
+  font-size: 36px; }
+
 .contact-section .description {
-  font-size: 18px;
+  font-size: 20px;
   font-weight: 400;
   margin-bottom: 40px; }
 
@@ -1715,6 +1609,7 @@ Link.nav-link:not(.btn) {
   justify-content: space-between; }
 
 label {
+  font-size: 18px;
   font-weight: 500; }
 
 button.previous {
@@ -1753,7 +1648,7 @@ input[type="text"], input[type="email"], textarea {
   padding: 15px;
   border: 1px solid #21ce99;
   border-radius: 4px;
-  font-size: 13px;
+  font-size: 18px;
   resize: none;
   margin-top: 8px; }
 
@@ -1938,20 +1833,6 @@ input[type="button"]:hover, input[type="submit"]:hover {
   overflow: visible;
   stroke-dashoffset: 325; }
 
-@media (max-width: 990px) {
-  .contact-section .title {
-    font-size: 40px; }
-  .contact-section .description {
-    font-size: 16px; } }
-
-@media (max-width: 768px) {
-  .contact-section .title {
-    font-size: 32px; } }
-
-@media (max-width: 576px) {
-  .contact-section .description {
-    font-size: 14px; } }
-
 @media (max-width: 510px) {
   .contact-section {
     padding: 40px 0; }
@@ -2132,4 +2013,4 @@ footer .container {
   footer .container {
     width: calc(100vw - 50px); } }
 
-/*# sourceMappingURL=style.ba9f.css.map*/
+/*# sourceMappingURL=style.c10c.css.map*/
