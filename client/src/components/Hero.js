@@ -1,5 +1,5 @@
 import React from 'react';
-import heroImage from '../assets/img/splash3.png'
+import heroImage from '../assets/img/splash.png'
 
 const Hero = () => (
   <div className="section" id="top">
@@ -15,10 +15,10 @@ const Hero = () => (
         </div>
         <ul className="social">
           <li>
-            <a href="https://github.com/odelavia" className="special" target="_blank" rel="noopener">github</a>
+            <a href="https://github.com/odelavia" className="special" target="_blank" rel="noopener noreferrer">github</a>
           </li>
           <li>
-            <a href="https://twitter.com/odelavia" className="special" target="_blank" rel="noopener">twitter</a>
+            <a href="https://twitter.com/odelavia" className="special" target="_blank" rel="noopener noreferrer">twitter</a>
           </li>
         </ul>
       </div>

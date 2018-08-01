@@ -1891,6 +1891,17 @@ input[type="button"]:hover, input[type="submit"]:hover {
 .hide {
   display: none; }
 
+@keyframes pulse {
+  0% {
+    transform: scale(1, 1);
+    opacity: 1; }
+  50% {
+    transform: scale(1.4, 1.4);
+    opacity: .8; }
+  100% {
+    transform: scale(1, 1);
+    opacity: 1; } }
+
 footer {
   display: flex;
   justify-content: center;
@@ -1914,16 +1925,20 @@ footer .container {
   .pull-left .footer-aboutlink {
     margin: auto 50px auto 0px; }
   .pull-left .footer-bloglink {
-    grid-area: f-blog; }
+    grid-area: f-blog;
+    margin: auto 0; }
 
 .pull-right {
   grid-area: copy;
   display: flex;
   justify-content: center;
+  align-items: center;
   justify-self: flex-end;
   width: 265px; }
   .pull-right .footer-copy,
   .pull-right .devsig {
+    display: flex;
+    align-items: center;
     font-size: 14px; }
 
 .pull-right:not(a),
@@ -2013,4 +2028,4 @@ footer .container {
   footer .container {
     width: calc(100vw - 50px); } }
 
-/*# sourceMappingURL=style.c10c.css.map*/
+/*# sourceMappingURL=style.5b7c.css.map*/
