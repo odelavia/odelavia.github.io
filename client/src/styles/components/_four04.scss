@@ -1,0 +1,28 @@
+.fourohfour-wrapper {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  height: calc(100vh - 170px);
+  width: 100vw;
+  .fourohfour-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    h2 {
+      font-size: 35px;
+    }
+    p {
+      font-size: 25px;
+      margin: 0;
+      & + p {
+        margin: 0;
+      }
+      code {
+        font-size: 25px;
+        font-weight: 200;
+      }
+    }
+  }
+}

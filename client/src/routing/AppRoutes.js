@@ -1,5 +1,5 @@
 import React from 'react';
-import { HashRouter, Route } from 'react-router-dom';
+import { HashRouter, Route, Switch } from 'react-router-dom';
 import NavBar from '../components/common/NavBar';
 import Home from '../components/Home';
 import Resume from '../components/Resume';
@@ -13,9 +13,11 @@ const AppRoutes = () => (
   <HashRouter>
     <div>
       <NavBar />
-      <Route exact path="/" component={Home} />
-      <Route path="/resume" component={Resume} />
-      <Route path="*" component={Four04} />
+      <Switch>
+        <Route exact path="/" component={Home} />
+        <Route path="/resume" component={Resume} />
+        <Route component={Four04} />
+      </Switch>
       <Footer />
     </div>
   </HashRouter>

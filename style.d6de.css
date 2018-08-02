@@ -2068,6 +2068,29 @@ input[type="button"]:hover, input[type="submit"]:hover {
 .hide {
   display: none; }
 
+.fourohfour-wrapper {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  height: calc(100vh - 170px);
+  width: 100vw; }
+  .fourohfour-wrapper .fourohfour-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px; }
+    .fourohfour-wrapper .fourohfour-container h2 {
+      font-size: 35px; }
+    .fourohfour-wrapper .fourohfour-container p {
+      font-size: 25px;
+      margin: 0; }
+      .fourohfour-wrapper .fourohfour-container p + p {
+        margin: 0; }
+      .fourohfour-wrapper .fourohfour-container p code {
+        font-size: 25px;
+        font-weight: 200; }
+
 @keyframes pulse {
   0% {
     transform: scale(1, 1);
@@ -2205,4 +2228,4 @@ footer .container {
   footer .container {
     width: calc(100vw - 50px); } }
 
-/*# sourceMappingURL=style.f813.css.map*/
+/*# sourceMappingURL=style.d6de.css.map*/
