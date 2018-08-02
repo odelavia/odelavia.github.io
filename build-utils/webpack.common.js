@@ -30,10 +30,6 @@ module.exports = {
       },
     ],
   },
-  devServer: {
-      historyApiFallback: true,
-      port: 8090
-    },
   plugins: [
     new CleanWebpackPlugin('dist', {}),
     new HtmlWebpackPlugin({

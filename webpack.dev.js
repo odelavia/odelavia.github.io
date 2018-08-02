@@ -26,10 +26,11 @@ module.exports = merge(common, {
   plugins: [
     new webpack.HotModuleReplacementPlugin(),
   ],
-  devtool: 'cheap-module-eval-source-map',
   devServer: {
-    // historyApiFallback: true,
+    historyApiFallback: true,
     contentBase: './src',
     hot: true,
+    port: 8090
   },
+  devtool: 'cheap-module-eval-source-map',
 });

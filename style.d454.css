@@ -2135,7 +2135,7 @@ footer .container {
 @media (max-width: 1025px) {
   footer .container {
     grid-template-columns: 1fr;
-    grid-template-areas: "links" "copy";
+    grid-template-areas: "links" "copy";
     justify-items: center; }
     footer .container .pull-left {
       display: flex;
@@ -2162,7 +2162,7 @@ footer .container {
       footer .container .pull-left {
         display: grid;
         grid-template-columns: 1fr;
-        grid-template-areas: "sig" "f-about" "f-blog";
+        grid-template-areas: "sig" "f-about" "f-blog";
         padding: 0;
         justify-content: center;
         max-width: calc(100vw - 50px); }
@@ -2205,4 +2205,4 @@ footer .container {
   footer .container {
     width: calc(100vw - 50px); } }
 
-/*# sourceMappingURL=style.2247.css.map*/
+/*# sourceMappingURL=style.d454.css.map*/
