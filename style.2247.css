@@ -1,3 +1,4 @@
+@charset "UTF-8";
 #loader-wrapper {
   position: fixed;
   display: flex;
@@ -477,7 +478,8 @@ blockquote {
   top: 0;
   right: 0;
   left: 0;
-  z-index: 1030; }
+  z-index: 1030;
+  transition: all 300ms ease 0s; }
   .navbar-color-on-scroll a {
     color: black; }
 
@@ -488,6 +490,7 @@ blockquote {
   color: #FFFFFF;
   padding-top: 20px;
   z-index: 999;
+  transition: all 300ms ease 0s;
   width: 100vw; }
 
 .navbar-container {
@@ -839,6 +842,18 @@ Link.nav-link:not(.btn) {
   .nav-item:before {
     content: none; } }
 
+@media print {
+  .navbar-container {
+    display: none; }
+    .navbar-container .navbar-translate {
+      display: none; }
+      .navbar-container .navbar-translate .navbar-brand {
+        display: none; }
+  .navbar-color-on-scroll {
+    width: 0;
+    height: 0;
+    background-color: transparent !important; } }
+
 .hero {
   color: #fff; }
   .hero:before {
@@ -1027,6 +1042,168 @@ Link.nav-link:not(.btn) {
 @media screen and (pointer: coarse) and (orientation: portrait) {
   .hero .container.full .content .social {
     margin-bottom: 50px; } }
+
+#resume-page {
+  overflow: auto;
+  padding: 0 auto;
+  background-color: #21ce99; }
+
+.nav-spacer {
+  left: 0;
+  width: 100vw;
+  height: 90px; }
+
+#Resume {
+  margin-bottom: 90px;
+  text-align: left; }
+  #Resume:before, #Resume:after {
+    content: "";
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: #21ce99; }
+  #Resume #inner {
+    height: 1140px;
+    width: 950px;
+    padding: 10px 80px 10px 50px;
+    margin: 1px auto;
+    background: #ffffff; }
+    #Resume #inner a {
+      color: black;
+      text-transform: lowercase;
+      letter-spacing: 0; }
+    #Resume #inner p {
+      line-height: 18px;
+      margin: 0; }
+    #Resume #inner p + p {
+      margin: 0; }
+    #Resume #inner #bd {
+      margin-bottom: 0.3em;
+      margin-top: 4em;
+      zoom: 1; }
+      #Resume #inner #bd #main {
+        float: right;
+        margin-left: -25em;
+        width: 100%; }
+        #Resume #inner #bd #main h2 {
+          font-size: 19.5px; }
+        #Resume #inner #bd #main .right-main {
+          padding-left: 72px; }
+          #Resume #inner #bd #main .right-main .yui-gf {
+            zoom: 1; }
+            #Resume #inner #bd #main .right-main .yui-gf .yui-u {
+              float: none;
+              width: 100%; }
+              #Resume #inner #bd #main .right-main .yui-gf .yui-u .job {
+                position: relative;
+                margin-bottom: 0.7em;
+                padding-bottom: 0.5em; }
+                #Resume #inner #bd #main .right-main .yui-gf .yui-u .job h5 {
+                  font-size: 13.5px;
+                  font-weight: 500; }
+                #Resume #inner #bd #main .right-main .yui-gf .yui-u .job p {
+                  font-size: 13px;
+                  font-weight: 400; }
+                  #Resume #inner #bd #main .right-main .yui-gf .yui-u .job p:before {
+                    content: '\2022   '; }
+                #Resume #inner #bd #main .right-main .yui-gf .yui-u .job h4 {
+                  font-size: 14.5px;
+                  font-style: italic;
+                  font-weight: 200;
+                  padding-bottom: 6px;
+                  position: absolute;
+                  top: -0.02em;
+                  right: 0; }
+                #Resume #inner #bd #main .right-main .yui-gf .yui-u .job.last {
+                  position: relative;
+                  margin-bottom: 0.7em;
+                  padding-bottom: 0.5em; }
+            #Resume #inner #bd #main .right-main .yui-gf .education .job .spacing {
+              font-size: 13px;
+              font-weight: 400;
+              line-height: 16px; }
+            #Resume #inner #bd #main .right-main .yui-gf .education .job h5 {
+              font-size: 13.5px; }
+            #Resume #inner #bd #main .right-main .yui-gf .education .job p {
+              font-size: 13px; }
+        #Resume #inner #bd #main .yui-b {
+          margin-left: 14.8461em;
+          float: none;
+          width: auto;
+          position: static; }
+      #Resume #inner #bd .left-nav {
+        position: relative;
+        border-right: 1px dotted #cac9c9;
+        height: 950px; }
+        #Resume #inner #bd .left-nav .yui-gf .yui-u {
+          margin-right: 30px; }
+          #Resume #inner #bd .left-nav .yui-gf .yui-u .name {
+            text-align: right;
+            font-size: 32.5px; }
+          #Resume #inner #bd .left-nav .yui-gf .yui-u .contact-info {
+            margin-top: 7px;
+            text-align: right;
+            right: 30px; }
+            #Resume #inner #bd .left-nav .yui-gf .yui-u .contact-info h5 i {
+              font-size: 14.5px; }
+            #Resume #inner #bd .left-nav .yui-gf .yui-u .contact-info p {
+              font-size: 13px;
+              font-weight: 400; }
+            #Resume #inner #bd .left-nav .yui-gf .yui-u .contact-info a {
+              font-size: 13;
+              color: black;
+              text-transform: lowercase; }
+          #Resume #inner #bd .left-nav .yui-gf .yui-u .languages {
+            right: 30px;
+            position: absolute;
+            text-align: right;
+            top: 625px; }
+            #Resume #inner #bd .left-nav .yui-gf .yui-u .languages .job {
+              position: relative;
+              margin-bottom: 0.7em;
+              padding-bottom: 0.5em; }
+              #Resume #inner #bd .left-nav .yui-gf .yui-u .languages .job .spacing {
+                font-size: 13px;
+                font-weight: 400;
+                line-height: 16px; }
+              #Resume #inner #bd .left-nav .yui-gf .yui-u .languages .job h5 {
+                font-weight: 500;
+                font-size: 14.5px; }
+              #Resume #inner #bd .left-nav .yui-gf .yui-u .languages .job p {
+                font-weight: 400;
+                font-size: 13px; }
+            #Resume #inner #bd .left-nav .yui-gf .yui-u .languages h2 {
+              font-size: 21px; }
+      #Resume #inner #bd .yui-b {
+        float: left;
+        position: relative; }
+
+@page {
+  size: letter;
+  top: 0;
+  margin-bottom: 0;
+  padding-bottom: 0; }
+
+@media print {
+  .nav-spacer {
+    display: none;
+    width: 0;
+    height: 0; }
+  #Resume #inner {
+    position: absolute;
+    top: 0;
+    padding: 0 0.5in;
+    margin: 0; }
+  .page {
+    margin: 0 !important;
+    padding: 0 !important;
+    /* need for printer to print correctly with no padding settings*/
+    box-shadow: initial !important;
+    page-break-inside: avoid;
+    page-break-after: always;
+    /* Force page breaks after each .page element of the document */ } }
 
 .about-section-wrapper {
   display: grid;
@@ -1958,7 +2135,7 @@ footer .container {
 @media (max-width: 1025px) {
   footer .container {
     grid-template-columns: 1fr;
-    grid-template-areas: "links" "copy";
+    grid-template-areas: "links" "copy";
     justify-items: center; }
     footer .container .pull-left {
       display: flex;
@@ -1985,7 +2162,7 @@ footer .container {
       footer .container .pull-left {
         display: grid;
         grid-template-columns: 1fr;
-        grid-template-areas: "sig" "f-about" "f-blog";
+        grid-template-areas: "sig" "f-about" "f-blog";
         padding: 0;
         justify-content: center;
         max-width: calc(100vw - 50px); }
@@ -2028,4 +2205,4 @@ footer .container {
   footer .container {
     width: calc(100vw - 50px); } }
 
-/*# sourceMappingURL=style.5b7c.css.map*/
+/*# sourceMappingURL=style.2247.css.map*/
