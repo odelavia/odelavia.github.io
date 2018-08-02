@@ -9,12 +9,10 @@ class NavBar extends Component {
     super(props);
 
     this.state = {
-      linkClicked: false,
       right: 300,
       scrolledDown: false,
     }
     this.openNav = this.openNav.bind(this)
-    this.resetMobileNav = this.resetMobileNav.bind(this)
     this.onScrollColorChange = this.onScrollColorChange.bind(this)
   }
 
@@ -31,10 +29,6 @@ class NavBar extends Component {
     } else if (this.props.navOpen == false) {
       this.props.dispatch(openNav())
     }
-  };
-
-  resetMobileNav() {
-    navOpen ? (!this.state.linkClicked ? this.setState({linkClicked: true}) : null) : null
   };
 
   onScrollColorChange() {
@@ -66,7 +60,7 @@ class NavBar extends Component {
       >
         <div className="navbar-container">
           <div className="navbar-translate">
-            <NavLink className="navbar-brand" to="/" onClick={() => this.resetMobileNav}>DE LA VIA</NavLink>
+            <NavLink className="navbar-brand" to="/" onClick={() => this.openNav}>DE LA VIA</NavLink>
             <button onClick={this.openNav} className="navbar-toggler" type="button" data-toggle="collapse" aria-expanded="false" aria-label="Toggle navigation">
               <span className="navbar-toggler-icon"></span>
               <span className="navbar-toggler-icon"></span>
@@ -76,11 +70,11 @@ class NavBar extends Component {
           <div className='outsideAlert'>
           <OutsideAlerter >
             <ul className="navbar-collapse" style={{right: this.state.right}}>
-              <NavLink id="home" className="nav-item" to="/" onClick={this.resetMobileNav} target="_blank" rel="noopener noreferrer">Home</NavLink>
-              <NavLink className="nav-item" to="/resume" onClick={this.resetMobileNav}>Resume</NavLink>
+              <NavLink id="home" className="nav-item" to="/" onClick={this.openNav}>Home</NavLink>
+              <NavLink className="nav-item" to="/resume" onClick={this.openNav}>Resume</NavLink>
               {/*<NavLink className="nav-item blog" to="/blog">Blog</NavLink>*/}
-              <a className="nav-item blog" href="http://www.medium.com/@oliverdelavia" target="_blank" rel="noopener noreferrer">blog</a>
-              <a className="nav-item last contact" href="mailto:odelavia@gmail.com" onClick={this.resetMobileNav}>Contact</a>
+              <a className="nav-item blog" href="http://www.medium.com/@oliverdelavia" onClick={this.openNav} target="_blank" rel="noopener noreferrer">blog</a>
+              <a className="nav-item last contact" href="mailto:odelavia@gmail.com" onClick={this.openNav}>Contact</a>
             </ul>
           </OutsideAlerter>
           </div>
