@@ -1,15 +1,22 @@
-import { VALIDATE_FORM, SUBMIT_FORM } from './types';
+import { SEND_FIRST_NAME, SEND_LAST_NAME, SEND_EMAIL } from './types';
 
-export const validateForm =() => {
+export const sendFirstName = () => {
   return {
-    type: VALIDATE_FORM,
-    payload: validate,
+    type: SEND_FIRST_NAME,
+    payload: firstName,
   }
-}
+};
 
-export const submitForm = () => {
+export const sendLastName = () => {
   return {
-    type: SUBMIT_FORM,
-    payload: submitInfo,
+    type: SEND_LAST_NAME,
+    payload: lastName,
+  }
+};
+
+export const sendEmail = () => {
+  return {
+    type: SEND_EMAIL,
+    payload: email,
   }
 };

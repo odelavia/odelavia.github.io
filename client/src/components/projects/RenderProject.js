@@ -9,7 +9,7 @@ class RenderProject extends Component {
 
   createTag(technology, index) {
     return (
-      <span>
+      <span key={`tech-${index}`}>
         {technology}
       </span>
     );

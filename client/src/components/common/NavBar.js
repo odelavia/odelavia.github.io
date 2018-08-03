@@ -52,7 +52,6 @@ class NavBar extends Component {
   }
 
   render() {
-    console.log('navbar')
     return (
       <nav id="sectionsNav"
         className={this.state.scrolledDown ? 'navbar-color-on-scroll' : 'navbar-transparent'}

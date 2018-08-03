@@ -1,25 +1,31 @@
-import { VALIDATE_FORM, SUBMIT_FORM } from '../actions/types';
+import { SEND_EMAIL, SEND_FIRST_NAME, SEND_LAST_NAME } from '../actions/types';
 
-// const initialState = {
-//   validated: false,
-//   submit: false,
-// }
+const initialState = {
+  firstName: '',
+  lastName: '',
+  email: ''
+}
 
-// export default (state = [], action) => {
-//   console.log(action)
+export default (state = initialState, action) => {
+  console.log(action)
 
-//   switch(action.type) {
-//     // case VALIDATE_FORM:
-//     //   return {
-//     //     ...state,
-//     //     validated: action.payload,
-//     //   };
-//     // case SUBMIT_FORM:
-//     //   return {
-//     //     ...state,
-//     //     submit: action.payload,
-//     //   };
-//     default:
-//       return state;
-//   }
-// };
+  switch(action.type) {
+    case SEND_FIRST_NAME:
+      return {
+        ...state,
+        firstName: action.payload,
+      };
+    case SEND_LAST_NAME:
+      return {
+        ...state,
+        lastName: action.payload,
+      };
+    case SEND_EMAIL:
+      return {
+        ...state,
+        email: action.payload,
+      };
+    default:
+      return state;
+  }
+};
