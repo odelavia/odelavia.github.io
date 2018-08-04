@@ -2,7 +2,7 @@
   "projects": [
     {
       "title":"2 Bears",
-      "description":"Mobile point of sales app for Belgian non-profit, Mov feast. I led my team of three. The requirements were to build a point-of-sale foood ordering app that generates QR codes on the receipts. Waiters then scan the code on the reciept so they track orders and how much of an order they have left to serve. We ended up building a self-checkout functionality on top of that.",
+      "description":"Mobile point of sales app for Belgian non-profit, Mov feast. I led my team of three. The requirements were to build a point-of-sale food ordering app that generates QR codes on the receipts. Waiters then scan the code on the receipt so they can track the orders and how much of an order is left to serve. We ended up building a self-checkout functionality on top of that.",
       "siteLink":"https://github.com/chingu-voyage5/2-Bears",
       "repoLink":"https://github.com/chingu-voyage5/2-Bears",
       "stack":["JavaScript", "React-Native", "ReactJS", "Redux", "HTLM5", "NodeJS", "ExpressJS", "PostgreSQL", "Sequelize"],
@@ -10,7 +10,7 @@
     },
     {
       "title":"C-Prop Generator",
-      "description":"Proposal generator for residential contracting. This was built out of a need for my father's business. The requirements were that you can type into it like google docs and print the proposals out once done. I am adding an authorization and save functionality so that proposals can be looked up at a later time and indexed.",
+      "description":"Proposal generator for residential contracting. This was built out of a need for my father's business. The requirements were that you can type into it like google docs and then print. I am adding an authorization and save functionality so that proposals can be indexed and looked up at a later time.",
       "siteLink":"http://propgen.surge.sh/",
       "repoLink":"https://github.com/odelavia/contractor-proposal-generator",
       "stack":["JavaScript", "ReactJS", "Sass", "CSS3", "HTLM5", "NodeJS", "ExpressJS", "Webpack"],
@@ -18,7 +18,7 @@
     },
     {
       "title":"Facetagger",
-      "description":"A face-tagging game for your pleasure! Utilizes the that utilizes the Clarifai API. Paste image links with people's faces in them and add to your score. Make a profile and add some basic information about you. Leaderboards coming soon!",
+      "description":"A face-tagging game for your pleasure! Utilizes the Clarifai API. Paste image links with people's faces in them and add to your score. Make a profile and add some basic information about yourself. Leaderboards coming soon!",
       "siteLink":"javascript:void(0); //",
       "repoLink":"javascript:void(0); //",
       "stack":["JavaScript", "ReactJS", "Sass", "CSS3", "HTLM5", "NodeJS", "ExpressJS", "PostgreSQL", "Sequelize", "Webpack"],
@@ -26,7 +26,7 @@
     },
     {
       "title":"Gecho",
-      "description":"A video music playing app that utilizes Youtube's API. This project was a tremendous learning experience. I was on a team of four and it was my first dive into React, server and database code. I quickly caught up to the team and jumping around wherever I was needed. Search for and listen to music videos as a guest or sign in and save your favorites. You can even customize your accounts theme and avatar! ",
+      "description":"A music-video playing app that utilizes Youtube's API. This project was a tremendous learning experience. I was on a team of four and it was my first dive into the React framework, as well as server and database code. I quickly caught up to the team and started jumping around wherever I was needed. Search for and listen to music videos as a guest or sign in and save your favorites. You can even customize your account's theme and avatar! ",
       "siteLink":"https://gecho.herokuapp.com/",
       "repoLink":"https://github.com/chingu-voyage4/Geckos-Team-32",
       "stack":["JavaScript", "ReactJS", "Redux", "Sass", "CSS3", "HTLM5", "NodeJS", "ExpressJS", "MongoDB", "Mongoose", "Webpack"],
@@ -34,7 +34,7 @@
     },
     {
       "title":"Hangman",
-      "description":"A modern attempt at the classic Hangman game. I really engrained my object-oriented programming skills here. I utilized es6 standards. To play simply choose how many guesses you want to play with and how many words. Start typing the letters to play. Hit reset if you want to try again! ",
+      "description":"A modern attempt at the classic Hangman game. I really engrained my object-oriented programming skills here. I utilized es6 standards. To play simply choose how many guesses you want to play with and how many words you'd like to guess. Start typing letters to play. Hit reset if you want to try again! ",
       "siteLink":"http://jscript-hangman.surge.sh/",
       "repoLink":"https://github.com/odelavia/vanillaJS-hangman-app",
       "stack":["JavaScript", "CSS3", "HTLM5"],
@@ -42,7 +42,7 @@
     },
     {
       "title":"Tech-stack",
-      "description":"A mobile app that allows you to sign in and see what tech stack you've learned. Keep track of all the technologies you've learned. When you're finished just sign out! Due to deploying apps to mobile stores costing $99/year, there isn't a live version for this yet. Feel free to look through my code in the Repo though!",
+      "description":"A mobile app that allows you to sign in and see what tech stacks you've worked with. Keep track of all the technologies you've learned. When you're finished just sign out! Due to the cost of deploying apps to mobile stores, there isn't a live version for this yet. Feel free to look through my code in the Repo though!",
       "siteLink":"javascript:void(0); //",
       "repoLink":"https://github.com/odelavia/React-Native-Auth-App",
       "stack":["JavaScript", "React-Native", "ReactJS", "Redux", "HTLM5", "Firebase"],
@@ -50,7 +50,7 @@
     },
     {
       "title":"Glasskey",
-      "description":"A twist on the GlassDoor App. Use the app to see employee reviews. Sign to search through Employees and rate them. make a comment or check out the other comments for that employee. Feel free to delete you comments or campgrounds but only if you've signed in as their original poster.",
+      "description":"A twist on the GlassDoor App. Use the app to see employee reviews. Sign in to search through employees and rate them. Make a comment or check out other employee comments. Feel free to delete you comments or reviews but only if you've signed in as the original poster.",
       "siteLink":"javascript:void(0); //",
       "repoLink":"https://github.com/odelavia/Glasskey",
       "stack":["JavaScript", "CSS3", "HTLM5", "NodeJS", "ExpressJS", "MongoDB", "Mongoose", "Webpack"],
