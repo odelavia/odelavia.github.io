@@ -27,7 +27,7 @@ class OutsideAlerter extends Component {
       if ( event.target.parentNode.className == 'navbar-toggler'|| event.target.className == 'navbar-toggler') return
       if(this.props.display == 'block' && event.target.parentNode.className != 'navbar-toggler') {
             this.props.dispatch(closeNav());
-            console.log('entered props', this.props.navOpen)
+            // console.log('entered props', this.props.navOpen)
       }
     }
   }

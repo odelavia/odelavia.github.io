@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { NavLink } from 'react-router-dom';
 import { connect } from 'react-redux';
-import { openNav, closeNav } from '../../actions/navBar';
+import { openNav, closeNav } from '../../actions';
 import OutsideAlerter from '../common/OutsideAlerter';
 
 class NavBar extends Component {

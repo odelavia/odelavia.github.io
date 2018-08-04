@@ -30,6 +30,7 @@
           height: 465px;
           width: 465px;
           padding-left: 30px;
+          border: solid 3px rgba(0,0,0,.05);
           border-radius: 250px;
           box-shadow: 0px 10px 25px 0px rgba(0, 0, 0, 0.3);
           overflow: hidden;
@@ -93,7 +94,7 @@
           transition: all 350ms cubic-bezier(0.285, 0.105, 0.465, 1.015);
         }
         .special:hover {
-          color: #e24b6c;
+          // color: #e24b6c;
         }
         .special:hover:after {
           width: 45px;
@@ -215,6 +216,7 @@
           .splash-image {
             height: 320px;
             width: 320px;
+            padding-left: 0;
             img {
               max-width: 220px;
             }
@@ -256,6 +258,7 @@
           .splash-image {
             height: 220px;
             width: 220px;
+            padding-left: 0;
             img {
               max-width: 151px;
             }

@@ -1,13 +1,13 @@
 import React from 'react';
-import { Field, reduxForm } from 'redux-form';
+import { Field, reduxForm, formValueSelector } from 'redux-form';
 import { connect } from 'react-redux';
 import validate from './validate';
 import RenderField from './RenderField';
 
-const WizardFormFirstPage = props => {
-  const { handleSubmit, dispatch } = props;
+let WizardFormFirstPage = props => {
+  const { handleSubmit } = props;
   return (
-    <form action="https://formspree.io/odelavia@gmail.com" method="POST" onSubmit={dispatch(sendFirstName(), sendLastName()), handleSubmit}>
+    <form action="https://formspree.io/odelavia@gmail.com" method="POST" onSubmit={ handleSubmit }>
       <Field
         name="firstName"
         type="text"
@@ -27,22 +27,21 @@ const WizardFormFirstPage = props => {
   );
 };
 
-// const mapDispatchToProps = (dispatch) => {
-//   return {
-//     onSubmit: (evt) => dispatch(sendFirstName(evt.target.querySelector('input').value)
-//   }
-// }
-
-const mapStateToProps = (state) => {
-  return {
-    firstName: state.contactForm.firstName,
-    lastName: state.contactForm.lastName
-  }
-}
-
-export default reduxForm({
-  form: 'wizard', //                 <------ same form name
+WizardFormFirstPage = reduxForm({
+  form: 'wizard',
   destroyOnUnmount: false, //        <------ preserve form data
   forceUnregisterOnUnmount: true, // <------ unregister fields on unmount
   validate,
-})(connect(mapStateToProps)(WizardFormFirstPage));
+})(WizardFormFirstPage);
+
+const selector = formValueSelector('wizard')
+WizardFormFirstPage = connect(
+  state => {
+    const { firstName, lastName } = selector(state, 'firstName', 'lastName')
+    return {
+      fullName: `${firstName || ''} ${lastName || ''}`
+    }
+  }
+)(WizardFormFirstPage)
+
+export default WizardFormFirstPage;
