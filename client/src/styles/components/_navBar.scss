@@ -22,7 +22,9 @@
 
   .navbar-brand {
     height: 50px;
-
+    &:hover {
+      color: black;
+    }
     &:before {
       content: none;
     }
@@ -72,12 +74,17 @@
   animation-duration: 0.5s;
   animation-delay: 0.3s;
 
+  &:hover {
+    color: white;
+  }
+
   &:hover:before {
     width: 50px;
   }
 
   &:before {
-    content: "";
+    // content: "";
+    content: none;
     position: absolute;
     z-index: -1;
     left: 0;
