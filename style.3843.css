@@ -1086,9 +1086,9 @@ Link.nav-link:not(.btn) {
     height: 100vh;
     background: #21ce99; }
   #Resume #inner {
-    height: 1140px;
+    height: 1260px;
     width: 950px;
-    padding: 10px 80px 10px 50px;
+    padding: 10px 70px 10px 30px;
     margin: 1px auto;
     background: #ffffff; }
     #Resume #inner a {
@@ -1157,7 +1157,7 @@ Link.nav-link:not(.btn) {
       #Resume #inner #bd .left-nav {
         position: relative;
         border-right: 1px dotted #cac9c9;
-        height: 950px; }
+        height: 1125px; }
         #Resume #inner #bd .left-nav .yui-gf .yui-u {
           margin-right: 30px; }
           #Resume #inner #bd .left-nav .yui-gf .yui-u .name {
@@ -1180,7 +1180,7 @@ Link.nav-link:not(.btn) {
             right: 30px;
             position: absolute;
             text-align: right;
-            top: 625px; }
+            top: 735px; }
             #Resume #inner #bd .left-nav .yui-gf .yui-u .languages .job {
               position: relative;
               margin-bottom: 0.7em;
@@ -1891,7 +1891,7 @@ span.error-message {
   color: red; }
 
 input:focus, textarea:focus {
-  border: 1px solid #ee0979;
+  border: 2px solid #ee0979;
   outline-width: 0;
   transition: All 0.5s ease-in;
   -webkit-transition: All 0.5s ease-in;
@@ -2194,4 +2194,4 @@ footer .container {
 #loadOverlay {
   display: none; }
 
-/*# sourceMappingURL=style.2a44.css.map*/
+/*# sourceMappingURL=style.3843.css.map*/
