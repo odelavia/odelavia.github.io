@@ -16,29 +16,29 @@ const Resume = () => (
         <div className="job">
           <h5>2 Bears, <span>Developer & Team Lead</span></h5>
           <h4>May 2018 - Present</h4>
-          <p>Currently leading team of three US based developers in building responsive cross platform POS app for IOS/Android</p>
-          <p>Managed the upgrade of an internal tool to the latest web technologies by translating business requirements into software to improve customer service</p>
-          <p>Influenced system architecture decisions to reflect technical strategy</p>
-          <p>Developed user stories, drew wireframes, planned sprints, triaged and corrected bugs, and delivered a user-centered functional app</p>
+          <p>Currently leading team of three US based developers in building responsive cross platform POS app for IOS/Android.</p>
+          <p>Managed the upgrade of an internal tool to the latest web technologies by translating business requirements into software to improve customer service.</p>
+          <p>Influenced system architecture decisions to reflect technical strategy.</p>
+          <p>Developed user stories, drew wireframes, planned sprints, triaged and corrected bugs, and delivered a user-centered functional app.</p>
           <p>Tools: JavaScript, React, Redux, React-Native, HTML, CSS/SASS, PostgreSQL, Sequelize, Node, Express, Grunt, and Webpack</p>
         </div>
 
         <div className="job">
           <h5>Facetagger, <span>Developer</span></h5>
           <h4>March 2018 - May 2018</h4>
-          <p>Built a full-scale, responsive face-tagger game that utilizes the Clarifai API</p>
-          <p>Developed navigation, authentication/authorization/registration, user profile modals, image-url input loader, and face-tagging implentation, and as user rank funtionality</p>
-          <p>Configured Webpack to bundle code using React, Redux, SCSS, Babel, and implemented hot module reloading</p>
+          <p>Built a full-scale, responsive face-tagger game that utilizes the Clarifai API.</p>
+          <p>Developed navigation, authentication/authorization/registration, user profile modals, image-url input loader, and face-tagging implentation, and as user rank funtionality.</p>
+          <p>Configured Webpack to bundle code using React, Redux, SCSS, Babel, and implemented hot module reloading.</p>
           <p>Tools: JavaScript, React, Redux, HTML, CSS/SASS, PostgreSQL, Node, Express, and Webpack</p>
         </div>
 
         <div className="job">
           <h5>Gecho, <span>Developer</span></h5>
           <h4>Feb 2018 - April 2018</h4>
-          <p> Built a full-scale web app that plays music videos utilizing the Youtube API with a team of two US based developers and one Argentinan developer</p>
-          <p>Configured MongoDB user schemas to persist music and user preferences</p>
-          <p>Connected Youtube API to search bar and implemented server-side rendering of music videos to hide the necessary API keys</p>
-          <p>Worked on app-wide UI and developed error handling across app</p>
+          <p> Built a full-scale web app that plays music videos utilizing the Youtube API with a team of two US based developers and one Argentinian developer.</p>
+          <p>Configured MongoDB user schemas to persist music and user preferences.</p>
+          <p>Connected Youtube API to search bar and implemented server-side rendering of music videos to hide the necessary API keys.</p>
+          <p>Worked on app-wide UI and developed error handling across app.</p>
           <p>Tools: JavaScript, React, React-Router, Redux, HTML, CSS/SASS, MongoDB, Mongoose, Node, Express, Gulp, and Webpack</p>
         </div>
         </div>
@@ -51,20 +51,20 @@ const Resume = () => (
          <h5>Chingu<span>, Developer & Online Community Facilitator</span></h5>
          <h4>Feb 2018 – Present</h4>
          <div className="spacing"><i>A global collaboration platform and coding-cohort generator. They connect motivated learners with shared goals to learn, help and build together.</i></div>
-         <p>Helping to facilitate 700+ developers in 140+ remote international teams</p>
-         <p>Organized remote teams, answered questions, helped other junior developers with code, troubleshot and kept teams on track for their weekly sprints</p>
-         <p>Presented a talk/demo on the benefits of pair-programming for the Chingu Community</p>
-         <p>Meet weekly sprint deadlines in Agile environment typically within two-month series, rapid prototyping of features, writing client-side and server-side code in JavaScript, React, React-Native and Node</p>
-         <p>Technologies in production include React progressive web apps, relational and NoSQL databases, user authentication (Passport.JS, OAuth), RESTful APIs, and build tools (Gulp, Grunt, Webpack)</p>
+         <p>Helping to facilitate 700+ developers in 140+ remote international teams.</p>
+         <p>Organized remote teams, answered questions, helped other junior developers with code, troubleshot and kept teams on track for their weekly sprints.</p>
+         <p>Presented a talk/demo on the benefits of pair-programming for the Chingu Community.</p>
+         <p>Meet weekly sprint deadlines in Agile environment typically within two-month series, rapid prototyping of features, writing client-side and server-side code in JavaScript, React, React-Native and Node.</p>
+         <p>Technologies in production include React progressive web apps, relational and NoSQL databases, user authentication (Passport.JS, OAuth), RESTful APIs, and build tools (Gulp, Grunt, Webpack).</p>
         </div>
 
          <div className="job">
           <h5>Dara Global Arts<span>, Associate Gallery Director</span></h5>
           <h4>Nov 2016 - Nov 2017</h4>
           <div className="spacing"><i>A Boutique art gallery based in Vienna, Virginia.</i></div>
-          <p>Consulted on a complete renovation of the space and Wordpress website overhaul</p> 
-          <p>Rendered daily operations including presentation, inventory, and installation of artwork</p>
-          <p>Created a new database of the gallery inventory to reduce the time needed for Director’s bi-weekly inventory check by 85%</p>
+          <p>Consulted on a complete renovation of the space and Wordpress website overhaul.</p> 
+          <p>Rendered daily operations including presentation, inventory, and installation of artwork.</p>
+          <p>Created a new database of the gallery inventory to reduce the time needed for Director’s bi-weekly inventory check by 85%.</p>
          </div>
 
         </div>
@@ -78,9 +78,9 @@ const Resume = () => (
            <h5>HD Contractors, Inc.<span>, Project Supervisor, Construction</span></h5>
            <h4>July 2010 - Present</h4>
            <div className="spacing"><i>Residential/commercial contracting company that renovates spaces in the Washington D.C. area.</i></div>
-           <p>Lead day-to-day team, perform quality checks, teach and mentor new employees</p>
-           <p>Define project purpose and scope, calculate resources required, establish standards and protocols, allocate resources, schedule and coordinate staff, resolve design problems, evaluate and implement change orders</p>
-           <p>Implemented a Proposal Generator to cut time on drafting project bids in half (<a href="propgen.surge.sh">propgen.surge.sh</a>)</p>
+           <p>Lead day-to-day team, perform quality checks, teach and mentor new employees.</p>
+           <p>Define project purpose and scope, calculate resources required, establish standards and protocols, allocate resources, schedule and coordinate staff, resolve design problems, evaluate and implement change orders.</p>
+           <p>Implemented a Proposal Generator to cut time on drafting project bids in half (<a href="propgen.surge.sh">propgen.surge.sh</a>).</p>
           </div>
 
         </div>
