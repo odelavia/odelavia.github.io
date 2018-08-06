@@ -10,64 +10,61 @@ const Resume = () => (
      <div id="main">
       <div className="yui-b right-main">
 
-       <div className="yui-gf">
+      <div className="yui-gf">
         <div className="yui-u">
-          <h2>Experience</h2>
-
-          <div className="job">
-           <h5>Chingu<span>, Software Developer</span></h5>
-           <h4>May 2018 – Present</h4>
-           <div className="spacing"><i>A global collaboration platform and coding-cohort generator. They connect motivated learners with shared goals to learn, help and build together</i></div>
-           <p>Currently leading a team of three on a belgian non-profit point of sale app. Check out <a href="https://github.com/chingu-voyage5/2-Bears">github.com/chingu-voyage5/2-bears</a></p>
-           <p>Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...</p>
-           <p>Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...</p>
-           <p>Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...</p>
-           <p>Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...</p>
-           <p>Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...</p>
-           <p>Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...</p>
-           <p>Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...</p>
-           <p>Tools: JavaScript, React, Redux, React-Native, HTML, CSS/SASS, PostgreSQL, Sequelize, MongoDB, Mongoose, Node, Express, Gulp, Grunt, and Webpack</p>
-          </div>
-
-          <div className="job last">
-           <h5>HD Contractors, Inc.<span>, Project Supervisor, Construction</span></h5>
-           <h4>July 2010 - Present</h4>
-           <div className="spacing"><i>Residential/commercial contracting company that renovates spaces in the Washington D.C. area</i></div>
-           <p>Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...</p>
-           <p>Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...</p>
-           <p>Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...</p>
-           <p>Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...</p>
-           <p>Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...</p>
-           <p>Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...</p>
-          </div>
-
+        <h2>Projects</h2>
+        <div className="job">
+          <h5>2 Bears, <span>Developer & Team Lead</span></h5>
+          <h4>May 2018 - Present</h4>
+          <p>Currently leading team of three US based developers in building responsive cross platform POS app for IOS/Android.</p>
+          <p>Managed the upgrade of an internal tool to the latest web technologies by translating business requirements into software to improve customer service.</p>
+          <p>Influenced system architecture decisions to reflect technical strategy</p>
+          <p>Developed user stories, drew wireframes, planned sprints, triaged and corrected bugs, and delivered a user-centered functional app</p>
+          <p>Tools: JavaScript, React, Redux, React-Native, HTML, CSS/SASS, PostgreSQL, Sequelize, Node, Express, Grunt, and Webpack</p>
         </div>
-       </div>
+
+        <div className="job">
+          <h5>Facetagger, <span>Developer</span></h5>
+          <h4>March 2018 - May 2018</h4>
+          <p>Built a full-scale, responsive face-tagger game that utilizes the Clarifai API.</p>
+          <p>Developed navigation, authentication/authorization/registration, user profile modals, image-url input loader, and face-tagging implentation, and as user rank funtionality.</p>
+          <p>Configured Webpack to bundle code using React, Redux, SCSS, Babel, and implemented hot module reloading</p>
+          <p>Tools: JavaScript, React, Redux, HTML, CSS/SASS, PostgreSQL, Node, Express, and Webpack</p>
+        </div>
+
+        <div className="job">
+          <h5>Gecho, <span>Developer</span></h5>
+          <h4>Feb 2018 - April 2018</h4>
+          <p> Built a full-scale web app that plays music videos utilizing the Youtube API (in collaboration with 3 developers)</p>
+          <p>Configured MongoDB user schemas to persist music and user preferences.</p>
+          <p>Connected Youtube API to search bar and implemented server-side rendering of music videos to </p>
+          <p>Worked on app-wide UI and developed error handling across app.</p>
+          <p>Tools: JavaScript, React, React-Router, Redux, HTML, CSS/SASS, MongoDB, Mongoose, Node, Express, Gulp, and Webpack</p>
+        </div>
+        </div>
+      </div>
 
        <div className="yui-gf">
         <div className="yui-u">
          <h2>Volunteer Experience</h2>
          <div className="job">
-          <h5>Chingu, <span>Online Community Facilitator</span></h5>
-          <h4>May 2018 - Present</h4>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent eget viverra est.</p>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent eget viverra est.</p>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent eget viverra est.</p>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent eget viverra est.</p>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent eget viverra est.</p>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent eget viverra est.</p>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent eget viverra est.</p>
-         </div>
+         <h5>Chingu<span>, Developer & Online Community Facilitator</span></h5>
+         <h4>Feb 2018 – Present</h4>
+         <div className="spacing"><i>A global collaboration platform and coding-cohort generator. They connect motivated learners with shared goals to learn, help and build together</i></div>
+         <p>Helping to facilitate 700+ developers in 140+ remote international teams.</p>
+         <p>Plan and organize remote teams, answered questions, helped other junior developers with code, troubleshot and kept teams on track for their weekly sprints.</p>
+         <p>Presented a talk/demo on the benefits of pair-programming for the Chingu Community.</p>
+         <p>Meeting weekly sprint deadlines in Agile environment typically within two-month series, rapid prototyping of features, writing client-side and server-side code in JavaScript, React, React-Native and Node.</p>
+         <p>Technologies in production include React progressive web apps, relational and NoSQL databases, user authentication (Passport.JS, OAuth), RESTful APIs, and build tools (Gulp, Grunt, Webpack).</p>
+        </div>
 
          <div className="job">
           <h5>Dara Global Arts<span>, Associate Gallery Director</span></h5>
           <h4>Nov 2016 - Nov 2017</h4>
           <div className="spacing"><i>A Boutique art gallery based in Vienna, Virginia</i></div>
-          <p>Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...</p>
-          <p>Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...</p>
-          <p>Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...</p>
-          <p>Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...</p>
-          <p>Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...</p>
+          <p>Consulted on a complete renovation of the space and Wordpress website overhaul.</p> 
+          <p>Rendered daily operations including presentation, inventory, and installation of artwork.</p>
+          <p>Created a new database of the gallery inventory to reduce the time needed for Director’s bi-weekly inventory check by 85%.</p>
          </div>
 
         </div>
@@ -75,15 +72,17 @@ const Resume = () => (
 
        <div className="yui-gf">
         <div className="yui-u">
-         <h2>Projects</h2>
-         <div className="job">
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent eget viverra est.</p>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent eget viverra est.</p>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent eget viverra est.</p>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent eget viverra est.</p>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent eget viverra est.</p>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent eget viverra est.</p>
-         </div>
+          <h2>Employment</h2>
+
+          <div className="job last">
+           <h5>HD Contractors, Inc.<span>, Project Supervisor, Construction</span></h5>
+           <h4>July 2010 - Present</h4>
+           <div className="spacing"><i>Residential/commercial contracting company that renovates spaces in the Washington D.C. area</i></div>
+           <p>Lead day-to-day team, perform quality checks, teach and mentor new employees.</p>
+           <p>Define project purpose and scope, calculate resources required, establish standards and protocols, allocate resources, schedule and coordinate staff, resolve design problems, evaluate and implement change orders</p>
+           <p>Implemented a Proposal Generator to cut time on drafting project bids in half. Check out <a href="propgen.surge.sh">propgen.surge.sh</a></p>
+          </div>
+
         </div>
        </div>
 
@@ -134,7 +133,7 @@ const Resume = () => (
 
          <div className="job">
           <h5>Technologies</h5>
-          <p>React, React-Native, Redux</p>
+          <p>React, React-Native, React-Router, Redux</p>
           <p>Jest, Enzyme</p>
           <p>Node.js, Express.js</p>
           <p>REST API</p>
