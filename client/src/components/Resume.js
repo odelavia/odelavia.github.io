@@ -80,7 +80,7 @@ const Resume = () => (
            <div className="spacing"><i>Residential/commercial contracting company that renovates spaces in the Washington D.C. area.</i></div>
            <p>Lead day-to-day team, perform quality checks, teach and mentor new employees.</p>
            <p>Define project purpose and scope, calculate resources required, establish standards and protocols, allocate resources, schedule and coordinate staff, resolve design problems, evaluate and implement change orders.</p>
-           <p>Implemented a Proposal Generator to cut time on drafting project bids in half (<a href="propgen.surge.sh">propgen.surge.sh</a>).</p>
+           <p>Implemented a Proposal Generator to cut time on drafting project bids in half (<a href="http://www.propgen.surge.sh">propgen.surge.sh</a>).</p>
           </div>
 
         </div>
