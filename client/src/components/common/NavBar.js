@@ -70,7 +70,7 @@ class NavBar extends Component {
           <OutsideAlerter >
             <ul className="navbar-collapse" style={{right: this.state.right}}>
               <NavLink id="home" className="nav-item" to="/" onClick={this.openNav}>Home</NavLink>
-              <NavLink className="nav-item" to="/resume" onClick={this.openNav}>Resume</NavLink>
+              <a className="nav-item" href="https://drive.google.com/open?id=1NXOScHcc6ZgbCsTAKj2RJlbxvbN8BTYF" onClick={this.openNav} target="_blank" rel="noopener noreferrer">Resume</a>
               {/*<NavLink className="nav-item blog" to="/blog">Blog</NavLink>*/}
               <a className="nav-item blog" href="http://www.medium.com/@oliverdelavia" onClick={this.openNav} target="_blank" rel="noopener noreferrer">blog</a>
               <a className="nav-item last contact" href="mailto:odelavia@gmail.com" onClick={this.openNav}>Contact</a>
