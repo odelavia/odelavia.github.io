@@ -19,8 +19,8 @@
     {
       "title":"Facetagger",
       "description":"A face-tagging game for your pleasure! Utilizes the Clarifai API. Paste image links with people's faces in them and add to your score. Make a profile and add some basic information about yourself. Leaderboards coming soon!",
-      "siteLink":"javascript:void(0); //",
-      "repoLink":"javascript:void(0); //",
+      "siteLink":"https://face-tagger.herokuapp.com/",
+      "repoLink":"https://github.com/odelavia/face-tagger-app",
       "stack":["JavaScript", "ReactJS", "Sass", "CSS3", "HTLM5", "NodeJS", "ExpressJS", "PostgreSQL", "Sequelize", "Webpack"],
       "backgroundImage":"https://i.imgur.com/mogw1Zt.jpg"
     },

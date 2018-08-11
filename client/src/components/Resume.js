@@ -17,17 +17,17 @@ const Resume = () => (
           <h5>2 Bears, <span>Developer & Team Lead</span></h5>
           <h4>May 2018 - Present</h4>
           <p>Currently leading team of three US based developers in building responsive cross platform POS app for IOS/Android.</p>
-          <p>Managed the upgrade of an internal tool to the latest web technologies by translating business requirements into software to improve customer service.</p>
+          <p>Managed the upgrade of an internal tool to latest technologies by translating business requisites into software, improving customer service.</p>
           <p>Influenced system architecture decisions to reflect technical strategy.</p>
-          <p>Developed user stories, drew wireframes, planned sprints, triaged and corrected bugs, and delivered a user-centered functional app.</p>
+          <p>Developed user stories, wireframes, weekly sprints, triaged and corrected bugs, and delivered a user-centered functional app.</p>
           <p>Tools: JavaScript, React, Redux, React-Native, HTML, CSS/SASS, PostgreSQL, Sequelize, Node, Express, Grunt, and Webpack</p>
         </div>
 
         <div className="job">
           <h5>Facetagger, <span>Developer</span></h5>
           <h4>March 2018 - May 2018</h4>
-          <p>Built a full-scale, responsive face-tagger game that utilizes the Clarifai API.</p>
-          <p>Developed navigation, authentication/authorization/registration, user profile modals, image-url input loader, and face-tagging implentation, and as user rank funtionality.</p>
+          <p>Built a full-stack, responsive face-tagger game that utilizes the Clarifai API.</p>
+          <p>Developed navigation, authentication/authorization/registration, user profile modals, image-url input loader, face-tagging implementation, and user rank funtionality.</p>
           <p>Configured Webpack to bundle code using React, Redux, SCSS, Babel, and implemented hot module reloading.</p>
           <p>Tools: JavaScript, React, Redux, HTML, CSS/SASS, PostgreSQL, Node, Express, and Webpack</p>
         </div>
@@ -35,9 +35,9 @@ const Resume = () => (
         <div className="job">
           <h5>Gecho, <span>Developer</span></h5>
           <h4>Feb 2018 - April 2018</h4>
-          <p> Built a full-scale web app that plays music videos utilizing the Youtube API with a team of two US based developers and one Argentinian developer.</p>
+          <p>Built a full-scale web app that plays music videos utilizing the Youtube API with a team of two American and one Argentinian developers.</p>
           <p>Configured MongoDB user schemas to persist music and user preferences.</p>
-          <p>Connected Youtube API to search bar and implemented server-side rendering of music videos to hide the necessary API keys.</p>
+          <p>Connected Youtube API to search bar and implemented server-side rendering of music videos to hide secret keys.</p>
           <p>Worked on app-wide UI and developed error handling across app.</p>
           <p>Tools: JavaScript, React, React-Router, Redux, HTML, CSS/SASS, MongoDB, Mongoose, Node, Express, Gulp, and Webpack</p>
         </div>
