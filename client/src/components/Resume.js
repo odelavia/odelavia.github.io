@@ -51,8 +51,8 @@ const Resume = () => (
          <h5>Chingu<span>, Developer & Online Community Facilitator</span></h5>
          <h4>Feb 2018 – Present</h4>
          <div className="spacing"><i>A global collaboration platform and coding-cohort generator. They connect motivated learners with shared goals to learn, help and build together.</i></div>
-         <p>Helping to facilitate 700+ developers in 140+ remote international teams.</p>
-         <p>Organized remote teams, answered questions, helped other junior developers with code, troubleshot and kept teams on track for their weekly sprints.</p>
+         <p>Helping to facilitate 700+ developers in 140+ remote international coding cohorts.</p>
+         <p>Organized remote teams, answered questions, helped other junior developers with code, troubleshot and kept teams on track for their weekly Agile sprints.</p>
          <p>Presented a talk/demo on the benefits of pair-programming for the Chingu Community.</p>
          <p>Meet weekly sprint deadlines in Agile environment typically within two-month series, rapid prototyping of features, writing client-side and server-side code in JavaScript, React, React-Native and Node.</p>
          <p>Technologies in production include React progressive web apps, relational and NoSQL databases, user authentication (Passport.JS, OAuth), RESTful APIs, and build tools (Gulp, Grunt, Webpack).</p>
@@ -137,7 +137,7 @@ const Resume = () => (
           <p>Jest, Enzyme</p>
           <p>Node.js, Express.js</p>
           <p>REST API</p>
-          <p>MongoDB, PostgreSQL, Redis</p>
+          <p>MongoDB, PostgreSQL, MySQL, Redis</p>
           <p>Git, Gulp, Webpack</p>
           <p>MacOS, Windows</p>
           <p>Adobe Photoshop, Illustrator</p>
