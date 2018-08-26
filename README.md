@@ -61,16 +61,59 @@ contractor-proposal-generator/             # application root directory
 ├── client/                                # frontend directory
 │    ├── src/                              # development code directory
 │    │    ├── __tests__                    # jest testing directory
-│    │    │    ├── __snapshots__/          # jest snapshots directory (created after running tests)
+│    │    │    ├── NavBar.test.js          # NavBar component jest test test file
 │    │    │    └── app.test.js             # initial test file
 │    │    ├── actions/                     # 
+│    │    │    ├── index.js                # 
+│    │    │    ├── navBar.js               # 
+│    │    │    └── types.js                # 
 │    │    ├── assets/                      # 
 │    │    ├── components/                  # react components directory
-│    │    │    └── App.js                  # initial App.js file
+│    │    │    ├── about/                  # 
+│    │    │    │    ├── About.js           # 
+│    │    │    │    ├── AboutContainer.js  # 
+│    │    │    │    ├── App.js             # 
+│    │    │    │    ├── FileBodies.js      # 
+│    │    │    │    ├── FileEnumeration.js # 
+│    │    │    │    ├── FileTabs.js        # 
+│    │    │    │    ├── IndexTab.js        # 
+│    │    │    │    ├── Interests.js       # 
+│    │    │    │    ├── Proficiency.js     # 
+│    │    │    │    └── ReadMe.js          # 
+│    │    │    ├── blog/                   # 
+│    │    │    │    ├── Blog.js            # 
+│    │    │    │    ├── BlogPostsData.json # 
+│    │    │    │    └── RenderPost.js      # 
+│    │    │    ├── common/                 # 
+│    │    │    │    ├── AsyncComponent.js  # 
+│    │    │    │    ├── Footer.js          # 
+│    │    │    │    ├── NavBar.js          # 
+│    │    │    │    └── OutsideAlerter.js  # 
+│    │    │    ├── contact/                # 
+│    │    │    │    ├── Contact.js         # 
+│    │    │    │    ├── RenderField.js     # 
+│    │    │    │    ├── Validate.js        # 
+│    │    │    │    ├── Wizard.js          # 
+│    │    │    │    ├── WizardFormPage1.js # 
+│    │    │    │    ├── WizardFormPage2.js # 
+│    │    │    │    └── WizardFormPage3.js # 
+│    │    │    ├── projects/               # 
+│    │    │    │    ├── ProjectsData.json  # 
+│    │    │    │    ├── Projects.js        # 
+│    │    │    │    └── RenderProject.js   # 
+│    │    │    ├── Four04.js               # 
+│    │    │    ├── Hero.js                 # 
+│    │    │    ├── Home.js                 # 
+│    │    │    └── Resume.js               # 
 │    │    ├── loadingScreen/               # 
+│    │    │    └── preloadingScreen.js     # 
 │    │    ├── reducers/                    # 
+│    │    │    ├── index.js                # 
+│    │    │    └── navBar__reducer.js      # 
 │    │    ├── routing/                     # 
+│    │    │    └── appRoutes.js            # 
 │    │    ├── store/                       # 
+│    │    │    └── store.js                # 
 │    │    ├── styles/                      # sass styles directory
 │    │    │    ├── components/             # sass components directory
 │    │    │    │    └── _app.scss          # initial styling for app component

@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import data from './recentBlogPosts.json';
+import data from './BlogPostsData.json';
 import RenderPost from './RenderPost';
 
 class Blog extends Component {
