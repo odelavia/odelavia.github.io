@@ -55,7 +55,7 @@ My personal portfolio website
 
 ### Directory Structure
 ```
-contractor-proposal-generator/             # application root directory
+odelavia.github.io/                        # application root directory
 ├── build-utils/                           # webpack utilities
 │    └── webpack.common.js                 # base webpack configuration
 ├── client/                                # frontend directory
