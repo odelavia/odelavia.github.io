@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Root from "./root";
+import { Provider } from 'react-redux';
+import Root from './root';
 import { AppContainer } from 'react-hot-loader';
 // import App from './components/App';
 import AppRoutes from './routing/AppRoutes';
