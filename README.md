@@ -56,14 +56,21 @@ My personal portfolio website
 ### Directory Structure
 ```
 contractor-proposal-generator/             # application root directory
+├── build-utils/                           # webpack utilities
+│    └── webpack.common.js                 # base webpack configuration
 ├── client/                                # frontend directory
-│    ├── dist/                             # production code directory ignored by .gitignore file
 │    ├── src/                              # development code directory
 │    │    ├── __tests__                    # jest testing directory
 │    │    │    ├── __snapshots__/          # jest snapshots directory (created after running tests)
 │    │    │    └── app.test.js             # initial test file
+│    │    ├── actions/                     # 
+│    │    ├── assets/                      # 
 │    │    ├── components/                  # react components directory
 │    │    │    └── App.js                  # initial App.js file
+│    │    ├── loadingScreen/               # 
+│    │    ├── reducers/                    # 
+│    │    ├── routing/                     # 
+│    │    ├── store/                       # 
 │    │    ├── styles/                      # sass styles directory
 │    │    │    ├── components/             # sass components directory
 │    │    │    │    └── _app.scss          # initial styling for app component
@@ -72,7 +79,8 @@ contractor-proposal-generator/             # application root directory
 │    │    │    │    └── _variables.scss    # sass variables
 │    │    │    └── main.scss               # root sass file (import other files here)
 │    │    ├── index.html                   # template HTML file
-│    │    └── index.js                     # application entry point
+│    │    ├── index.js                     # application entry point
+│    │    └── root.js                      # 
 ├── server/                                # backend directory
 │    ├── middleware/                       # server middleware directory
 │    │    ├── cors.js                      # CORS middleware
@@ -80,8 +88,16 @@ contractor-proposal-generator/             # application root directory
 │    │    └── session.js                   # express-session middleware
 │    └── server.js                         # express server entry point
 ├── .babelrc                               # babel configuration file
-├── .eslintrc.js                           # eslint configuration file
-├── webpack.common.js                      # base webpack configuration
+├── bundle.js                              # 
+├── .gitignore                             # 
+├── bundle.js.map                          # 
+├── CNAME                                  # 
+├── index.html                             # 
+├── package-lock.json                      # 
+├── package.json                           # 
+├── README.md                              # 
+├── style.[hash].css                       # 
+├── style.[hash].css.map                   # 
 ├── webpack.dev.js                         # development build webpack configuration
 └── webpack.prod.js                        # production build webpack configuration
 ```
