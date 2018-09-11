@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import SlantedContainer from '../common/SlantedContainer';
 
 class RenderProject extends Component {
   constructor(props) {
@@ -20,23 +21,28 @@ class RenderProject extends Component {
   }
 
   render() {
+    const { index, title, description, siteLink, tech, repoLink, backgroundImage } = this.props;
     return (
       <div className="test-project">
-        <div className={`img-container-${this.props.index}`}>
+        <div className={`img-container-${index}`}>
           <div className="project-img"
-            style={{ backgroundImage: `url(${this.props.backgroundImage})` }}
+            style={{ backgroundImage: `url(${backgroundImage})` }}
           />
       </div>
         <div className="project-description">
-          <h4>{this.props.title}</h4>
-          <p>{this.props.description}</p>
+          <h4>{title}</h4>
+          <p>{description}</p>
           <div className="proj-stack">
-            {this.createTags(this.props.tech)}
+            {this.createTags(tech)}
           </div>
           <span>
-            <a href={this.props.siteLink}>Live</a>
+            {
+              siteLink === "javascript:void(0); //" || ""
+              ? <SlantedContainer>NOT LIVE</SlantedContainer>
+              : <a href={siteLink}>Live</a>
+            }
             <span className="live-repo">//</span>
-            <a href={this.props.repoLink}>Repo</a>
+            <a href={repoLink}>Repo</a>
           </span>
         </div>
       </div>
