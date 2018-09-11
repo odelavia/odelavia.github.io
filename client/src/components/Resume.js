@@ -129,7 +129,7 @@ const Resume = () => (
                       <p>MacOS, Windows</p>
                       <p>Adobe Photoshop, Illustrator</p>
                       <p> Figma, Sketch</p>
-                    </div>
+                  </div>
                 </div>
               </div>
             </div>
