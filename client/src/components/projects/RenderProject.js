@@ -1,5 +1,7 @@
-import React, { Component } from 'react';
+import React, { Component, Fragment } from 'react';
 import SlantedContainer from '../common/SlantedContainer';
+import BannerBadge from '../common/BannerBadge';
+import BannerBadgeBackground from '../common/BannerBadgeBackground';
 
 class RenderProject extends Component {
   constructor(props) {
@@ -21,29 +23,34 @@ class RenderProject extends Component {
   }
 
   render() {
-    const { index, title, description, siteLink, tech, repoLink, backgroundImage } = this.props;
+    const { index, title, completed, description, siteLink, tech, repoLink, backgroundImage } = this.props;
     return (
-      <div className="test-project">
-        <div className={`img-container-${index}`}>
-          <div className="project-img"
-            style={{ backgroundImage: `url(${backgroundImage})` }}
-          />
-      </div>
-        <div className="project-description">
-          <h4>{title}</h4>
-          <p>{description}</p>
-          <div className="proj-stack">
-            {this.createTags(tech)}
+      <div className="projectCard-wrapper">
+        {
+          completed === 'yes' ? null : <Fragment><BannerBadgeBackground /><BannerBadge id="visible-badge" /></Fragment>
+        }
+        <div className="test-project">
+          <div className={`img-container-${index}`}>
+            <div className="project-img"
+              style={{ backgroundImage: `url(${backgroundImage})` }}
+            />
           </div>
-          <span>
-            {
-              siteLink === "javascript:void(0); //" || ""
-              ? <SlantedContainer>NOT LIVE</SlantedContainer>
-              : <a href={siteLink}>Live</a>
-            }
-            <span className="live-repo">//</span>
-            <a href={repoLink}>Repo</a>
-          </span>
+          <div className="project-description">
+            <h4>{title}</h4>
+            <p>{description}</p>
+            <div className="proj-stack">
+              {this.createTags(tech)}
+            </div>
+            <span>
+              {
+                siteLink === "javascript:void(0); //" || ""
+                ? <SlantedContainer>NOT LIVE</SlantedContainer>
+                : <a href={siteLink}>Live</a>
+              }
+              <span className="live-repo">//</span>
+              <a href={repoLink}>Repo</a>
+            </span>
+          </div>
         </div>
       </div>
     );

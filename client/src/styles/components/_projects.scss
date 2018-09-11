@@ -53,6 +53,10 @@
     grid-gap: 40px;
     margin: 0 auto;
 
+    .projectCard-wrapper {
+      position: relative;
+    }
+
     .test-project {
       position: relative;
       display: grid;

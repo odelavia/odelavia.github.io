@@ -10,17 +10,18 @@ class Projects extends Component {
     this.createProjects = this.createProjects.bind(this);
   }
 
-  createProject(project, index) {
+  createProject({ title, completed, description, siteLink, stack, repoLink, backgroundImage }, index) {
     return (
       <RenderProject
         key={`project-${index}`}
         index={index + 1}
-        title={project.title}
-        description={project.description}
-        siteLink={project.siteLink}
-        tech={project.stack}
-        repoLink={project.repoLink}
-        backgroundImage={project.backgroundImage}
+        title={title}
+        completed={completed}
+        description={description}
+        siteLink={siteLink}
+        tech={stack}
+        repoLink={repoLink}
+        backgroundImage={backgroundImage}
       />
     );
   }
