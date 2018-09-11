@@ -27,7 +27,8 @@ class RenderProject extends Component {
     return (
       <div className="projectCard-wrapper">
         {
-          completed === 'yes' ? null : <Fragment><BannerBadgeBackground /><BannerBadge id="visible-badge" /></Fragment>
+          completed === 'yes' ? null
+          : <Fragment><BannerBadgeBackground /><BannerBadge id="visible-badge" /></Fragment>
         }
         <div className="test-project">
           <div className={`img-container-${index}`}>

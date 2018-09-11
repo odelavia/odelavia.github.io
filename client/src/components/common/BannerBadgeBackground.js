@@ -4,10 +4,10 @@ const BannerBadgeBackground = () => {
   return (
     <div id="background-banner" className="banner">
       <div className="line first">
-        <span/>
+        <span />
       </div>
       <div className="line second">
-        <span/>
+        <span />
       </div>
     </div>
   );
