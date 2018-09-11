@@ -21,7 +21,6 @@
   hr {
     height: 1px;
     width: 50px;
-    // background-color: $robinhood-green;
     border: none;
   }
 
@@ -159,7 +158,6 @@
   .commented-out,
   .line-num {
     color: #464C60 !important;
-    // height: 25px;
   }
   .html-tag {
     display: flex;
@@ -238,7 +236,6 @@
     }
   }
 }
-@media (max-width: 2560px) {}
 @media (max-width: 2400px) {
   .about-section-wrapper {
     .about-text-wrapper {
@@ -247,8 +244,6 @@
       }
     }
   }
-}
-@media (max-width: 1900px) {
 }
 @media (max-width: 1440px) {
   .about-section-wrapper {
@@ -271,7 +266,6 @@
     }
   }
 }
-@media (max-width: 1025px) {}
 @media (max-width: 990px) {
   .about-section-wrapper {
     .about-text-wrapper {
@@ -281,7 +275,6 @@
     }
   }
 }
-@media (max-width: 830px) {}
 @media (max-width: 768px) {
   .about-section-wrapper {
     .about-text-wrapper,
@@ -290,9 +283,6 @@
     }
   }
 }
-@media (max-width: 660px) {}
-@media (max-width: 576px) {}
-@media (max-width: 510px) {}
 @media (max-width: 425px) {
   .about-section-wrapper {
     .about-text-wrapper {
@@ -302,5 +292,3 @@
     }
   }
 }
-@media (max-width: 375px) {}
-@media (max-width: 320px) {}

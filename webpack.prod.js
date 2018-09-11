@@ -40,6 +40,7 @@ module.exports = merge(common, {
       canPrint: true
     }),
     new UglifyJSPlugin({
+      test: /\.js($|\?)/i,
       sourceMap: true,
     }),
   ],

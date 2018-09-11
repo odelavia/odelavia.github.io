@@ -1,8 +1,6 @@
 #loader-wrapper {
   position: fixed;
   display: flex;
-  // top: 0;
-  // left: 0;
   justify-content: center;
   align-items: center;
   width: 100vw;
@@ -13,11 +11,8 @@
   #loader {
     display: block;
     position: relative;
-    // left: 50%;
-    // top: 50%;
     width: 150px;
     height: 150px;
-    // margin: -75px 0 0 -75px;
     border-radius: 50%;
     z-index: 1001;
     animation: spin 2s linear infinite;
@@ -78,7 +73,6 @@
   display: block;
   width: 50px;
   height: 50px;
-  // background: rgba(217,91,67,1);
   background: $robinhood-green;
   border-radius: 100%;
   float: left;

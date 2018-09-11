@@ -107,8 +107,6 @@
   border-radius: 0.25rem;
 }
 nav .navbar-toggler {
-  // padding: 1px 6px;
-  // margin: 0 34px 0 0;
   font-size: 5px;
   height: 24px;
   width: 24px;
@@ -128,9 +126,7 @@ nav .navbar-toggler .navbar-toggler-icon {
   border-radius: 1px;
   background-color: #555;
 }
-/* .navbar-toggler:not(:disabled):not(.disabled) {
-  cursor: pointer;
-} */
+
 .navbar-collapse {
   display: grid;
   grid-template-columns: 2fr repeat(4, auto);
@@ -314,10 +310,6 @@ Link.nav-link:not(.btn) {
   user-select: none;
 }
 
-@media (min-width: 2400px) {}
-@media (max-width: 2560px) {}
-@media (max-width: 2400px) {}
-@media (max-width: 1900px) {}
 @media (max-width: 1440px) {
   .navbar-brand {
     font-size: 40px;
@@ -407,16 +399,12 @@ Link.nav-link:not(.btn) {
       font-size: 16px;
       display: block;
       margin-bottom: 20px;
-      // &:hover {
-      //   color: #e24b6c;
-        
 
       &:before {
         background: $off-white;
       }
       &:hover:before {
         width: 17%;
-        // width: 50px;
       }
     }
   }
@@ -438,7 +426,6 @@ Link.nav-link:not(.btn) {
     border-color: #898d90;
   }
 }
-@media (max-width: 830px) {}
 @media (max-width: 768px) {
   .navbar-container {
     padding: 0 20px;
@@ -447,10 +434,6 @@ Link.nav-link:not(.btn) {
     margin: 0;
   }
 }
-@media (max-width: 660px) {}
-@media (max-width: 576px) {}
-@media (max-width: 425px) {}
-@media (max-width: 375px) {}
 @media (max-width: 320px) {
   nav {
     max-width: 320px;

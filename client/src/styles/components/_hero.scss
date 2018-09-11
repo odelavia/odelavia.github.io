@@ -93,9 +93,6 @@
           width: 0;
           transition: all 350ms cubic-bezier(0.285, 0.105, 0.465, 1.015);
         }
-        .special:hover {
-          // color: #e24b6c;
-        }
         .special:hover:after {
           width: 45px;
         }

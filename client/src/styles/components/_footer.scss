@@ -77,12 +77,6 @@ footer .container {
   transition: all 300ms ease 0s;
 }
 
-@media (min-width: 2400px) {}
-@media (max-width: 2560px) {}
-@media (max-width: 2400px) {}
-@media (max-width: 1900px) {}
-@media (max-width: 1440px) {}
-@media (max-width: 1280px) {}
 @media (max-width: 1025px) {
   footer {
     .container {
@@ -110,15 +104,11 @@ footer .container {
     }
   }
 }
-@media (max-width: 990px) {}
-@media (max-width: 830px) {}
 @media (max-width: 768px) {
   footer {
     padding: 20px;
   }
 }
-@media (max-width: 660px) {}
-@media (max-width: 576px) {}
 @media (max-width: 510px) {
   footer {
     width: 100vw;
@@ -184,8 +174,6 @@ footer .container {
     }
   }
 }
-@media (max-width: 425px) {}
-@media (max-width: 375px) {}
 @media (max-width: 320px) {
   footer {
     .container {
