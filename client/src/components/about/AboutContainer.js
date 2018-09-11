@@ -3,90 +3,50 @@ import FileTabs from './FileTabs';
 import FileEnumeration from './FileEnumeration';
 import FileBodies from './FileBodies';
 
-
+const initialState = {
+  fileOne: false,
+  fileTwo: false,
+  fileThree: false,
+  fileFour: false,
+  fileFive: false,
+  fileSix: false
+};
 class AboutContainer extends Component {
   constructor(props) {
     super(props);
 
-    this.state = {
-      fileOne: false,
-      fileTwo: false,
-      fileThree: false,
-      fileFour: false,
-      fileFive: false,
-      fileSix: true,
-    }
+    this.state = { ...initialState, fileSix: true };
     this.onFileSelection = this.onFileSelection.bind(this)
   }
 
-  componentDidMount() {
-    document.addEventListener('mousedown', this.onFileSelection);
+  componentDidMount(event) {
+    document.addEventListener('mousedown', event => this.onFileSelection(event));
   }
 
-  componentWillMount() {
-    document.addEventListener('mousedown', this.onFileSelection);
+  componentWillMount(event) {
+    document.addEventListener('mousedown', event => this.onFileSelection(event));
   }
 
-  onFileSelection() {
-    if (event.target.id == 'fileOne') {
-      this.setState({
-        fileOne: true,
-        fileTwo: false,
-        fileThree: false,
-        fileFour: false,
-        fileFive: false,
-        fileSix: false,
-      })
-    } else if (event.target.id == 'fileTwo') {
-        this.setState({
-          fileOne: false,
-          fileTwo: true,
-          fileThree: false,
-          fileFour: false,
-          fileFive: false,
-          fileSix: false,
-        })
-    } else if (event.target.id == 'fileThree') {
-        this.setState({
-          fileOne: false,
-          fileTwo: false,
-          fileThree: true,
-          fileFour: false,
-          fileFive: false,
-          fileSix: false,
-        })
-    } else if (event.target.id == 'fileFour') {
-        this.setState({
-          fileOne: false,
-          fileTwo: false,
-          fileThree: false,
-          fileFour: true,
-          fileFive: false,
-          fileSix: false,
-        })
-    }else if (event.target.id == 'fileFive') {
-        this.setState({
-          fileOne: false,
-          fileTwo: false,
-          fileThree: false,
-          fileFour: false,
-          fileFive: true,
-          fileSix: false,
-        })
-    }else if (event.target.id == 'fileSix') {
-        this.setState({
-          fileOne: false,
-          fileTwo: false,
-          fileThree: false,
-          fileFour: false,
-          fileFive: false,
-          fileSix: true,
-        })
-    }
+  onFileSelection({target}) {
+    this.setState(() => {
+        if (target.id == 'fileOne') {
+          return { ...initialState, fileOne: true }
+        } else if (target.id == 'fileTwo') {
+            return { ...initialState, fileTwo: true }
+        } else if (target.id == 'fileThree') {
+            return { ...initialState, fileThree: true }
+        } else if (target.id == 'fileFour') {
+            return { ...initialState, fileFour: true }
+        }else if (target.id == 'fileFive') {
+            return { ...initialState, fileFive: true }
+        }else if (target.id == 'fileSix') {
+            return { ...initialState, fileSix: true
+        }
+      }
+    });
   }
 
   render() {
-    // console.log('about')
     return (
       <div className="about-section-wrapper">
         <section className="about-text-wrapper">
@@ -94,7 +54,6 @@ class AboutContainer extends Component {
             World Experience
           </h3>
           <hr />
-
           <p>
             I am a software developer with strong roots in residential painting, carpentry and oil portraiture. My passion is solving problems. My goal is to keep user experiences beautiful, clean, and intutive. I've walked and ridden my bike across 4 continents and inform my work with observations made during those adventures. Innovation is everywhere!
           </p>
@@ -104,9 +63,9 @@ class AboutContainer extends Component {
           <div className="editor-container">
             <div className="about-btns-wrapper">
               <div className="about-btns-container">
-                <button className="close-btn" onClick={()=>console.log('closed')}></button>
-                <button className="min-btn" onClick={()=>console.log('minimized')}></button>
-                <button className="max-btn" onClick={()=>console.log('maximized')}></button>
+                <button className="close-btn"></button>
+                <button className="min-btn"></button>
+                <button className="max-btn"></button>
               </div>
             </div>
             <FileTabs {...this.state}/>

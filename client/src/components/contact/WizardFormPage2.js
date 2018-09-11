@@ -7,8 +7,7 @@ import RenderField from './RenderField';
 const renderError = ({ meta: { touched, error } }) =>
   touched && error ? <span>{error}</span> : false;
 
-let WizardFormSecondPage = props => {
-  const { handleSubmit, previousPage } = props;
+let WizardFormSecondPage = ({ handleSubmit, previousPage }) => {
   return (
     <form onSubmit={handleSubmit}>
       <Field name="email" type="email" component={RenderField} label="Email" />

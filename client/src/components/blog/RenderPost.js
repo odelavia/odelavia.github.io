@@ -1,29 +1,23 @@
-import React, { Component } from 'react';
+import React from 'react';
 
-class RenderPost extends Component {
-  constructor(props) {
-    super(props);
-  }
-
-  render() {
-    return (
-      <div className="post-container">
-        <div className={`post-description-${this.props.index}`}>
-          <h2>{this.props.title}</h2>
-          <p>{this.props.description}</p>
-          <div>
-            <span className="author">{this.props.author}</span>
-            <span className="published">{this.props.published}</span>
-          </div>
-          <a className="articleLink solid-button" href={this.props.postLink}>Read Article</a>
+const RenderPost = ({ index, title, description, author, published, postLink, backgroundImage }) => {
+  return (
+    <div className="post-container">
+      <div className={`post-description-${index}`}>
+        <h2>{title}</h2>
+        <p>{description}</p>
+        <div>
+          <span className="author">{author}</span>
+          <span className="published">{published}</span>
         </div>
-        <div
-          className="post-img"
-          style={{ backgroundImage: `url(${this.props.backgroundImage})` }}
-        />
+        <a className="articleLink solid-button" href={postLink}>Read Article</a>
       </div>
-    );
-  }
+      <div
+        className="post-img"
+        style={{ backgroundImage: `url(${backgroundImage})` }}
+      />
+    </div>
+  );
 }
 
 export default RenderPost;

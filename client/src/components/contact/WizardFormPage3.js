@@ -3,8 +3,7 @@ import { connect } from 'react-redux';
 import { Field, reduxForm } from 'redux-form';
 import validate from './validate';
 
-const WizardFormThirdPage = props => {
-  const { handleSubmit, previousPage, submitting } = props;
+const WizardFormThirdPage = ({ handleSubmit, previousPage, submitting }) => {
   return (
     <form action="https://formspree.io/odelavia@gmail.com" method="POST" >
       <div className="renderField">

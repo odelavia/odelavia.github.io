@@ -4,9 +4,6 @@ import Wizard from './Wizard';
 class Contact extends Component {
   constructor(props) {
     super(props);
-
-    this.state = {
-    }
     this.showResults = this.showResults.bind(this);
   }
 

@@ -4,8 +4,7 @@ import { connect } from 'react-redux';
 import validate from './validate';
 import RenderField from './RenderField';
 
-let WizardFormFirstPage = props => {
-  const { handleSubmit } = props;
+let WizardFormFirstPage = ({ handleSubmit }) => {
   return (
     <form action="https://formspree.io/odelavia@gmail.com" method="POST" onSubmit={ handleSubmit }>
       <Field
