@@ -2228,17 +2228,15 @@ footer .container {
 
 #foreground-banner.banner {
   z-index: 1; }
-  #foreground-banner.banner .line:first-child:before {
+  #foreground-banner.banner .line:first-child:before, #foreground-banner.banner .line:last-child:after {
     border-color: transparent; }
   #foreground-banner.banner .line.first:after {
     background: transparent; }
-  #foreground-banner.banner .line:last-child:after {
-    border-color: transparent; }
 
 .banner {
   position: absolute;
-  top: -155px;
-  right: -125px;
+  top: -70px;
+  right: -15px;
   z-index: 1;
   margin: 80px auto;
   width: 225px; }
@@ -2251,7 +2249,8 @@ footer .container {
     font-size: 18px;
     font-weight: 500;
     line-height: 78px;
-    transform: matrix(1, 1, -1, 1, 0, 90); }
+    transform-origin: center;
+    transform: matrix(1, 1, -1, 1, 120, 0); }
     .banner .line:after, .banner .line:first-child:before {
       position: absolute;
       top: 24px;
@@ -2291,4 +2290,53 @@ footer .container {
     background: white;
     color: #666666ba; }
 
-/*# sourceMappingURL=style.cef5.css.map*/
+@media (max-width: 1440px) {
+  #background-banner.banner {
+    display: none; }
+  #foreground-banner.banner {
+    top: 8px;
+    right: 135px;
+    margin: 0;
+    width: 0; }
+    #foreground-banner.banner .line {
+      position: absolute;
+      height: 30px;
+      top: 50px;
+      right: -125px;
+      margin: 0;
+      line-height: 36px;
+      text-align: center;
+      transform: rotateZ(45.26367deg);
+      box-shadow: none; }
+      #foreground-banner.banner .line:first-child::before {
+        top: 0; }
+      #foreground-banner.banner .line.first:before, #foreground-banner.banner .line.first:after {
+        content: '';
+        position: absolute;
+        top: 0px;
+        width: 105%;
+        height: 100%;
+        border-color: rgba(3, 108, 219, 0.86) !important;
+        border-style: solid;
+        border-radius: 2px;
+        background-color: white;
+        box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.05);
+        z-index: -1; }
+      #foreground-banner.banner .line.first:before {
+        left: -35%;
+        border-width: 3px 0px 3px 3px;
+        transform: skewX(-45deg); }
+      #foreground-banner.banner .line.first:after {
+        right: -35%;
+        border-width: 3px 3px 3px 0px;
+        transform: skewX(45deg);
+        background-color: white; }
+      #foreground-banner.banner .line.second {
+        display: none; }
+      #foreground-banner.banner .line span {
+        display: inline;
+        font-size: 18px;
+        font-weight: 500;
+        border: none; } }
+
+/*# sourceMappingURL=style.7c9e.css.map*/
