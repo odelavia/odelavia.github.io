@@ -6,8 +6,33 @@ import BannerBadgeBackground from '../common/BannerBadgeBackground';
 class RenderProject extends Component {
   constructor(props) {
     super(props);
+    this.state = {
+      width: 0,
+      height: 0,
+      firstbanner: 'IN'
+    };
+
+    this.updateWindowDimensions = this.updateWindowDimensions.bind(this);
     this.createTag = this.createTag.bind(this);
     this.createTags = this.createTags.bind(this);
+  }
+
+  componentDidMount() {
+    this.updateWindowDimensions();
+    window.addEventListener('resize', this.updateWindowDimensions);
+  }
+
+  componentWillUnmount() {
+    window.removeEventListener('resize', this.updateWindowDimensions);
+  }
+
+  updateWindowDimensions() {
+    this.setState({ width: window.innerWidth, height: window.innerHeight });
+    if (this.state.width <= 1440) {
+      this.setState({ firstbanner: 'IN PROGRESS'})
+    } else if (this.state.width >= 1441) {
+      this.setState({ firstbanner: 'IN'})
+    }
   }
 
   createTag(technology, index) {
@@ -28,7 +53,10 @@ class RenderProject extends Component {
       <div className="projectCard-wrapper">
         {
           completed === 'yes' ? null
-          : <Fragment><BannerBadgeBackground /><BannerBadge id="visible-badge" /></Fragment>
+          : <Fragment>
+            <BannerBadgeBackground />
+            <BannerBadge id="visible-badge">{[this.state.firstbanner,'PROGRESS']}</BannerBadge>
+          </Fragment>
         }
         <div className="test-project">
           <div className={`img-container-${index}`}>

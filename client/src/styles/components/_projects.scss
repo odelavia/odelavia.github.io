@@ -55,6 +55,7 @@
 
     .projectCard-wrapper {
       position: relative;
+      // overflow: hidden;
     }
 
     .test-project {
@@ -197,6 +198,16 @@
 }
 @media (max-width: 1900px) {
 }
+
+// @media (min-width: 1441px) {
+//   .projects-container {
+//     .projects {
+//         .projectCard-wrapper {
+//           overflow: visible !important;
+//         }
+//     }
+//   }
+// }
 @media (max-width: 1440px) {
   .projects-container {
     .projects-text {

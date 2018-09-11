@@ -11,25 +11,21 @@
   z-index: 1;
 
   .line {
-    &:first-child:before {
+    &:first-child:before,
+    &:last-child:after {
       border-color: transparent;
     }
 
     &.first:after {
       background: transparent;
     }
-
-    &:last-child:after {
-      border-color: transparent;
-    }
-
   }
 }
 
 .banner {
   position: absolute;
-  top: -155px;
-  right: -125px;
+  top: -70px;
+  right: -15px;
   z-index: 1;
   margin: 80px auto;
   width: 225px;
@@ -43,7 +39,8 @@
     font-size: 18px;
     font-weight: 500;
     line-height: 78px;
-    transform: matrix(1, 1, -1, 1, 0, 90);
+    transform-origin: center;
+    transform: matrix(1, 1, -1, 1, 120, 0);
 
     &:after,
     &:first-child:before {
@@ -99,5 +96,74 @@
     border: 1px solid rgba(3, 108, 219, 0.86);
     background: rgba(255, 255, 255, 1);
     color: #666666ba;
+  }
+}
+
+@media (max-width: 1440px) {
+  #background-banner.banner {
+    display: none;
+  }
+  #foreground-banner.banner {
+    top: 8px;
+    right: 135px;
+    margin: 0;
+    width: 0;
+
+    .line {
+      position: absolute;
+      height: 30px;
+      top: 50px;
+      right: -125px;
+      margin: 0;
+      line-height: 36px;
+      text-align: center;
+      transform: rotateZ(45.26366581533504deg);
+      box-shadow: none;
+
+      &:first-child::before {
+        top: 0;
+      }
+
+      &.first {
+        &:before,
+        &:after {
+          content: '';
+          position: absolute;
+          top: 0px;
+          width: 105%;
+          height: 100%;
+          border-color: rgba(3, 108, 219, 0.86) !important;
+          border-style: solid;
+          border-radius: 2px;
+          background-color: white;
+          box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.05);
+          z-index: -1;
+        }
+
+        &:before {
+          left: -35%;
+          border-width: 3px 0px 3px 3px;
+          transform: skewX(-45deg);
+        }
+
+        &:after {
+          right: -35%;
+          border-width: 3px 3px 3px 0px;
+          transform: skewX(45deg);
+          background-color: white;
+        }
+      }
+
+      &.second {
+        display: none;
+      }
+
+      span {
+        display: inline;
+        font-size: 18px;
+        font-weight: 500;
+        border: none;
+      }
+    }
   }
 }

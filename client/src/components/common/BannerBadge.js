@@ -1,13 +1,13 @@
 import React from 'react';
 
-const BannerBadge = () => {
+const BannerBadge = ({ children }) => {
   return (
     <div id="foreground-banner" className="banner">
       <div className="line first">
-        <span>IN</span>
+        <span>{children[0]}</span>
       </div>
       <div className="line second">
-        <span>PROGRESS</span>
+        <span>{children[1]}</span>
       </div>
     </div>
   );
