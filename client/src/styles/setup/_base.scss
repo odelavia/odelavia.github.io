@@ -10,6 +10,7 @@ body {
   font-family: "Raleway","Roboto Condensed", "Roboto", sans-serif;
 	font-size: 14px;
   background-color: #eee;
+  overflow-x: hidden;
 }
 
 html {
@@ -19,7 +20,6 @@ html {
 
 body {
   width: 100vw;
-  overflow-x: hidden;
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
   font-weight: 300;
