@@ -7,7 +7,7 @@ const Hero = () => (
     <div className="container full">
       <div className="content">
         <div className="splash-image">
-          <img src={heroImage} alt="portrait" width="320" height="465" />
+          <img src={heroImage} alt="portrait" />
         </div>
         <div className="tagline">
           <h1>Hi, I'm Oliver!</h1> <br/>
