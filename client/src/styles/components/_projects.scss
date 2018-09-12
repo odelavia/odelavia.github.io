@@ -93,37 +93,47 @@
         }
 
         &[class$="-1"] {
-          background: #f0a9b7;
+          // background: #f0a9b7;
+          background: darken(#647077, 20%);
         }
         &[class$="-2"] {
           background: #4b5fbd;
         }
         &[class$="-3"] {
-          background: darken(#f2fc62, 40%);
-        }
-        &[class$="-4"] {
-          background: darken(#faaa4a, 20%);
-        }
-        &[class$="-5"] {
-          background: lighten(#ff3c15, 20%);
-        }
-        &[class$="-6"] {
-          background: darken(#49bdff, 40%);
-        }
-        &[class$="-7"] {
-          background: darken(#e8354d, 40%);
-        }
-        &[class$="-8"] {
+          // background: darken(#f2fc62, 40%);
           background: darken(#647077, 20%);
         }
+        &[class$="-4"] {
+          // background: darken(#faaa4a, 20%);
+          background: #4b5fbd;
+        }
+        &[class$="-5"] {
+          // background: lighten(#ff3c15, 20%);
+          background: darken(#647077, 20%);
+        }
+        &[class$="-6"] {
+          // background: darken(#49bdff, 40%);
+          background: #4b5fbd;
+        }
+        &[class$="-7"] {
+          // background: darken(#e8354d, 40%);
+          background: darken(#647077, 20%);
+        }
+        &[class$="-8"] {
+          // background: darken(#647077, 20%);
+          background: #4b5fbd;
+        }
         &[class$="-9"] {
-          background: darken(#4639ab, 20%);
+          // background: darken(#4639ab, 20%);
+          background: darken(#647077, 20%);
         }
         &[class$="-10"] {
-          background: darken(#df5c1f, 20%);
+          // background: darken(#df5c1f, 20%);
+          background: #4b5fbd;
         }
         &[class$="-11"] {
-          background: darken(#5c70d6, 40%);
+          // background: darken(#5c70d6, 40%);
+          background: darken(#647077, 20%);
         }
       }
 
@@ -135,7 +145,6 @@
         grid-gap: 36px;
         flex-direction: column;
         padding: 40px;
-        // color: #000;
         color: #525F7F;
         height: 100%;
         min-width: 62%;
@@ -231,18 +240,6 @@
         }
         .project-description {
           width: 100%;
-          h4 {
-          }
-          p {
-          }
-          span {
-            a ~ a {
-            }
-            a {
-            }
-            .live-repo {
-            }
-          }
         }
       }
     }
