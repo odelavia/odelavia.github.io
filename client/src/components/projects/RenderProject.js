@@ -12,28 +12,28 @@ class RenderProject extends Component {
       firstbanner: 'IN'
     };
 
-    this.updateWindowDimensions = this.updateWindowDimensions.bind(this);
+    // this.updateWindowDimensions = this.updateWindowDimensions.bind(this);
     this.createTag = this.createTag.bind(this);
     this.createTags = this.createTags.bind(this);
   }
 
-  componentDidMount() {
-    this.updateWindowDimensions();
-    window.addEventListener('resize', this.updateWindowDimensions);
-  }
+  // componentDidMount() {
+  //   this.updateWindowDimensions();
+  //   window.addEventListener('resize', this.updateWindowDimensions);
+  // }
 
-  componentWillUnmount() {
-    window.removeEventListener('resize', this.updateWindowDimensions);
-  }
+  // componentWillUnmount() {
+  //   window.removeEventListener('resize', this.updateWindowDimensions);
+  // }
 
-  updateWindowDimensions() {
-    this.setState({ width: window.innerWidth, height: window.innerHeight });
-    if (this.state.width <= 1440) {
-      this.setState({ firstbanner: 'IN PROGRESS'})
-    } else if (this.state.width >= 1441) {
-      this.setState({ firstbanner: 'IN'})
-    }
-  }
+  // updateWindowDimensions() {
+    // this.setState({ width: window.innerWidth, height: window.innerHeight });
+    // if (this.state.width <= 1440) {
+    //   this.setState({ firstbanner: 'IN PROGRESS'})
+    // } else if (this.state.width >= 1441) {
+    //   this.setState({ firstbanner: 'IN'})
+    // }
+  // }
 
   createTag(technology, index) {
     return (
