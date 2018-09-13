@@ -3,15 +3,15 @@ import { connect } from 'react-redux';
 import { Field, reduxForm } from 'redux-form';
 import validate from './validate';
 
-const WizardFormThirdPage = ({ handleSubmit, previousPage, submitting }) => {
+const WizardFormThirdPage = ({ firstName, lastName, email, previousPage }) => {
   return (
     <form action="https://formspree.io/odelavia@gmail.com" method="POST" >
       <div className="renderField">
         <label>Message</label>
         <div className="input-container">
-          <input name="firstName" type="hidden" style={{display: "none" }} readOnly value={props.firstName} />
-          <input name="lastName" type="hidden" style={{display: "none" }} readOnly value={props.lastName} />
-          <input name="_replyto" type="hidden" style={{display: "none" }} readOnly value={props.email} />
+          <input name="firstName" type="hidden" style={{display: "none" }} readOnly value={firstName} />
+          <input name="lastName" type="hidden" style={{display: "none" }} readOnly value={lastName} />
+          <input name="_replyto" type="hidden" style={{display: "none" }} readOnly value={email} />
           <input type="text" name="_gotcha" style={{display: "none" }} />
           <input type="hidden" name="_format" value="plain" />
           <Field name="message" component="textarea" placeholder="Message..." />
