@@ -1,6 +1,6 @@
 import React from 'react';
-import Hero from './Hero.js'
-import AboutContainer from './about/AboutContainer'
+import Hero from './common/Hero.js'
+import AboutContainer from './about/AboutContainer.js'
 import Projects from './projects/Projects.js';
 import Contact from './contact/Contact.js';
 const Home = () => (

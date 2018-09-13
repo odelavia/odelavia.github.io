@@ -1,16 +1,16 @@
 @import './setup/variables';
-@import './preloadingScreen';
+@import './loadingScreen/preloadingScreen'; //keep here so that file loads before everything else.
 @import './setup/base';
-@import './components/navBar';
-@import './components/hero';
-@import './components/resume';
-@import './components/about';
-@import './components/projects';
-@import './components/blog';
+@import './components/about/about';
+@import './components/blog/blog';
+@import './components/common/bannerBadge';
+@import './components/common/footer';
+@import './components/common/hero';
+@import './components/common/navBar';
+@import './components/common/slantedContainer';
 @import './components/contact/contact';
 @import './components/contact/wizard';
+@import './components/projects/projects';
+@import './components/resume';
 @import './components/four04';
-@import './components/footer';
-@import './components/common/slantedContainer';
-@import './components/common/bannerBadge';
 

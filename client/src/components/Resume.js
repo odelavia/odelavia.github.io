@@ -1,4 +1,4 @@
-import React, { Fragment } from "react"
+import React from "react"
 
 const Resume = () => (
   <div id="resume-page">
