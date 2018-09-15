@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import data from './ProjectsData.json';
 import RenderProject from './RenderProject';
-import SearchBar from './SearchBar';
+// import SearchBar from './SearchBar';
 
 class Projects extends Component {
   constructor(props) {
@@ -43,7 +43,7 @@ class Projects extends Component {
               It’s the perfect balance between design thinking and design doing.</p>
             <p>Check out my projects below.</p>
           </div>
-          <SearchBar />
+          {/*<SearchBar />*/}
           <div className="projects">
             {this.createProjects(data.projects)}
           </div>
