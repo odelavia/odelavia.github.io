@@ -4,21 +4,11 @@
       "title":"2 Bears",
       "completed": "no",
       "updating": "no",
-      "description":"Mobile point of sales app for Belgian non-profit, Mov feast. I led my team of three. The requirements were to build a point-of-sale food ordering app that generates QR codes on the receipts. Waiters then scan the code on the receipt so they can track the orders and how much of an order is left to serve. We ended up building a self-checkout functionality on top of that.",
+      "description":"Mobile point of sales app for Belgian non-profit, Mov feast. I'm leading a team of three. The requirements were to build a point-of-sale food ordering app that generates QR codes on the receipts. Waiters then scan the code on the receipt so they can track the orders and how much of an order is left to serve. We ended up building a self-checkout functionality on top of that.",
       "siteLink":"javascript:void(0); //",
       "repoLink":"https://github.com/chingu-voyage5/2-Bears",
-      "stack":["JavaScript", "React-Native", "ReactJS", "Redux", "HTLM5", "NodeJS", "ExpressJS", "PostgreSQL", "Sequelize"],
+      "stack":["JavaScript", "React-Native", "ReactJS", "Redux", "Typescript","HTLM5", "NodeJS", "ExpressJS", "PostgreSQL", "Sequelize"],
       "backgroundImage":"https://i.imgur.com/O5ZTIQA.jpg"
-    },
-    {
-      "title":"C-Prop Generator",
-      "completed": "yes",
-      "updating": "no",
-      "description":"Proposal generator for residential contracting. This was built out of a need for my father's business. The requirements were that you can type into it like google docs and then print. I am adding an authorization and save functionality so that proposals can be indexed and looked up at a later time.",
-      "siteLink":"http://propgen.surge.sh/",
-      "repoLink":"https://github.com/odelavia/contractor-proposal-generator",
-      "stack":["JavaScript", "ReactJS", "Sass", "CSS3", "HTLM5", "NodeJS", "ExpressJS", "Webpack"],
-      "backgroundImage":"https://imgur.com/xKpYBx6.jpg"
     },
     {
       "title":"Facetagger",
@@ -29,6 +19,16 @@
       "repoLink":"https://github.com/odelavia/face-tagger-app",
       "stack":["JavaScript", "ReactJS", "Redux", "Sass", "CSS3", "HTLM5", "NodeJS", "ExpressJS", "Redis", "PostgreSQL", "Sequelize", "Webpack"],
       "backgroundImage":"https://i.imgur.com/mogw1Zt.jpg"
+    },
+    {
+      "title":"C-Prop Generator",
+      "completed": "yes",
+      "updating": "no",
+      "description":"Proposal generator for residential contracting. This was built out of a need for my father's business. The requirements were that you can type into it like google docs and then print. I am adding an authorization and save functionality so that proposals can be indexed and looked up at a later time.",
+      "siteLink":"http://propgen.surge.sh/",
+      "repoLink":"https://github.com/odelavia/contractor-proposal-generator",
+      "stack":["JavaScript", "ReactJS", "Sass", "CSS3", "HTLM5", "NodeJS", "ExpressJS", "Webpack"],
+      "backgroundImage":"https://imgur.com/xKpYBx6.jpg"
     },
     {
       "title":"Gecho",

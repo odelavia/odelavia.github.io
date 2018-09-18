@@ -55,9 +55,9 @@ class AboutContainer extends Component {
           </h3>
           <hr />
           <p>
-            I am a software developer with strong roots in residential painting, carpentry and oil portraiture. My passion is solving problems. My goal is to keep user experiences beautiful, clean, and intutive. I've walked and ridden my bike across 4 continents and inform my work with observations made during those adventures. Innovation is everywhere!
+            I am a software engineer with strong roots in residential painting, carpentry and oil portraiture. My passion is solving problems. My goal is to keep user experiences beautiful, clean, and intutive. I've walked and ridden my bike across 4 continents and inform my work with observations made during those adventures. Innovation is everywhere!
           </p>
-          <p>Click on my text editor's file tabs below to learn more</p>
+          <p>Click on my text editor's file tabs to learn more</p>
         </section>
         <section className="about-editor-wrapper">
           <div className="editor-container">
