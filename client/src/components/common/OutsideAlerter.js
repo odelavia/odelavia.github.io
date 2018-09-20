@@ -24,8 +24,8 @@ class OutsideAlerter extends Component {
 
   handleClickOutside(event) {
     if (this.wrapperRef && !this.wrapperRef.contains(event.target)) {
-      if ( event.target.parentNode.className == 'navbar-toggler'|| event.target.className == 'navbar-toggler') return
-      if(this.props.display == 'block' && event.target.parentNode.className != 'navbar-toggler') {
+      if ( event.target.parentNode.className == 'js-nav-toggle'|| event.target.className == 'js-nav-toggle') return
+      if(this.props.display == 'block' && event.target.parentNode.className != 'js-nav-toggle') {
             this.props.dispatch(closeNav());
             // console.log('entered props', this.props.navOpen)
       }

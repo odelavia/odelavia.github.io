@@ -53,27 +53,27 @@ class NavBar extends Component {
 
   render() {
     return (
-      <nav id="sectionsNav"
-        className={this.state.scrolledDown ? 'navbar-color-on-scroll' : 'navbar-transparent'}
+      <nav
+        className={this.state.scrolledDown ? 'c-nav--color' : 'c-nav'}
         onScroll={this.onScrollColorChange}
       >
-        <div className="navbar-container">
-          <div className="navbar-translate">
-            <NavLink className="navbar-brand" to="/" onClick={() => this.openNav}>DE LA VIA</NavLink>
-            <button onClick={this.openNav} className="navbar-toggler" type="button" data-toggle="collapse" aria-expanded="false" aria-label="Toggle navigation">
-              <span className="navbar-toggler-icon"></span>
-              <span className="navbar-toggler-icon"></span>
-              <span className="navbar-toggler-icon"></span>
+        <div className="l-nav-container">
+          <div className="l-nav-translate">
+            <NavLink className="nav__brand" to="/" onClick={() => this.openNav}>DE LA VIA</NavLink>
+            <button className="js-nav-toggle" onClick={this.openNav} type="button" aria-label="Toggle navigation">
+              <span className="nav-toggle__icon"></span>
+              <span className="nav-toggle__icon"></span>
+              <span className="nav-toggle__icon"></span>
             </button>
           </div>
           <div className='outsideAlert'>
           <OutsideAlerter >
-            <ul className="navbar-collapse" style={{right: this.state.right}}>
-              <NavLink id="home" className="nav-item" to="/" onClick={this.openNav}>Home</NavLink>
-              <a className="nav-item" href="https://drive.google.com/file/d/1NXOScHcc6ZgbCsTAKj2RJlbxvbN8BTYF/view" onClick={this.openNav} target="_blank" rel="noopener noreferrer">Resume</a>
-              {/*<NavLink className="nav-item blog" to="/blog">Blog</NavLink>*/}
-              <a className="nav-item blog" href="http://www.medium.com/@oliverdelavia" onClick={this.openNav} target="_blank" rel="noopener noreferrer">blog</a>
-              <a className="nav-item last contact" href="mailto:odelavia@gmail.com" onClick={this.openNav}>Contact</a>
+            <ul className="l-nav-list" style={{right: this.state.right}}>
+              <NavLink className="nav-list__item-1" to="/" onClick={this.openNav}>Home</NavLink>
+              <a className="nav-list__item-2" href="https://drive.google.com/file/d/1NXOScHcc6ZgbCsTAKj2RJlbxvbN8BTYF/view" onClick={this.openNav} target="_blank" rel="noopener noreferrer">Resume</a>
+              {/*<NavLink className="nav-list__item-3" to="/blog">Blog</NavLink>*/}
+              <a className="nav-list__item-3" href="http://www.medium.com/@oliverdelavia" onClick={this.openNav} target="_blank" rel="noopener noreferrer">blog</a>
+              <a className="nav-list__item-4" href="mailto:odelavia@gmail.com" onClick={this.openNav}>Contact</a>
             </ul>
           </OutsideAlerter>
           </div>
