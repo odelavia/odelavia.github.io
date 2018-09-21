@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
+import { connect } from 'react-redux';
 import data from './ProjectsData.json';
 import RenderProject from './RenderProject';
-// import SearchBar from './SearchBar';
+import SearchBar from './SearchBar';
 
 class Projects extends Component {
   constructor(props) {
@@ -27,11 +28,15 @@ class Projects extends Component {
     );
   }
 
-  createProjects(projects) {
-    return projects.map((project, index) => this.createProject(project, index))
+  createProjects(projects, filter) {
+    const regexp = new RegExp(filter, 'i');
+
+    return projects.filter( project => project.stack.some(text => regexp.test(text)))
+                   .map((project, index) => this.createProject(project, index))
   }
 
   render() {
+    const { filter } = this.props;
     return(
       <div className="projects-wrapper">
         <div className="projects-container">
@@ -43,9 +48,9 @@ class Projects extends Component {
               It’s the perfect balance between design thinking and design doing.</p>
             <p>Check out my projects below.</p>
           </div>
-          {/*<SearchBar />*/}
+          {<SearchBar />}
           <div className="projects">
-            {this.createProjects(data.projects)}
+            {this.createProjects(data.projects, filter)}
           </div>
         </div>
       </div>
@@ -53,4 +58,10 @@ class Projects extends Component {
   }
 }
 
-export default Projects;
+const mapStateToProps = (state) => {
+  return {
+    filter: state.searchbar.filter,
+  }
+}
+
+export default connect(mapStateToProps)(Projects);

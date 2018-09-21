@@ -77,7 +77,7 @@
       "description":"A blog built from scratch. I learned a lot about how CMS's work and how to connect everything to the backend here. I'm rebuilding in React to add to this site.",
       "siteLink":"javascript:void(0); //",
       "repoLink":"https://github.com/odelavia/RESTful-Blog",
-            "stack":["JavaScript", "EJS", "CSS3", "HTLM5", "NodeJS", "ExpressJS", "MongoDB", "Mongoose", "Webpack"],
+      "stack":["JavaScript", "EJS", "CSS3", "HTLM5", "NodeJS", "ExpressJS", "MongoDB", "Mongoose", "Webpack"],
       "backgroundImage":"https://i.imgur.com/mogw1Zt.jpg"
     },
     {
