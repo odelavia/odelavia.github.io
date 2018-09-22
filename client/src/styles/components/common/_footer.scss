@@ -1,3 +1,36 @@
+/**
+ * _footer.scss
+ *
+ * These are the styles for the footerbar component.
+ *
+ * Index
+ * - c-footer
+ * - c-footer--color
+ * - l-footer-container
+ * - l-footer-translate
+ * - footer__brand
+ * - js-footer-toggle
+ * - footer-toggle__icon
+ * - l-footer-list (footer-collapse)
+ * - footer-list__item-1
+ * - footer-list__item-2
+ * - footer-list__item-3
+ * - footer-list__item-4
+
+ * - block__element--modifier
+ * - js- js hooks
+ * - is- or -has states
+ * - h- helpers
+ * - l- layout no cosmetics
+ * - c- component specific to section
+ * - o- object used globally
+ * - @tablet - breakpoint
+ */
+
+/**
+ * footer Base
+ */
+
 @keyframes pulse {
   0% {
     transform: scale(1, 1);

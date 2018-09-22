@@ -30,7 +30,7 @@ class SearchBar extends Component {
             /* method="post" */
           >
             <div className="flexsearch--input-wrapper">
-              <input className="flexsearch--input" type="search" placeholder="search" ref="flexSearch" onChange={() => this.onSearchFilter()} />
+              <input className="flexsearch--input" type="search" placeholder="search by tech stack" ref="flexSearch" onChange={() => this.onSearchFilter()} />
             </div>
             <input className="flexsearch--submit" type="submit" value="&#10140;" onClick={() => this.handleOnSearch(event)}/>
           </div>
