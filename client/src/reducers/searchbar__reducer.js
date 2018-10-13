@@ -1,7 +1,8 @@
-import { SEARCH_FILTER } from '../actions/types';
+import { SEARCH_FILTER, SET_FILTER_TYPE } from '../actions/types';
 
 const initialState = {
   filter: '',
+  type: 'tech',
 }
 
 export default (state = initialState, action) => {
@@ -12,6 +13,11 @@ export default (state = initialState, action) => {
       return {
         ...state,
         filter: action.payload.filter,
+      };
+    case SET_FILTER_TYPE:
+      return {
+        ...state,
+        type: action.payload.type,
       };
     default:
       return state;

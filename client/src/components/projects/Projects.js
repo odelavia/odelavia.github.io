@@ -3,13 +3,19 @@ import { connect } from 'react-redux';
 import data from './ProjectsData.json';
 import RenderProject from './RenderProject';
 import SearchBar from './SearchBar';
-
+import OptionsDropDown from './OptionsDropDown';
+import options from './FilterOptions';
+console.log(options)
 class Projects extends Component {
-  constructor(props) {
-    super(props);
+  constructor(){
+    super()
+    this.state = {
+      searchFilter: options,
+    }
 
     this.createProject  = this.createProject.bind(this);
     this.createProjects = this.createProjects.bind(this);
+    // this.toggleSelected = this.toggleSelected.bind(this);
   }
 
   createProject({ title, completed, description, siteLink, stack, repoLink, backgroundImage }, index) {
@@ -28,11 +34,36 @@ class Projects extends Component {
     );
   }
 
-  createProjects(projects, filter) {
+  createProjects (projects, filter) {
+    console.log(projects, filter)
     const regexp = new RegExp(filter, 'i');
+    if (this.props.filterType === 'All') {
 
-    return projects.filter( project => project.stack.some(text => regexp.test(text)))
-                   .map((project, index) => this.createProject(project, index))
+    } else if (this.props.filterType === 'title') {
+      return projects.filter( project => regexp.test(project.title))
+                      .map((project, index) => this.createProject(project, index))
+    } else if (this.props.filterType === 'description') {
+      return projects.filter( project => regexp.test(project.description))
+                      .map((project, index) => this.createProject(project, index))
+    } else if (this.props.filterType === 'tech') {
+      return projects.filter( project => project.stack.some(text => regexp.test(text)))
+                      .map((project, index) => this.createProject(project, index))
+    } else if (this.props.filterType === 'created') {
+
+    } else if (this.props.filterType === 'live') {
+
+    }
+  }
+
+  toggleSelected (id, key){
+    console.log ("id, key",id, key)
+    let temp = this.state[key]
+    this.state[key].map(x => x.selected = false)
+    temp[id].selected = !temp[id].selected
+    this.setState({
+      [key]: temp,
+    }, () => console.log(this.state[key]))
+    // close optionsdropdownafter after clicking
   }
 
   render() {
@@ -48,7 +79,8 @@ class Projects extends Component {
               It’s the perfect balance between design thinking and design doing.</p>
             <p>Check out my projects below.</p>
           </div>
-          {<SearchBar />}
+          <SearchBar />
+          {<OptionsDropDown title="Select filter" titleHelper="filter" list={this.state.searchFilter} toggleItem={this.toggleSelected.bind(this)} />}
           <div className="projects">
             {this.createProjects(data.projects, filter)}
           </div>
@@ -61,6 +93,7 @@ class Projects extends Component {
 const mapStateToProps = (state) => {
   return {
     filter: state.searchbar.filter,
+    filterType: state.searchbar.type,
   }
 }
 

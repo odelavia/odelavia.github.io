@@ -30,7 +30,7 @@ class SearchBar extends Component {
             /* method="post" */
           >
             <div className="flexsearch--input-wrapper">
-              <input className="flexsearch--input" type="search" placeholder="search by tech stack" ref="flexSearch" onChange={() => this.onSearchFilter()} />
+              <input className="flexsearch--input" type="search" placeholder={`search by ${this.props.filterType}`} ref="flexSearch" onChange={() => this.onSearchFilter()} />
             </div>
             <input className="flexsearch--submit" type="submit" value="&#10140;" onClick={() => this.handleOnSearch(event)}/>
           </div>
@@ -44,6 +44,7 @@ const mapStateToProps = (state) => {
   // console.log('this is redux state', state.searchbar);
   return {
     filter: state.searchbar.filter,
+    filterType: state.searchbar.type,
   }
 }
 
